@@ -1,8 +1,18 @@
 const ADS_CONFIG = {
-    isAdsEnabled: false,
+    isAdsEnabled: true,
     clientId: "ca-pub-8437328263455404",
     retryAttempts: 3,
     retryDelay: 2000
+};
+
+const FIREBASE_CONFIG =  {
+    apiKey: "AIzaSyDymESAalqTuYgAhpuzyhOrqNoB33Esx-g",
+    authDomain: "foomadicsoul.firebaseapp.com",
+    projectId: "foomadicsoul",
+    storageBucket: "foomadicsoul.firebasestorage.app",
+    messagingSenderId: "892224040697",
+    appId: "1:892224040697:web:ceb4061045883038d57c28",
+    measurementId: "G-40NG4PEBLG"
 };
 
 function loadAdSense() {
@@ -30,11 +40,39 @@ function loadAdSense() {
     }
 }
 
+function loadFirebaseAnalytics() {
+    const firebaseAppScript = document.createElement('script');
+    firebaseAppScript.src = 'https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js';
+    document.head.appendChild(firebaseAppScript);
+    
+    const firebaseAnalyticsScript = document.createElement('script');
+    firebaseAnalyticsScript.src = 'https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics-compat.js';
+    document.head.appendChild(firebaseAnalyticsScript);
+    
+    firebaseAnalyticsScript.onload = function() {
+        try {
+            firebase.initializeApp(FIREBASE_CONFIG);
+            const analytics = firebase.analytics();
+            
+            analytics.logEvent('page_view', {
+                page_title: document.title,
+                page_location: window.location.href
+            });
+        } catch (e) {
+            console.log('Firebase Analytics error:', e);
+        }
+    };
+}
+
 function initializeAds() {
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', loadAdSense);
+        document.addEventListener('DOMContentLoaded', function() {
+            loadAdSense();
+            loadFirebaseAnalytics();
+        });
     } else {
         loadAdSense();
+        loadFirebaseAnalytics();
     }
 }
 
