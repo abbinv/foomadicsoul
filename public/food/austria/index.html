@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austrian Food - Top 5 Traditional Dishes | Austria Cuisine</title>
+    <meta name="description" content="Discover authentic Austrian cuisine with Wiener Schnitzel, Sachertorte, Apfelstrudel, and traditional Alpine flavors.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: white; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .dish-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .dish-card:hover { transform: translateY(-5px); }
+        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
+        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
+        .ingredients { margin-top: 1rem; }
+        .ingredients ul { margin-left: 1.5rem; }
+    </style>
+    <script src="../../config/ads-config.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Food</a>
+        <header>
+            <h1>🇦🇹 Austrian Cuisine</h1>
+            <p>Top 5 Traditional Austrian Dishes</p>
+        </header>
+        <div class="dishes-grid">
+            <div class="dish-card">
+                <h2 class="dish-title">Wiener Schnitzel</h2>
+                <p class="dish-desc">Breaded veal cutlet, Austria's most famous dish served with lemon.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Veal cutlet</li><li>Breadcrumbs</li><li>Lemon</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Sachertorte</h2>
+                <p class="dish-desc">Famous chocolate cake with apricot jam and dark chocolate glaze.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Chocolate sponge</li><li>Apricot jam</li><li>Chocolate glaze</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Apfelstrudel</h2>
+                <p class="dish-desc">Traditional apple strudel with thin pastry and spiced apple filling.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Phyllo pastry</li><li>Apples</li><li>Cinnamon</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Tafelspitz</h2>
+                <p class="dish-desc">Boiled beef served with vegetables and horseradish sauce.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Beef</li><li>Root vegetables</li><li>Horseradish</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Kaiserschmarrn</h2>
+                <p class="dish-desc">Shredded pancake with raisins, served with plum compote.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Pancake batter</li><li>Raisins</li><li>Plum compote</li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

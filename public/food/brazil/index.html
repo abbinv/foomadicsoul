@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazilian Food - Top 5 Dishes</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: white; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .dish-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .dish-card:hover { transform: translateY(-5px); }
+        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
+        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
+        .ingredients { margin-top: 1rem; }
+        .ingredients ul { margin-left: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Food</a>
+        <header>
+            <h1>🇧🇷 Brazilian Cuisine</h1>
+            <p>Top 5 Popular Dishes</p>
+        </header>
+        <div class="dishes-grid">
+            <a href="feijoada.html" class="dish-card" style="text-decoration: none; color: inherit;">
+                <h2 class="dish-title">Feijoada</h2>
+                <p class="dish-desc">National dish with black beans, pork, and beef served with rice and farofa.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Black beans</li><li>Pork</li><li>Farofa</li></ul>
+                </div>
+            </a>
+            <a href="pao-de-acucar.html" class="dish-card" style="text-decoration: none; color: inherit;">
+                <h2 class="dish-title">Pão de Açúcar</h2>
+                <p class="dish-desc">Sweet bread rolls perfect for breakfast or as a snack with coffee.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Wheat flour</li><li>Sugar</li><li>Yeast</li></ul>
+                </div>
+            </a>
+            <a href="brigadeiro.html" class="dish-card" style="text-decoration: none; color: inherit;">
+                <h2 class="dish-title">Brigadeiro</h2>
+                <p class="dish-desc">Chocolate truffle made with condensed milk, cocoa, and chocolate sprinkles.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Condensed milk</li><li>Cocoa powder</li><li>Chocolate sprinkles</li></ul>
+                </div>
+            </a>
+            <a href="moqueca.html" class="dish-card" style="text-decoration: none; color: inherit;">
+                <h2 class="dish-title">Moqueca</h2>
+                <p class="dish-desc">Bahian fish stew with coconut milk, dendê oil, and bell peppers.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Fresh fish</li><li>Coconut milk</li><li>Dendê oil</li></ul>
+                </div>
+            </a>
+            <a href="acai-bowl.html" class="dish-card" style="text-decoration: none; color: inherit;">
+                <h2 class="dish-title">Açaí Bowl</h2>
+                <p class="dish-desc">Superfruit bowl topped with granola, fruits, and honey.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Açaí berries</li><li>Granola</li><li>Fresh fruits</li></ul>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

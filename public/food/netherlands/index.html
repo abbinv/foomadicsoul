@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dutch Food - Top 5 Traditional Dishes | Netherlands Cuisine</title>
+    <meta name="description" content="Discover authentic Dutch cuisine with Stroopwafel, Bitterballen, Dutch Cheese, and traditional Netherlands flavors.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: white; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .dish-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .dish-card:hover { transform: translateY(-5px); }
+        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
+        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
+        .ingredients { margin-top: 1rem; }
+        .ingredients ul { margin-left: 1.5rem; }
+    </style>
+    <script src="../../config/ads-config.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Food</a>
+        <header>
+            <h1>🇳🇱 Dutch Cuisine</h1>
+            <p>Top 5 Traditional Dutch Dishes</p>
+        </header>
+        <div class="dishes-grid">
+            <div class="dish-card">
+                <h2 class="dish-title">Stroopwafel</h2>
+                <p class="dish-desc">Thin waffle cookies filled with caramel syrup, best enjoyed warm over coffee.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Waffle batter</li><li>Caramel syrup</li><li>Butter</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Bitterballen</h2>
+                <p class="dish-desc">Deep-fried meatballs with creamy ragout filling, popular bar snack.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Beef ragout</li><li>Breadcrumbs</li><li>Mustard</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Dutch Cheese</h2>
+                <p class="dish-desc">World-famous Gouda and Edam cheeses, aged to perfection.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Cow's milk</li><li>Cheese cultures</li><li>Salt</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Erwtensoep</h2>
+                <p class="dish-desc">Thick split pea soup with smoked sausage, winter comfort food.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Split peas</li><li>Smoked sausage</li><li>Vegetables</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Poffertjes</h2>
+                <p class="dish-desc">Small fluffy pancakes served with butter and powdered sugar.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Buckwheat flour</li><li>Yeast</li><li>Powdered sugar</li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

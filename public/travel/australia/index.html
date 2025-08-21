@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australia Travel - Top 5 Destinations</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: white; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .destination-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .destination-card:hover { transform: translateY(-5px); }
+        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
+        .destination-desc { color: #666; line-height: 1.6; }
+        .highlights { margin-top: 1rem; }
+        .highlights ul { margin-left: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Travel</a>
+        <header>
+            <h1>🇦🇺 Australia</h1>
+            <p>Top 5 Destinations</p>
+        </header>
+        <div class="destinations-grid">
+            <a href="sydney.html" class="destination-card" style="text-decoration: none; color: inherit;">
+                <h2 class="destination-title">Sydney</h2>
+                <p class="destination-desc">Iconic harbor city with Opera House, Harbour Bridge, and beautiful beaches.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Sydney Opera House</li><li>Harbour Bridge</li><li>Bondi Beach</li></ul>
+                </div>
+            </a>
+            <a href="melbourne.html" class="destination-card" style="text-decoration: none; color: inherit;">
+                <h2 class="destination-title">Melbourne</h2>
+                <p class="destination-desc">Cultural capital with street art, coffee culture, and diverse neighborhoods.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Federation Square</li><li>Royal Botanic Gardens</li><li>Laneways</li></ul>
+                </div>
+            </a>
+            <a href="great-barrier-reef.html" class="destination-card" style="text-decoration: none; color: inherit;">
+                <h2 class="destination-title">Great Barrier Reef</h2>
+                <p class="destination-desc">World's largest coral reef system, perfect for snorkeling and diving.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Coral gardens</li><li>Marine life</li><li>Whitsunday Islands</li></ul>
+                </div>
+            </a>
+            <a href="uluru.html" class="destination-card" style="text-decoration: none; color: inherit;">
+                <h2 class="destination-title">Uluru</h2>
+                <p class="destination-desc">Sacred monolith in the heart of Australia, spiritual center of Aboriginal culture.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Sunrise/sunset viewing</li><li>Kata Tjuta</li><li>Cultural center</li></ul>
+                </div>
+            </a>
+            <a href="tasmania.html" class="destination-card" style="text-decoration: none; color: inherit;">
+                <h2 class="destination-title">Tasmania</h2>
+                <p class="destination-desc">Island state with pristine wilderness, unique wildlife, and MONA museum.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Cradle Mountain</li><li>MONA</li><li>Salamanca Market</li></ul>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

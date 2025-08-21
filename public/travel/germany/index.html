@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Germany Travel - Top 5 Destinations</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: white; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .destination-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .destination-card:hover { transform: translateY(-5px); }
+        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
+        .destination-desc { color: #666; line-height: 1.6; }
+        .highlights { margin-top: 1rem; }
+        .highlights ul { margin-left: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Travel</a>
+        <header>
+            <h1>🇩🇪 Germany</h1>
+            <p>Top 5 Destinations</p>
+        </header>
+        <div class="destinations-grid">
+            <a href="berlin.html" class="destination-card" style="text-decoration: none; color: inherit;">
+                <h2 class="destination-title">Berlin</h2>
+                <p class="destination-desc">Historic capital with rich history, vibrant culture, and modern attractions.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Brandenburg Gate</li><li>Berlin Wall</li><li>Museum Island</li></ul>
+                </div>
+            </a>
+            <a href="munich.html" class="destination-card" style="text-decoration: none; color: inherit;">
+                <h2 class="destination-title">Munich</h2>
+                <p class="destination-desc">Bavarian capital famous for Oktoberfest, beer gardens, and Alpine charm.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Marienplatz</li><li>Neuschwanstein Castle</li><li>English Garden</li></ul>
+                </div>
+            </a>
+            <a href="cologne.html" class="destination-card" style="text-decoration: none; color: inherit;">
+                <h2 class="destination-title">Cologne</h2>
+                <p class="destination-desc">Ancient city on the Rhine with stunning Gothic cathedral and art museums.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Cologne Cathedral</li><li>Rhine River</li><li>Museum Ludwig</li></ul>
+                </div>
+            </a>
+            <a href="hamburg.html" class="destination-card" style="text-decoration: none; color: inherit;">
+                <h2 class="destination-title">Hamburg</h2>
+                <p class="destination-desc">Maritime city with historic port, canals, and vibrant nightlife district.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Speicherstadt</li><li>Reeperbahn</li><li>Miniatur Wunderland</li></ul>
+                </div>
+            </a>
+            <a href="dresden.html" class="destination-card" style="text-decoration: none; color: inherit;">
+                <h2 class="destination-title">Dresden</h2>
+                <p class="destination-desc">Baroque jewel rebuilt after WWII, known as Florence on the Elbe.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Frauenkirche</li><li>Zwinger Palace</li><li>Semperoper</li></ul>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

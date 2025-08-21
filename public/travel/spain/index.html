@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spain Travel - Travel</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: white; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .destination-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
+        .destination-desc { color: #666; line-height: 1.6; }
+        .highlights { margin-top: 1rem; }
+        .highlights ul { margin-left: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Travel</a>
+        <header>
+            <h1>🇪🇸 Spain</h1>
+            <p>Top 5 Destinations</p>
+        </header>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <h2 class="destination-title">Barcelona</h2>
+                <p class="destination-desc">Vibrant Catalonian city with Gaudí architecture, beaches, and rich cultural heritage.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Sagrada Familia</li><li>Park Güell</li><li>Las Ramblas</li></ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Madrid</h2>
+                <p class="destination-desc">Spain's capital with world-class museums, royal palaces, and vibrant nightlife.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Prado Museum</li><li>Royal Palace</li><li>Retiro Park</li></ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Seville</h2>
+                <p class="destination-desc">Andalusian gem with Moorish architecture, flamenco culture, and historic charm.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Alcázar Palace</li><li>Seville Cathedral</li><li>Barrio Santa Cruz</li></ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Granada</h2>
+                <p class="destination-desc">Home to the magnificent Alhambra palace and stunning Sierra Nevada views.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Alhambra</li><li>Generalife Gardens</li><li>Albaicín Quarter</li></ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Valencia</h2>
+                <p class="destination-desc">Mediterranean coastal city known for paella, modern architecture, and beaches.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>City of Arts and Sciences</li><li>Central Market</li><li>Malvarosa Beach</li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

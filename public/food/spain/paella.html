@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentic Paella Valenciana Recipe | Traditional Spanish Rice Dish</title>
+    <meta name="description" content="Learn to make authentic Paella Valenciana with saffron, bomba rice, chicken, and rabbit. Traditional Spanish recipe from Valencia with step-by-step instructions.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+        .hero {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .hero h1 { 
+            font-size: 3rem; 
+            color: #ff6b6b; 
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #ff6b6b, #ffa500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-image {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(45deg, #ff6b6b20, #ffa50020);
+            border-radius: 15px;
+            margin: 2rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8rem;
+            border: 3px dashed #ff6b6b;
+        }
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .content-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .card-title {
+            color: #ff6b6b;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .ingredients-list {
+            list-style: none;
+            padding: 0;
+        }
+        .ingredients-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .steps-list {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+        .steps-list li {
+            counter-increment: step-counter;
+            padding: 1rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            position: relative;
+            padding-left: 3rem;
+        }
+        .steps-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 1rem;
+            background: #ff6b6b;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .tips-card {
+            background: linear-gradient(45deg, #ff6b6b10, #ffa50010);
+            border-left: 4px solid #ff6b6b;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+        .rating {
+            display: flex;
+            gap: 0.2rem;
+            margin: 1rem 0;
+            justify-content: center;
+        }
+        .star { color: #ffa500; font-size: 1.5rem; }
+        .difficulty-badge {
+            background: linear-gradient(45deg, #ff6b6b, #ffa500);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 1rem 0;
+        }
+        @media (max-width: 768px) {
+            .content-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Spanish Food</a>
+        
+        <div class="hero">
+            <h1>🥘 Paella Valenciana</h1>
+            <p>The authentic rice dish from Valencia - Spain's culinary masterpiece</p>
+            <div class="hero-image">🥘</div>
+            <div class="rating">
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+            </div>
+            <span class="difficulty-badge">🔥 Intermediate</span>
+            <p><strong>Prep Time:</strong> 30 min | <strong>Cook Time:</strong> 45 min | <strong>Serves:</strong> 6-8</p>
+        </div>
+
+        <div class="content-grid">
+            <div class="content-card">
+                <h2 class="card-title">🛒 Ingredients</h2>
+                <ul class="ingredients-list">
+                    <li><span>Bomba rice (or Arborio)</span><span>400g</span></li>
+                    <li><span>Chicken pieces</span><span>500g</span></li>
+                    <li><span>Rabbit pieces</span><span>300g</span></li>
+                    <li><span>Green beans</span><span>200g</span></li>
+                    <li><span>Lima beans</span><span>150g</span></li>
+                    <li><span>Saffron threads</span><span>1g</span></li>
+                    <li><span>Tomato (grated)</span><span>1 large</span></li>
+                    <li><span>Olive oil</span><span>100ml</span></li>
+                    <li><span>Chicken stock</span><span>1.2L</span></li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h2 class="card-title">👨🍳 Instructions</h2>
+                <ol class="steps-list">
+                    <li>Heat olive oil in paella pan over medium-high heat</li>
+                    <li>Season and brown chicken and rabbit pieces</li>
+                    <li>Add green beans and lima beans, cook 5 minutes</li>
+                    <li>Add grated tomato and saffron, cook 2 minutes</li>
+                    <li>Add rice, stir to coat with sofrito</li>
+                    <li>Pour hot stock, bring to boil</li>
+                    <li>Simmer 20 minutes without stirring</li>
+                    <li>Rest 5 minutes before serving</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="tips-card">
+            <h3>🔥 Master Chef Tips</h3>
+            <p>• <strong>Never stir</strong> the rice once stock is added - this creates the perfect texture<br>
+            • <strong>Saffron quality</strong> matters - use Spanish saffron threads for authentic flavor<br>
+            • <strong>Socarrat</strong> - the crispy bottom layer is the prize, listen for crackling sounds<br>
+            • <strong>Paella pan</strong> - wide, shallow pan ensures even cooking and proper rice layer<br>
+            • <strong>Rest time</strong> - let paella rest 5 minutes covered with clean towel</p>
+        </div>
+    </div>
+</body>
+</html>

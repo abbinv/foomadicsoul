@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel - Modern Life Hub</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: white; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .countries-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+        .country-item {
+            background: white;
+            border-radius: 10px;
+            padding: 1rem;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .country-item:hover { transform: translateY(-5px); }
+        .country-flag { font-size: 2rem; margin-bottom: 0.5rem; }
+        .country-name { font-weight: bold; }
+    </style>
+    <script src="../config/ads-config.js"></script>
+</head>
+<body onload="loadAdSense()">
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Home</a>
+        <header>
+            <h1>✈️ Travel</h1>
+            <p>Top 25 Most Visited Countries</p>
+        </header>
+        <div class="countries-grid">
+            <a href="france/index.html" class="country-item"><div class="country-flag">🇫🇷</div><div class="country-name">France</div></a>
+            <a href="spain/index.html" class="country-item"><div class="country-flag">🇪🇸</div><div class="country-name">Spain</div></a>
+            <a href="usa/index.html" class="country-item"><div class="country-flag">🇺🇸</div><div class="country-name">USA</div></a>
+            <a href="china/index.html" class="country-item"><div class="country-flag">🇨🇳</div><div class="country-name">China</div></a>
+            <a href="italy/index.html" class="country-item"><div class="country-flag">🇮🇹</div><div class="country-name">Italy</div></a>
+            <a href="turkey/index.html" class="country-item"><div class="country-flag">🇹🇷</div><div class="country-name">Turkey</div></a>
+            <a href="germany/index.html" class="country-item"><div class="country-flag">🇩🇪</div><div class="country-name">Germany</div></a>
+            <a href="thailand/index.html" class="country-item"><div class="country-flag">🇹🇭</div><div class="country-name">Thailand</div></a>
+            <a href="uk/index.html" class="country-item"><div class="country-flag">🇬🇧</div><div class="country-name">UK</div></a>
+            <a href="japan/index.html" class="country-item"><div class="country-flag">🇯🇵</div><div class="country-name">Japan</div></a>
+            <a href="greece/index.html" class="country-item"><div class="country-flag">🇬🇷</div><div class="country-name">Greece</div></a>
+            <a href="canada/index.html" class="country-item"><div class="country-flag">🇨🇦</div><div class="country-name">Canada</div></a>
+            <a href="australia/index.html" class="country-item"><div class="country-flag">🇦🇺</div><div class="country-name">Australia</div></a>
+            <a href="russia/index.html" class="country-item"><div class="country-flag">🇷🇺</div><div class="country-name">Russia</div></a>
+            <a href="austria/index.html" class="country-item"><div class="country-flag">🇦🇹</div><div class="country-name">Austria</div></a>
+            <a href="portugal/index.html" class="country-item"><div class="country-flag">🇵🇹</div><div class="country-name">Portugal</div></a>
+            <a href="netherlands/index.html" class="country-item"><div class="country-flag">🇳🇱</div><div class="country-name">Netherlands</div></a>
+            <a href="poland/index.html" class="country-item"><div class="country-flag">🇵🇱</div><div class="country-name">Poland</div></a>
+            <a href="czech-republic/index.html" class="country-item"><div class="country-flag">🇨🇿</div><div class="country-name">Czech Republic</div></a>
+            <a href="croatia/index.html" class="country-item"><div class="country-flag">🇭🇷</div><div class="country-name">Croatia</div></a>
+            <a href="morocco/index.html" class="country-item"><div class="country-flag">🇲🇦</div><div class="country-name">Morocco</div></a>
+            <a href="egypt/index.html" class="country-item"><div class="country-flag">🇪🇬</div><div class="country-name">Egypt</div></a>
+            <a href="brazil/index.html" class="country-item"><div class="country-flag">🇧🇷</div><div class="country-name">Brazil</div></a>
+            <a href="india/index.html" class="country-item"><div class="country-flag">🇮🇳</div><div class="country-name">India</div></a>
+            <a href="south-korea/index.html" class="country-item"><div class="country-flag">🇰🇷</div><div class="country-name">South Korea</div></a>
+        </div>
+    </div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
+</body>
+</html>

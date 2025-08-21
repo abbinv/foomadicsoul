@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polish Food - Top 5 Traditional Dishes | Poland Cuisine</title>
+    <meta name="description" content="Discover authentic Polish cuisine with Pierogi, Kielbasa, Bigos, and traditional Central European flavors from Poland.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: white; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .dish-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .dish-card:hover { transform: translateY(-5px); }
+        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
+        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
+        .ingredients { margin-top: 1rem; }
+        .ingredients ul { margin-left: 1.5rem; }
+    </style>
+    <script src="../../config/ads-config.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Food</a>
+        <header>
+            <h1>🇵🇱 Polish Cuisine</h1>
+            <p>Top 5 Traditional Polish Dishes</p>
+        </header>
+        <div class="dishes-grid">
+            <div class="dish-card">
+                <h2 class="dish-title">Pierogi</h2>
+                <p class="dish-desc">Traditional dumplings filled with potatoes, cheese, meat, or fruit.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Dough</li><li>Potato filling</li><li>Onions</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Kielbasa</h2>
+                <p class="dish-desc">Polish sausage served grilled, boiled, or in stews with sauerkraut.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Pork</li><li>Garlic</li><li>Spices</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Bigos</h2>
+                <p class="dish-desc">Hunter's stew with sauerkraut, fresh cabbage, and various meats.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Sauerkraut</li><li>Mixed meats</li><li>Mushrooms</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Kotlet Schabowy</h2>
+                <p class="dish-desc">Breaded pork cutlet, Poland's version of schnitzel.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Pork cutlet</li><li>Breadcrumbs</li><li>Eggs</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Sernik</h2>
+                <p class="dish-desc">Polish cheesecake made with twaróg (farmer's cheese).</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Farmer's cheese</li><li>Eggs</li><li>Sugar</li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Food - Top 5 Dishes</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: white; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .dish-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .dish-card:hover { transform: translateY(-5px); }
+        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
+        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
+        .ingredients { margin-top: 1rem; }
+        .ingredients ul { margin-left: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Food</a>
+        <header>
+            <h1>🇩🇪 German Cuisine</h1>
+            <p>Top 5 Popular Dishes</p>
+        </header>
+        <div class="dishes-grid">
+            <div class="dish-card">
+                <h2 class="dish-title">Sauerbraten</h2>
+                <p class="dish-desc">Traditional pot roast marinated in vinegar and spices, served with red cabbage.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Beef roast</li><li>Vinegar marinade</li><li>Red cabbage</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Bratwurst</h2>
+                <p class="dish-desc">Grilled German sausage served with sauerkraut and mustard.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Pork sausage</li><li>Sauerkraut</li><li>German mustard</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Schnitzel</h2>
+                <p class="dish-desc">Breaded and fried cutlet, traditionally made with veal or pork.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Veal cutlet</li><li>Breadcrumbs</li><li>Lemon</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Pretzels</h2>
+                <p class="dish-desc">Traditional twisted bread with coarse salt, perfect with beer.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Bread dough</li><li>Coarse salt</li><li>Baking soda</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Black Forest Cake</h2>
+                <p class="dish-desc">Chocolate cake with cherries, whipped cream, and kirsch liqueur.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Chocolate cake</li><li>Cherries</li><li>Whipped cream</li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

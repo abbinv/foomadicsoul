@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Exploration - Trending</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(0,0,0,0.1);
+            color: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: #333; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .trends-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .trend-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .trend-title { color: #ff6b9d; font-size: 1.5rem; margin-bottom: 1rem; }
+        .trend-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
+        .impact-points { margin-top: 1rem; }
+        .impact-points ul { margin-left: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Trending</a>
+        <header>
+            <h1>🚀 Space Exploration</h1>
+            <p>5 Major Space Developments</p>
+        </header>
+        <div class="trends-grid">
+            <a href="mars-missions.html" class="trend-card" style="text-decoration: none; color: inherit;">
+                <h2 class="trend-title">Mars Missions</h2>
+                <p class="trend-desc">Multiple nations and private companies planning crewed missions to Mars within the next decade.</p>
+                <div class="impact-points">
+                    <strong>Impact areas:</strong>
+                    <ul><li>Human colonization</li><li>Scientific discovery</li><li>Technology advancement</li></ul>
+                </div>
+            </a>
+            <a href="commercial-space.html" class="trend-card" style="text-decoration: none; color: inherit;">
+                <h2 class="trend-title">Commercial Space Travel</h2>
+                <p class="trend-desc">SpaceX, Blue Origin, and Virgin Galactic making space accessible to civilians.</p>
+                <div class="impact-points">
+                    <strong>Impact areas:</strong>
+                    <ul><li>Space tourism</li><li>Cost reduction</li><li>Private sector growth</li></ul>
+                </div>
+            </a>
+            <a href="lunar-base.html" class="trend-card" style="text-decoration: none; color: inherit;">
+                <h2 class="trend-title">Lunar Base Development</h2>
+                <p class="trend-desc">NASA's Artemis program and international partnerships establishing permanent Moon presence.</p>
+                <div class="impact-points">
+                    <strong>Impact areas:</strong>
+                    <ul><li>Lunar research</li><li>Resource mining</li><li>Mars stepping stone</li></ul>
+                </div>
+            </a>
+            <a href="satellite-constellations.html" class="trend-card" style="text-decoration: none; color: inherit;">
+                <h2 class="trend-title">Satellite Constellations</h2>
+                <p class="trend-desc">Starlink and similar projects providing global internet coverage from space.</p>
+                <div class="impact-points">
+                    <strong>Impact areas:</strong>
+                    <ul><li>Global connectivity</li><li>Rural internet access</li><li>Space debris concerns</li></ul>
+                </div>
+            </a>
+            <a href="james-webb.html" class="trend-card" style="text-decoration: none; color: inherit;">
+                <h2 class="trend-title">James Webb Discoveries</h2>
+                <p class="trend-desc">Revolutionary telescope revealing new insights about universe formation and exoplanets.</p>
+                <div class="impact-points">
+                    <strong>Impact areas:</strong>
+                    <ul><li>Early universe study</li><li>Exoplanet detection</li><li>Cosmological understanding</li></ul>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

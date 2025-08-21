@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai Food - Food</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: white; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .dish-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
+        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
+        .ingredients { margin-top: 1rem; }
+        .ingredients ul { margin-left: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Food</a>
+        <header>
+            <h1>🇹🇭 Thai Cuisine</h1>
+            <p>Top 5 Popular Dishes</p>
+        </header>
+        <div class="dishes-grid">
+            <div class="dish-card">
+                <h2 class="dish-title">Pad Thai</h2>
+                <p class="dish-desc">Iconic stir-fried rice noodles with sweet, sour, and savory flavors.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Rice noodles</li><li>Tamarind paste</li><li>Fish sauce</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Tom Yum Goong</h2>
+                <p class="dish-desc">Spicy and sour soup with shrimp, lemongrass, and lime leaves.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Shrimp</li><li>Lemongrass</li><li>Kaffir lime leaves</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Green Curry</h2>
+                <p class="dish-desc">Creamy coconut curry with green chilies, basil, and your choice of protein.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Green curry paste</li><li>Coconut milk</li><li>Thai basil</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Som Tam</h2>
+                <p class="dish-desc">Refreshing green papaya salad with lime, chilies, and peanuts.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Green papaya</li><li>Lime juice</li><li>Fish sauce</li></ul>
+                </div>
+            </div>
+            <div class="dish-card">
+                <h2 class="dish-title">Mango Sticky Rice</h2>
+                <p class="dish-desc">Sweet dessert with ripe mango, coconut sticky rice, and coconut cream.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Glutinous rice</li><li>Ripe mango</li><li>Coconut cream</li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

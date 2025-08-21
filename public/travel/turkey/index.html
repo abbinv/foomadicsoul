@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkey Travel - Top 5 Destinations</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: white; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .destination-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .destination-card:hover { transform: translateY(-5px); }
+        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
+        .destination-desc { color: #666; line-height: 1.6; }
+        .highlights { margin-top: 1rem; }
+        .highlights ul { margin-left: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Travel</a>
+        <header>
+            <h1>🇹🇷 Turkey</h1>
+            <p>Top 5 Destinations</p>
+        </header>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <h2 class="destination-title">Istanbul</h2>
+                <p class="destination-desc">Historic city bridging Europe and Asia with Byzantine and Ottoman heritage.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Hagia Sophia</li><li>Blue Mosque</li><li>Grand Bazaar</li></ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Cappadocia</h2>
+                <p class="destination-desc">Fairy chimneys, underground cities, and hot air balloon rides.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Hot air balloons</li><li>Underground cities</li><li>Göreme Open Air Museum</li></ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Pamukkale</h2>
+                <p class="destination-desc">White travertine terraces and ancient Hierapolis ruins.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Travertine pools</li><li>Hierapolis</li><li>Antique Pool</li></ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Ephesus</h2>
+                <p class="destination-desc">Best-preserved ancient Greek city with Library of Celsus.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Library of Celsus</li><li>Great Theatre</li><li>Temple of Artemis</li></ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Antalya</h2>
+                <p class="destination-desc">Mediterranean coast with beaches, old town, and ancient ruins.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Kaleiçi Old Town</li><li>Düden Waterfalls</li><li>Aspendos Theatre</li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

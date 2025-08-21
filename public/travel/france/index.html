@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France Travel - Travel</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: white; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .destination-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
+        .destination-desc { color: #666; line-height: 1.6; }
+        .highlights { margin-top: 1rem; }
+        .highlights ul { margin-left: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Travel</a>
+        <header>
+            <h1>🇫🇷 France</h1>
+            <p>Top 5 Destinations</p>
+        </header>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <h2 class="destination-title">Paris</h2>
+                <p class="destination-desc">The City of Light, home to the Eiffel Tower, Louvre Museum, and romantic Seine River cruises.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul>
+                        <li>Eiffel Tower</li>
+                        <li>Louvre Museum</li>
+                        <li>Notre-Dame Cathedral</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Nice</h2>
+                <p class="destination-desc">French Riviera gem with stunning Mediterranean beaches and vibrant old town charm.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul>
+                        <li>Promenade des Anglais</li>
+                        <li>Old Town (Vieux Nice)</li>
+                        <li>Castle Hill</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Lyon</h2>
+                <p class="destination-desc">Gastronomic capital of France with Renaissance architecture and world-class cuisine.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul>
+                        <li>Basilica of Notre-Dame</li>
+                        <li>Traboules (hidden passageways)</li>
+                        <li>Presqu'île district</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Bordeaux</h2>
+                <p class="destination-desc">Wine capital with elegant 18th-century architecture and world-renowned vineyards.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul>
+                        <li>Place de la Bourse</li>
+                        <li>Wine museums</li>
+                        <li>Saint-Émilion vineyards</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Strasbourg</h2>
+                <p class="destination-desc">European capital with Gothic cathedral and charming Alsatian culture.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul>
+                        <li>Strasbourg Cathedral</li>
+                        <li>Petite France district</li>
+                        <li>European Parliament</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

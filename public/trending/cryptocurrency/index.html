@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency - Trending</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(0,0,0,0.1);
+            color: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: #333; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .trends-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .trend-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .trend-title { color: #ff6b9d; font-size: 1.5rem; margin-bottom: 1rem; }
+        .trend-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
+        .impact-points { margin-top: 1rem; }
+        .impact-points ul { margin-left: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Trending</a>
+        <header>
+            <h1>₿ Cryptocurrency</h1>
+            <p>5 Major Crypto Developments</p>
+        </header>
+        <div class="trends-grid">
+            <a href="bitcoin-etfs.html" class="trend-card" style="text-decoration: none; color: inherit;">
+                <h2 class="trend-title">Bitcoin ETFs</h2>
+                <p class="trend-desc">Institutional adoption through exchange-traded funds making crypto accessible to traditional investors.</p>
+                <div class="impact-points">
+                    <strong>Impact areas:</strong>
+                    <ul><li>Mainstream adoption</li><li>Institutional investment</li><li>Market legitimacy</li></ul>
+                </div>
+            </a>
+            <a href="defi-protocols.html" class="trend-card" style="text-decoration: none; color: inherit;">
+                <h2 class="trend-title">DeFi Protocols</h2>
+                <p class="trend-desc">Decentralized finance platforms offering lending, borrowing, and trading without intermediaries.</p>
+                <div class="impact-points">
+                    <strong>Impact areas:</strong>
+                    <ul><li>Financial inclusion</li><li>Yield farming</li><li>Smart contracts</li></ul>
+                </div>
+            </a>
+            <a href="nft-evolution.html" class="trend-card" style="text-decoration: none; color: inherit;">
+                <h2 class="trend-title">NFT Evolution</h2>
+                <p class="trend-desc">Non-fungible tokens expanding beyond art into gaming, music, and digital identity.</p>
+                <div class="impact-points">
+                    <strong>Impact areas:</strong>
+                    <ul><li>Digital ownership</li><li>Creator economy</li><li>Metaverse integration</li></ul>
+                </div>
+            </a>
+            <a href="cbdc.html" class="trend-card" style="text-decoration: none; color: inherit;">
+                <h2 class="trend-title">Central Bank Digital Currencies</h2>
+                <p class="trend-desc">Government-issued digital currencies challenging traditional crypto and payment systems.</p>
+                <div class="impact-points">
+                    <strong>Impact areas:</strong>
+                    <ul><li>Government control</li><li>Payment efficiency</li><li>Financial surveillance</li></ul>
+                </div>
+            </a>
+            <a href="crypto-regulation.html" class="trend-card" style="text-decoration: none; color: inherit;">
+                <h2 class="trend-title">Crypto Regulation</h2>
+                <p class="trend-desc">Evolving regulatory frameworks worldwide shaping the future of digital assets.</p>
+                <div class="impact-points">
+                    <strong>Impact areas:</strong>
+                    <ul><li>Legal clarity</li><li>Consumer protection</li><li>Market stability</li></ul>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

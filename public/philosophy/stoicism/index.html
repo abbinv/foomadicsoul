@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoicism - Philosophy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(0,0,0,0.1);
+            color: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: #333; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .concepts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .concept-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .concept-title { color: #666; font-size: 1.5rem; margin-bottom: 1rem; }
+        .concept-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
+        .key-points { margin-top: 1rem; }
+        .key-points ul { margin-left: 1.5rem; }
+    </style>
+    <script src="../../config/ads-config.js"></script>
+</head>
+<body onload="loadAdSense()">
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Philosophy</a>
+        <header>
+            <h1>🏛️ Stoicism</h1>
+            <p>5 Core Principles</p>
+        </header>
+        <div class="concepts-grid">
+            <div class="concept-card">
+                <h2 class="concept-title">Focus on What You Control</h2>
+                <p class="concept-desc">The fundamental Stoic principle of distinguishing between what is within our power and what is not.</p>
+                <div class="key-points">
+                    <strong>Key aspects:</strong>
+                    <ul><li>Our thoughts and actions</li><li>Our responses to events</li><li>Our values and choices</li></ul>
+                </div>
+            </div>
+            <div class="concept-card">
+                <h2 class="concept-title">Virtue as the Highest Good</h2>
+                <p class="concept-desc">Living according to the four cardinal virtues: wisdom, justice, courage, and temperance.</p>
+                <div class="key-points">
+                    <strong>Key aspects:</strong>
+                    <ul><li>Wisdom in decision-making</li><li>Justice in relationships</li><li>Courage in adversity</li></ul>
+                </div>
+            </div>
+            <div class="concept-card">
+                <h2 class="concept-title">Acceptance of Fate</h2>
+                <p class="concept-desc">Embracing what happens to us while focusing our energy on our response and attitude.</p>
+                <div class="key-points">
+                    <strong>Key aspects:</strong>
+                    <ul><li>Amor fati (love of fate)</li><li>Present moment awareness</li><li>Emotional equilibrium</li></ul>
+                </div>
+            </div>
+            <div class="concept-card">
+                <h2 class="concept-title">Negative Visualization</h2>
+                <p class="concept-desc">Imagining loss to increase gratitude and reduce attachment to external things.</p>
+                <div class="key-points">
+                    <strong>Key aspects:</strong>
+                    <ul><li>Appreciation of what we have</li><li>Preparation for setbacks</li><li>Reduced anxiety about loss</li></ul>
+                </div>
+            </div>
+            <div class="concept-card">
+                <h2 class="concept-title">Evening Reflection</h2>
+                <p class="concept-desc">Daily practice of reviewing our actions, thoughts, and progress in virtue.</p>
+                <div class="key-points">
+                    <strong>Key aspects:</strong>
+                    <ul><li>Self-examination</li><li>Learning from mistakes</li><li>Continuous improvement</li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending - Modern Life Hub</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(0,0,0,0.1);
+            color: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: #333; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.1); }
+        .topics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .topic-item {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .topic-item:hover { transform: translateY(-5px); }
+        .topic-icon { font-size: 3rem; margin-bottom: 1rem; }
+        .topic-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; }
+        .topic-desc { color: #666; line-height: 1.6; }
+    </style>
+    <script src="../config/ads-config.js"></script>
+</head>
+<body onload="loadAdSense()">
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Home</a>
+        <header>
+            <h1>🔥 Trending</h1>
+            <p>5 Hot Topics Shaping Our World</p>
+        </header>
+        <div class="topics-grid">
+            <a href="artificial-intelligence/index.html" class="topic-item">
+                <div class="topic-icon">🤖</div>
+                <div class="topic-title">Artificial Intelligence</div>
+                <div class="topic-desc">AI revolution transforming industries, from ChatGPT to autonomous systems reshaping how we work and live.</div>
+            </a>
+            <a href="climate-change/index.html" class="topic-item">
+                <div class="topic-icon">🌍</div>
+                <div class="topic-title">Climate Change</div>
+                <div class="topic-desc">Global efforts to combat climate change through renewable energy, sustainability, and environmental policies.</div>
+            </a>
+            <a href="cryptocurrency/index.html" class="topic-item">
+                <div class="topic-icon">₿</div>
+                <div class="topic-title">Cryptocurrency</div>
+                <div class="topic-desc">Digital currencies, blockchain technology, and the future of decentralized finance and Web3.</div>
+            </a>
+            <a href="space-exploration/index.html" class="topic-item">
+                <div class="topic-icon">🚀</div>
+                <div class="topic-title">Space Exploration</div>
+                <div class="topic-desc">Private space companies, Mars missions, and the new space race changing our cosmic perspective.</div>
+            </a>
+            <a href="social-media/index.html" class="topic-item">
+                <div class="topic-icon">📱</div>
+                <div class="topic-title">Social Media Evolution</div>
+                <div class="topic-desc">Platform changes, digital wellness, and the impact of social networks on society and mental health.</div>
+            </a>
+        </div>
+    </div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
+</body>
+</html>

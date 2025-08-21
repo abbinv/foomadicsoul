@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greece Travel - Top 5 Destinations</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: white; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .destination-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .destination-card:hover { transform: translateY(-5px); }
+        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
+        .destination-desc { color: #666; line-height: 1.6; }
+        .highlights { margin-top: 1rem; }
+        .highlights ul { margin-left: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Travel</a>
+        <header>
+            <h1>🇬🇷 Greece</h1>
+            <p>Top 5 Destinations</p>
+        </header>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <h2 class="destination-title">Athens</h2>
+                <p class="destination-desc">Ancient capital with Acropolis, Parthenon, and rich archaeological heritage.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Acropolis</li><li>Parthenon</li><li>Ancient Agora</li></ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Santorini</h2>
+                <p class="destination-desc">Volcanic island with white-washed buildings, blue domes, and stunning sunsets.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Oia sunset</li><li>Red Beach</li><li>Fira town</li></ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Mykonos</h2>
+                <p class="destination-desc">Cosmopolitan island with vibrant nightlife, beaches, and windmills.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Little Venice</li><li>Windmills</li><li>Paradise Beach</li></ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Crete</h2>
+                <p class="destination-desc">Largest Greek island with Minoan palaces, beaches, and mountain villages.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Knossos Palace</li><li>Samaria Gorge</li><li>Chania Old Town</li></ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Delphi</h2>
+                <p class="destination-desc">Ancient sanctuary and oracle site with temple ruins and mountain views.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Temple of Apollo</li><li>Ancient Theatre</li><li>Delphi Museum</li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

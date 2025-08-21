@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA Travel - Travel</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: white; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .destination-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
+        .destination-desc { color: #666; line-height: 1.6; }
+        .highlights { margin-top: 1rem; }
+        .highlights ul { margin-left: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Travel</a>
+        <header>
+            <h1>🇺🇸 USA</h1>
+            <p>Top 5 Destinations</p>
+        </header>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <h2 class="destination-title">New York City</h2>
+                <p class="destination-desc">The Big Apple with iconic skyline, Broadway shows, and world-famous landmarks.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Statue of Liberty</li><li>Times Square</li><li>Central Park</li></ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Grand Canyon</h2>
+                <p class="destination-desc">Natural wonder in Arizona offering breathtaking views and hiking adventures.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>South Rim</li><li>Bright Angel Trail</li><li>Desert View</li></ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">San Francisco</h2>
+                <p class="destination-desc">Golden Gate Bridge, cable cars, and diverse neighborhoods by the bay.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Golden Gate Bridge</li><li>Alcatraz Island</li><li>Fisherman's Wharf</li></ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Yellowstone</h2>
+                <p class="destination-desc">America's first national park with geysers, wildlife, and pristine wilderness.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>Old Faithful</li><li>Grand Prismatic Spring</li><li>Mammoth Hot Springs</li></ul>
+                </div>
+            </div>
+            <div class="destination-card">
+                <h2 class="destination-title">Las Vegas</h2>
+                <p class="destination-desc">Entertainment capital with casinos, shows, and desert adventures nearby.</p>
+                <div class="highlights">
+                    <strong>Must-see:</strong>
+                    <ul><li>The Strip</li><li>Bellagio Fountains</li><li>Red Rock Canyon</li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

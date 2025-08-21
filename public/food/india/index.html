@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Food - Top 5 Dishes</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; color: white; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .dish-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .dish-card:hover { transform: translateY(-5px); }
+        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
+        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
+        .ingredients { margin-top: 1rem; }
+        .ingredients ul { margin-left: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Food</a>
+        <header>
+            <h1>🇮🇳 Indian Cuisine</h1>
+            <p>Top 5 Popular Dishes</p>
+        </header>
+        <div class="dishes-grid">
+            <a href="butter-chicken.html" class="dish-card" style="text-decoration: none; color: inherit;">
+                <h2 class="dish-title">Butter Chicken</h2>
+                <p class="dish-desc">Creamy tomato-based curry with tender chicken in rich, aromatic sauce.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Chicken</li><li>Tomatoes</li><li>Cream</li></ul>
+                </div>
+            </a>
+            <a href="biryani.html" class="dish-card" style="text-decoration: none; color: inherit;">
+                <h2 class="dish-title">Chicken Biryani</h2>
+                <p class="dish-desc">Fragrant basmati rice layered with spiced chicken and aromatic herbs.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Basmati rice</li><li>Chicken</li><li>Saffron</li></ul>
+                </div>
+            </a>
+            <a href="dal-tadka.html" class="dish-card" style="text-decoration: none; color: inherit;">
+                <h2 class="dish-title">Dal Tadka</h2>
+                <p class="dish-desc">Comforting lentil curry tempered with cumin, garlic, and spices.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Yellow lentils</li><li>Cumin</li><li>Turmeric</li></ul>
+                </div>
+            </a>
+            <a href="masala-dosa.html" class="dish-card" style="text-decoration: none; color: inherit;">
+                <h2 class="dish-title">Masala Dosa</h2>
+                <p class="dish-desc">Crispy fermented crepe filled with spiced potato curry from South India.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Rice batter</li><li>Potatoes</li><li>Curry leaves</li></ul>
+                </div>
+            </a>
+            <a href="gulab-jamun.html" class="dish-card" style="text-decoration: none; color: inherit;">
+                <h2 class="dish-title">Gulab Jamun</h2>
+                <p class="dish-desc">Sweet milk dumplings soaked in rose-flavored sugar syrup.</p>
+                <div class="ingredients">
+                    <strong>Key ingredients:</strong>
+                    <ul><li>Milk powder</li><li>Sugar syrup</li><li>Rose water</li></ul>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

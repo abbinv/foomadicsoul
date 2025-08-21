@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Margherita Recipe - Authentic Italian</title>
+    <meta name="description" content="Learn to make authentic Pizza Margherita with San Marzano tomatoes, mozzarella di bufala, and fresh basil. Traditional Neapolitan recipe.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+        .hero {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .hero h1 { 
+            font-size: 3rem; 
+            color: #ff6b6b; 
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #ff6b6b, #ffa500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-image {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(45deg, #ff6b6b20, #ffa50020);
+            border-radius: 15px;
+            margin: 2rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8rem;
+            border: 3px dashed #ff6b6b;
+        }
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .content-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .card-title {
+            color: #ff6b6b;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .ingredients-list {
+            list-style: none;
+            padding: 0;
+        }
+        .ingredients-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .steps-list {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+        .steps-list li {
+            counter-increment: step-counter;
+            padding: 1rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            position: relative;
+            padding-left: 3rem;
+        }
+        .steps-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 1rem;
+            background: #ff6b6b;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .tips-card {
+            background: linear-gradient(45deg, #ff6b6b10, #ffa50010);
+            border-left: 4px solid #ff6b6b;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+        .rating {
+            display: flex;
+            gap: 0.2rem;
+            margin: 1rem 0;
+            justify-content: center;
+        }
+        .star { color: #ffa500; font-size: 1.5rem; }
+        @media (max-width: 768px) {
+            .content-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+    <script src="../../config/ads-config.js"></script>
+</head>
+<body onload="loadAdSense()">
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Italian Food</a>
+        
+        <div class="hero">
+            <h1>🍕 Pizza Margherita</h1>
+            <p>The queen of pizzas - simple, elegant, and absolutely delicious</p>
+            <div class="hero-image">🍕</div>
+            <div class="rating">
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+            </div>
+            <p><strong>Prep Time:</strong> 2 hours | <strong>Cook Time:</strong> 2 minutes | <strong>Serves:</strong> 2-4</p>
+        </div>
+
+        <div class="content-grid">
+            <div class="content-card">
+                <h2 class="card-title">🛒 Ingredients</h2>
+                <ul class="ingredients-list">
+                    <li><span>Pizza dough</span><span>500g</span></li>
+                    <li><span>San Marzano tomatoes</span><span>400g</span></li>
+                    <li><span>Mozzarella di bufala</span><span>250g</span></li>
+                    <li><span>Fresh basil leaves</span><span>10-12</span></li>
+                    <li><span>Extra virgin olive oil</span><span>3 tbsp</span></li>
+                    <li><span>Sea salt</span><span>To taste</span></li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h2 class="card-title">👨‍🍳 Instructions</h2>
+                <ol class="steps-list">
+                    <li>Preheat oven to maximum temperature (250°C+)</li>
+                    <li>Roll out dough into thin circle</li>
+                    <li>Spread crushed tomatoes evenly</li>
+                    <li>Add torn mozzarella pieces</li>
+                    <li>Bake for 90 seconds to 2 minutes</li>
+                    <li>Top with fresh basil and olive oil</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="tips-card">
+            <h3>🔥 Pro Tips</h3>
+            <p>• Use a pizza stone for authentic crispy crust<br>
+            • Less is more - don't overload with toppings<br>
+            • Fresh mozzarella should be drained to prevent soggy pizza<br>
+            • Add basil AFTER baking to preserve its fresh flavor</p>
+        </div>
+    </div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
+</body>
+</html>

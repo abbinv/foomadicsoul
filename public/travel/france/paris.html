@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Travel Guide - City of Light | Best Attractions & Tips</title>
+    <meta name="description" content="Complete Paris travel guide with Eiffel Tower, Louvre Museum, and hidden gems. Best restaurants, hotels, and insider tips for your Paris adventure.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .back-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+        .hero {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            margin-bottom: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #4ecdc4, #44a08d);
+        }
+        .hero h1 { 
+            font-size: 3.5rem; 
+            color: #4ecdc4; 
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #4ecdc4, #44a08d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-image {
+            width: 100%;
+            height: 350px;
+            background: linear-gradient(45deg, #4ecdc420, #44a08d20);
+            border-radius: 15px;
+            margin: 2rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10rem;
+            border: 3px dashed #4ecdc4;
+            position: relative;
+        }
+        .attractions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .attraction-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .attraction-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #4ecdc4, #44a08d);
+        }
+        .attraction-card:hover { transform: translateY(-10px); }
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .card-title {
+            color: #4ecdc4;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .card-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
+        .highlights {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+        .highlights ul { margin-left: 1.5rem; }
+        .info-badges {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        .badge {
+            background: linear-gradient(45deg, #4ecdc4, #44a08d);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        .travel-tips {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+            border-left: 5px solid #4ecdc4;
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .info-badges { flex-direction: column; align-items: center; }
+        }
+    </style>
+    <script src="../../config/ads-config.js"></script>
+</head>
+<body onload="loadAdSense()">
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to France</a>
+        
+        <div class="hero">
+            <h1>🗼 Paris</h1>
+            <p>The City of Light - Where romance meets history</p>
+            <div class="hero-image">🗼</div>
+            <div class="info-badges">
+                <span class="badge">🌟 UNESCO Heritage</span>
+                <span class="badge">🎨 Art Capital</span>
+                <span class="badge">💕 Romance</span>
+                <span class="badge">🥐 Gastronomy</span>
+            </div>
+        </div>
+
+        <div class="attractions-grid">
+            <div class="attraction-card">
+                <span class="card-icon">🗼</span>
+                <h2 class="card-title">Eiffel Tower</h2>
+                <p class="card-desc">Iconic iron lattice tower and symbol of Paris, offering breathtaking city views from three observation levels.</p>
+                <div class="highlights">
+                    <strong>Best Times:</strong>
+                    <ul>
+                        <li>Sunset for golden hour photos</li>
+                        <li>Night for sparkling light show</li>
+                        <li>Early morning to avoid crowds</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="attraction-card">
+                <span class="card-icon">🎨</span>
+                <h2 class="card-title">Louvre Museum</h2>
+                <p class="card-desc">World's largest art museum housing the Mona Lisa, Venus de Milo, and countless masterpieces.</p>
+                <div class="highlights">
+                    <strong>Must-See:</strong>
+                    <ul>
+                        <li>Mona Lisa by Leonardo da Vinci</li>
+                        <li>Venus de Milo sculpture</li>
+                        <li>Winged Victory of Samothrace</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="attraction-card">
+                <span class="card-icon">⛪</span>
+                <h2 class="card-title">Notre-Dame Cathedral</h2>
+                <p class="card-desc">Gothic masterpiece on Île de la Cité, famous for its flying buttresses and rose windows.</p>
+                <div class="highlights">
+                    <strong>Features:</strong>
+                    <ul>
+                        <li>Gothic architecture marvel</li>
+                        <li>Stunning rose windows</li>
+                        <li>Historic significance</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="attraction-card">
+                <span class="card-icon">🌊</span>
+                <h2 class="card-title">Seine River Cruise</h2>
+                <p class="card-desc">Romantic boat ride along the Seine, passing major landmarks and offering unique perspectives of the city.</p>
+                <div class="highlights">
+                    <strong>Highlights:</strong>
+                    <ul>
+                        <li>Sunset dinner cruises</li>
+                        <li>Commentary in multiple languages</li>
+                        <li>Perfect for photography</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="travel-tips">
+            <h3>🎯 Insider Tips</h3>
+            <p><strong>🚇 Transportation:</strong> Get a Navigo weekly pass for unlimited metro/bus travel<br>
+            <strong>🍽️ Dining:</strong> Lunch between 12-2pm, dinner after 7:30pm for authentic experience<br>
+            <strong>💰 Budget:</strong> Many museums are free on first Sunday mornings<br>
+            <strong>📱 Apps:</strong> Download Citymapper for navigation and Google Translate for French phrases<br>
+            <strong>🎫 Booking:</strong> Reserve Eiffel Tower tickets online to skip long queues</p>
+        </div>
+    </div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
+</body>
+</html>
