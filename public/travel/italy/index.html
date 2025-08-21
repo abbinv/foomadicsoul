@@ -3,93 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Italy Travel Guide - Top 5 Destinations | Visit Italy</title>
-    <meta name="description" content="Explore Italy's top destinations: Rome, Florence, Venice, Amalfi Coast, and Tuscany. Complete Italy travel guide with Renaissance art and culture.">
+    <title>Italy Travel - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .destination-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        .destination-card:hover { transform: translateY(-5px); }
-        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
-        .destination-desc { color: #666; line-height: 1.6; }
-        .highlights { margin-top: 1rem; }
-        .highlights ul { margin-left: 1.5rem; }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Travel</a>
-        <header>
-            <h1>🇮🇹 Italy</h1>
-            <p>Top 5 Italian Destinations</p>
-        </header>
-        <div class="destinations-grid">
-            <div class="destination-card">
-                <h2 class="destination-title">Rome</h2>
-                <p class="destination-desc">Eternal City with ancient Roman ruins, Vatican City, and Renaissance masterpieces.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Colosseum</li><li>Vatican Museums</li><li>Trevi Fountain</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Florence</h2>
-                <p class="destination-desc">Renaissance capital with world-class art museums and stunning architecture.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Uffizi Gallery</li><li>Duomo Cathedral</li><li>Ponte Vecchio</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Venice</h2>
-                <p class="destination-desc">Floating city with canals, gondolas, and unique Byzantine architecture.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>St. Mark's Square</li><li>Grand Canal</li><li>Doge's Palace</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Amalfi Coast</h2>
-                <p class="destination-desc">Dramatic coastline with colorful cliffside towns and Mediterranean beauty.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Positano</li><li>Amalfi Town</li><li>Ravello Gardens</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Tuscany</h2>
-                <p class="destination-desc">Rolling hills with vineyards, medieval towns, and world-renowned wine regions.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Siena</li><li>Chianti Wine Region</li><li>San Gimignano</li></ul>
-                </div>
-            </div>
+        <div class="article-header">
+            <h1>🇮🇹 Italy Travel</h1>
+            <div class="meta">Published on December 2024 | 7 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Italy enchants travelers with its unparalleled combination of ancient history, Renaissance art, culinary excellence, and breathtaking landscapes. From Rome's eternal monuments to Venice's romantic canals, from Tuscany's rolling hills to Sicily's ancient ruins, Italy offers cultural immersion and natural beauty that has inspired visitors for centuries.</p>
+            
+            <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=500&h=300&fit=crop" alt="Colosseum Rome">
+            
+            <h2>Eternal Rome</h2>
+            <p>Rome layers 2,800 years of history with iconic monuments like the Colosseum, Roman Forum, and Pantheon alongside Vatican City's Sistine Chapel and St. Peter's Basilica. The city seamlessly blends ancient ruins with vibrant modern life, offering world-class museums, charming piazzas, and exceptional dining. Tossing coins in Trevi Fountain and climbing Spanish Steps remain essential Roman experiences that connect visitors to centuries of tradition.</p>
+            
+            <h2>Renaissance Florence</h2>
+            <p>Florence cradles Renaissance art and architecture with Michelangelo's David, Botticelli's Birth of Venus, and Brunelleschi's cathedral dome defining artistic achievement. The Uffizi Gallery houses humanity's greatest masterpieces, while artisan workshops continue traditional crafts like leather working and jewelry making. Ponte Vecchio's shops and sunset views over the Arno River create romantic moments in this artistic capital.</p>
+            
+            <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=500&h=300&fit=crop" alt="Amalfi Coast Italy">
+            
+            <h2>Coastal Splendor</h2>
+            <p>The Amalfi Coast's dramatic cliffs, lemon groves, and azure waters create one of the world's most beautiful drives, with Positano's pastel houses cascading toward the sea. Cinque Terre's five colorful villages connected by hiking trails offer stunning Mediterranean vistas and fresh seafood. Sicily combines Greek temples, Norman cathedrals, and Mount Etna's volcanic landscapes with pristine beaches and unique cultural fusion.</p>
+            
+            <h2>Tuscan Romance</h2>
+            <p>Tuscany's rolling hills dotted with cypress trees, medieval hilltop towns, and world-renowned vineyards epitomize Italian countryside beauty. Siena's Gothic architecture and Palio horse race, San Gimignano's medieval towers, and Chianti's wine estates offer authentic experiences. Florence serves as the region's cultural heart, while smaller towns like Montepulciano and Pienza showcase Renaissance urban planning and local traditions.</p>
+            
+            <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=500&h=300&fit=crop" alt="Tuscany countryside">
+            
+            <h2>Venetian Magic</h2>
+            <p>Venice's unique lagoon setting creates an otherworldly atmosphere where gondolas navigate ancient canals past Byzantine palaces and Gothic churches. St. Mark's Square and Basilica showcase the city's former maritime power, while Murano's glass-making and Burano's colorful houses demonstrate traditional crafts. Despite crowds, Venice maintains its romantic allure, especially during quiet early mornings and atmospheric evenings.</p>
+            
+            <h2>Regional Diversity</h2>
+            <p>Northern Italy offers Alpine scenery in the Dolomites, elegant Milan's fashion and design, and Lake Como's villa-dotted shores. Central Italy provides Umbria's medieval towns and truffle hunting, while Southern Italy features Naples' pizza birthplace, Pompeii's preserved ruins, and Puglia's unique trulli houses. Each region maintains distinct dialects, cuisines, and traditions that create diverse travel experiences within unified Italian culture.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

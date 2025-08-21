@@ -3,93 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Russia Travel Guide - Top 5 Destinations | Visit Russia</title>
-    <meta name="description" content="Explore Russia's top destinations: Moscow, St. Petersburg, Trans-Siberian Railway, Lake Baikal, and Golden Ring cities.">
+    <title>Russia Travel - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .destination-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        .destination-card:hover { transform: translateY(-5px); }
-        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
-        .destination-desc { color: #666; line-height: 1.6; }
-        .highlights { margin-top: 1rem; }
-        .highlights ul { margin-left: 1.5rem; }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Travel</a>
-        <header>
-            <h1>🇷🇺 Russia</h1>
-            <p>Top 5 Russian Destinations</p>
-        </header>
-        <div class="destinations-grid">
-            <div class="destination-card">
-                <h2 class="destination-title">Moscow</h2>
-                <p class="destination-desc">Capital city with Red Square, Kremlin, and rich Russian history and culture.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Red Square & Kremlin</li><li>St. Basil's Cathedral</li><li>Bolshoi Theatre</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">St. Petersburg</h2>
-                <p class="destination-desc">Former imperial capital with palaces, museums, and European architecture.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Hermitage Museum</li><li>Peterhof Palace</li><li>White Nights</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Trans-Siberian Railway</h2>
-                <p class="destination-desc">Epic train journey across Russia, world's longest railway line.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Moscow to Vladivostok</li><li>Siberian landscapes</li><li>Local encounters</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Lake Baikal</h2>
-                <p class="destination-desc">World's deepest and oldest freshwater lake in Siberia.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Olkhon Island</li><li>Ice formations</li><li>Endemic wildlife</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Golden Ring</h2>
-                <p class="destination-desc">Historic towns northeast of Moscow with traditional Russian architecture.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Sergiev Posad</li><li>Suzdal</li><li>Vladimir</li></ul>
-                </div>
-            </div>
+        <div class="article-header">
+            <h1>🇷🇺 Russia Travel</h1>
+            <div class="meta">Published on December 2024 | 6 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Russia spans eleven time zones across the world's largest country, offering travelers imperial palaces, vast wilderness, and rich cultural heritage that reflects centuries of tsarist grandeur and Soviet history. From Moscow's Red Square to Siberian wilderness, Russia provides epic journeys through diverse landscapes and complex history.</p>
+            
+            <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=500&h=300&fit=crop" alt="Red Square Moscow">
+            
+            <h2>Moscow's Imperial Power</h2>
+            <p>Red Square anchors Moscow with the Kremlin's fortress walls, St. Basil's Cathedral's colorful onion domes, and Lenin's Mausoleum representing different eras of Russian power. The Kremlin houses government offices and museums displaying imperial treasures, while GUM department store offers luxury shopping in a historic arcade. Moscow's metro system features palatial stations with marble, mosaics, and chandeliers that demonstrate Soviet architectural ambition.</p>
+            
+            <h2>St. Petersburg's Elegance</h2>
+            <p>St. Petersburg showcases European-influenced architecture through the Winter Palace's Hermitage Museum, one of the world's largest art collections housed in opulent imperial rooms. The city's canals, bridges, and neoclassical buildings earned it the nickname "Venice of the North." White Nights during summer provide nearly 24-hour daylight for exploring palaces, gardens, and cultural sites that reflect Peter the Great's vision of a European capital.</p>
+            
+            <h2>Trans-Siberian Railway</h2>
+            <p>The Trans-Siberian Railway offers one of the world's great train journeys, crossing 9,289 kilometers from Moscow to Vladivostok through diverse landscapes including forests, steppes, mountains, and Lake Baikal. This epic journey provides glimpses of Russian life in small towns and cities while crossing multiple time zones. Stops include Yekaterinburg, Irkutsk, and other historic cities that tell Russia's expansion story.</p>
+            
+            <h2>Lake Baikal</h2>
+            <p>Lake Baikal contains 20% of the world's fresh water in the deepest and oldest lake on Earth, surrounded by pristine wilderness and unique ecosystems. The lake offers hiking, fishing, and wildlife viewing opportunities, while winter transforms it into a frozen wonderland for ice walking and dog sledding. Local Buryat culture adds indigenous perspectives to this UNESCO World Heritage site.</p>
+            
+            <h2>Cultural Heritage</h2>
+            <p>Russian culture encompasses literature (Tolstoy, Dostoevsky), classical music (Tchaikovsky, Stravinsky), and ballet (Bolshoi, Mariinsky) that influence global arts. Orthodox churches with golden domes and icon paintings demonstrate religious traditions, while Soviet-era monuments and museums provide historical context. Traditional crafts like matryoshka dolls and lacquer boxes continue folk art traditions.</p>
+            
+            <h2>Siberian Wilderness</h2>
+            <p>Siberia's vast forests, tundra, and mountain ranges offer adventure travel opportunities including wildlife viewing, fishing, and cultural exchanges with indigenous peoples. The region's extreme climate and isolation create unique ecosystems and traditional lifestyles adapted to harsh conditions. These experiences provide insights into Russia's frontier heritage and relationship with nature's extremes.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

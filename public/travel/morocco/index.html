@@ -3,93 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morocco Travel Guide - Top 5 Destinations | Visit Morocco</title>
-    <meta name="description" content="Explore Morocco's top destinations: Marrakech, Fez, Casablanca, Chefchaouen, and Sahara Desert. Complete Morocco travel guide.">
+    <title>Morocco Travel - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .destination-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        .destination-card:hover { transform: translateY(-5px); }
-        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
-        .destination-desc { color: #666; line-height: 1.6; }
-        .highlights { margin-top: 1rem; }
-        .highlights ul { margin-left: 1.5rem; }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Travel</a>
-        <header>
-            <h1>🇲🇦 Morocco</h1>
-            <p>Top 5 Moroccan Destinations</p>
-        </header>
-        <div class="destinations-grid">
-            <div class="destination-card">
-                <h2 class="destination-title">Marrakech</h2>
-                <p class="destination-desc">Red city with bustling souks, palaces, and the famous Jemaa el-Fnaa square.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Jemaa el-Fnaa</li><li>Bahia Palace</li><li>Majorelle Garden</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Fez</h2>
-                <p class="destination-desc">Imperial city with the world's largest car-free urban area and ancient medina.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Fez el-Bali</li><li>Al-Qarawiyyin University</li><li>Tanneries</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Casablanca</h2>
-                <p class="destination-desc">Modern economic capital with Art Deco architecture and Hassan II Mosque.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Hassan II Mosque</li><li>Corniche</li><li>Old Medina</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Chefchaouen</h2>
-                <p class="destination-desc">Blue city in the Rif Mountains with painted blue buildings and mountain views.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Blue Streets</li><li>Kasbah Museum</li><li>Ras El Maa Waterfall</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Sahara Desert</h2>
-                <p class="destination-desc">Vast desert with golden dunes, camel treks, and starry night skies.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Erg Chebbi Dunes</li><li>Camel Trekking</li><li>Desert Camps</li></ul>
-                </div>
-            </div>
+        <div class="article-header">
+            <h1>🇲🇦 Morocco Travel</h1>
+            <div class="meta">Published on December 2024 | 6 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Morocco enchants travelers with its exotic blend of Arab, Berber, and French influences, offering imperial cities, Sahara Desert adventures, and vibrant souks that create sensory experiences unlike anywhere else. From Marrakech's bustling medinas to Atlas Mountain villages, Morocco provides cultural immersion in North African traditions.</p>
+            
+            <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?w=500&h=300&fit=crop" alt="Moroccan desert and markets">
+            
+            <h2>Marrakech's Sensory Overload</h2>
+            <p>Marrakech's Jemaa el-Fnaa square transforms from daytime market to evening entertainment with snake charmers, storytellers, and food stalls creating magical atmospheres. The medina's labyrinthine souks offer handcrafted goods including carpets, leather, spices, and metalwork while testing bargaining skills. Luxury riads provide peaceful retreats with traditional architecture, courtyards, and rooftop terraces overlooking the bustling city.</p>
+            
+            <h2>Sahara Desert Adventures</h2>
+            <p>Sahara Desert experiences include camel trekking across golden dunes, overnight camping under star-filled skies, and sunrise views that reveal the desert's changing colors and vast scale. Merzouga and Zagora provide gateway access to desert camps that offer traditional Berber hospitality, music, and cuisine. These adventures create unforgettable connections with Morocco's nomadic heritage and natural beauty.</p>
+            
+            <h2>Imperial Cities</h2>
+            <p>Morocco's four imperial cities each offer distinct experiences: Fez's medieval medina and traditional crafts, Meknes's royal grandiosity and nearby Roman ruins, Rabat's modern capital amenities and historic sites, and Marrakech's vibrant energy and luxury accommodations. These cities demonstrate different periods of Moroccan history while preserving architectural and cultural traditions.</p>
+            
+            <h2>Atlas Mountain Culture</h2>
+            <p>Atlas Mountain villages preserve Berber traditions through traditional architecture, agricultural practices, and handicrafts that continue ancient customs. Trekking opportunities range from day hikes to multi-day expeditions that visit remote communities and provide insights into mountain life. These experiences offer cultural exchange and stunning landscapes away from urban centers.</p>
+            
+            <h2>Coastal Charm</h2>
+            <p>Morocco's Atlantic and Mediterranean coastlines offer different experiences: Casablanca's modern architecture and Hassan II Mosque, Essaouira's Portuguese-influenced medina and windsurfing beaches, and Tangier's European connections and literary history. Coastal cities provide relaxed alternatives to inland imperial cities while maintaining Moroccan character and hospitality.</p>
+            
+            <h2>Cultural Immersion</h2>
+            <p>Moroccan culture emphasizes hospitality through mint tea ceremonies, traditional hammam baths, and family-style meals that welcome visitors into local customs. Festivals, music, and arts demonstrate regional diversity while Islamic traditions influence daily life and architecture. These cultural experiences provide authentic insights into Moroccan society and values that extend beyond tourist attractions.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

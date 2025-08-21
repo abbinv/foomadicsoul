@@ -3,92 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brazilian Food - Top 5 Dishes</title>
+    <title>Brazilian Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        .dish-card:hover { transform: translateY(-5px); }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
     </style>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇧🇷 Brazilian Cuisine</h1>
-            <p>Top 5 Popular Dishes</p>
-        </header>
-        <div class="dishes-grid">
-            <a href="feijoada.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Feijoada</h2>
-                <p class="dish-desc">National dish with black beans, pork, and beef served with rice and farofa.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Black beans</li><li>Pork</li><li>Farofa</li></ul>
-                </div>
-            </a>
-            <a href="pao-de-acucar.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Pão de Açúcar</h2>
-                <p class="dish-desc">Sweet bread rolls perfect for breakfast or as a snack with coffee.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Wheat flour</li><li>Sugar</li><li>Yeast</li></ul>
-                </div>
-            </a>
-            <a href="brigadeiro.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Brigadeiro</h2>
-                <p class="dish-desc">Chocolate truffle made with condensed milk, cocoa, and chocolate sprinkles.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Condensed milk</li><li>Cocoa powder</li><li>Chocolate sprinkles</li></ul>
-                </div>
-            </a>
-            <a href="moqueca.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Moqueca</h2>
-                <p class="dish-desc">Bahian fish stew with coconut milk, dendê oil, and bell peppers.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Fresh fish</li><li>Coconut milk</li><li>Dendê oil</li></ul>
-                </div>
-            </a>
-            <a href="acai-bowl.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Açaí Bowl</h2>
-                <p class="dish-desc">Superfruit bowl topped with granola, fruits, and honey.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Açaí berries</li><li>Granola</li><li>Fresh fruits</li></ul>
-                </div>
-            </a>
+            <div class="meta">Published on December 2024 | 5 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Brazilian cuisine reflects the country's multicultural heritage, combining Portuguese colonial influences, African slave traditions, and indigenous Amazonian ingredients. This fusion created vibrant, flavorful dishes that celebrate Brazil's tropical abundance while honoring the diverse cultures that shaped the nation's culinary identity.</p>
+            
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=500&h=300&fit=crop" alt="Brazilian feijoada and tropical fruits">
+            
+            <h2>Feijoada Nacional</h2>
+            <p>Brazil's national dish, feijoada, combines black beans with various pork cuts in a hearty stew traditionally served on Wednesdays and Saturdays. This dish originated from Portuguese and African influences, with enslaved Africans creating flavorful meals from available ingredients. Modern feijoada includes rice, collard greens, orange slices, and farofa (cassava flour mixture).</p>
+            
+            <h2>Churrasco Culture</h2>
+            <p>Brazilian barbecue (churrasco) originated in Rio Grande do Sul's gaucho culture, featuring various cuts of beef, pork, and chicken grilled on skewers over open flames. Churrascarias offer rodizio service with continuous meat service, while traditional accompaniments include chimichurri, vinaigrette, and pão de açúcar (cheese bread).</p>
+            
+            <h2>Amazonian Superfoods</h2>
+            <p>The Amazon rainforest provides unique ingredients like açaí berries, cupuaçu fruit, and guarana, which Brazilians have used for centuries. Açaí bowls became global health trends, while traditional preparations include açaí with tapioca and fish. These superfoods offer exceptional nutritional value while connecting modern Brazil to indigenous traditions.</p>
+            
+            <h2>Regional Specialties</h2>
+            <p>Brazil's vast territory creates distinct regional cuisines: Bahia's African-influenced moqueca and acarajé, Minas Gerais' cheese and coffee culture, São Paulo's diverse immigrant influences, and the Northeast's seafood and coconut preparations. Each region's climate, history, and cultural influences created unique flavor profiles within Brazilian cuisine.</p>
+            
+            <h2>Street Food & Snacks</h2>
+            <p>Brazilian street food includes coxinha (chicken croquettes), pão de açúcar (cheese bread), pastels (fried pastries), and brigadeiros (chocolate truffles). These snacks reflect Brazil's social culture, with food vendors creating gathering places for communities while preserving traditional recipes and techniques passed through generations.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

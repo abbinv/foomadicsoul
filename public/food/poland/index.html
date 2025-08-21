@@ -3,93 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polish Food - Top 5 Traditional Dishes | Poland Cuisine</title>
-    <meta name="description" content="Discover authentic Polish cuisine with Pierogi, Kielbasa, Bigos, and traditional Central European flavors from Poland.">
+    <title>Polish Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        .dish-card:hover { transform: translateY(-5px); }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇵🇱 Polish Cuisine</h1>
-            <p>Top 5 Traditional Polish Dishes</p>
-        </header>
-        <div class="dishes-grid">
-            <div class="dish-card">
-                <h2 class="dish-title">Pierogi</h2>
-                <p class="dish-desc">Traditional dumplings filled with potatoes, cheese, meat, or fruit.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Dough</li><li>Potato filling</li><li>Onions</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Kielbasa</h2>
-                <p class="dish-desc">Polish sausage served grilled, boiled, or in stews with sauerkraut.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Pork</li><li>Garlic</li><li>Spices</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Bigos</h2>
-                <p class="dish-desc">Hunter's stew with sauerkraut, fresh cabbage, and various meats.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Sauerkraut</li><li>Mixed meats</li><li>Mushrooms</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Kotlet Schabowy</h2>
-                <p class="dish-desc">Breaded pork cutlet, Poland's version of schnitzel.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Pork cutlet</li><li>Breadcrumbs</li><li>Eggs</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Sernik</h2>
-                <p class="dish-desc">Polish cheesecake made with twaróg (farmer's cheese).</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Farmer's cheese</li><li>Eggs</li><li>Sugar</li></ul>
-                </div>
-            </div>
+            <div class="meta">Published on December 2024 | 5 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Polish cuisine reflects the country's agricultural abundance and complex history, creating hearty, flavorful dishes that sustained communities through challenging times. Influenced by neighboring countries and historical events, Polish cooking emphasizes seasonal ingredients, preservation techniques, and family traditions that celebrate both everyday meals and special occasions.</p>
+            
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop" alt="Polish pierogi and sausages">
+            
+            <h2>Pierogi Mastery</h2>
+            <p>Pierogi, Poland's most famous dish, consists of tender dough pockets filled with potatoes, cheese, meat, or fruit. Traditional preparation involves hand-rolling dough and crimping edges to seal fillings. Sweet pierogi with berries or plums serve as desserts, while savory versions with sauerkraut or mushrooms provide substantial meals, especially during religious fasting periods.</p>
+            
+            <h2>Kielbasa Heritage</h2>
+            <p>Polish sausage-making traditions produce dozens of kielbasa varieties, each region specializing in unique seasonings and smoking techniques. Krakowska, kabanos, and biała kielbasa represent different preparation methods and serving occasions. Traditional smoking houses use specific wood types to achieve distinctive flavors that define Polish charcuterie excellence.</p>
+            
+            <h2>Bigos Tradition</h2>
+            <p>Bigos, known as "hunter's stew," combines sauerkraut, fresh cabbage, various meats, and mushrooms in a slow-cooked dish that improves with reheating. This national dish reflects Polish resourcefulness, using preserved vegetables and available meats to create satisfying meals during winter months. Each family maintains secret ingredient combinations passed through generations.</p>
+            
+            <h2>Seasonal Celebrations</h2>
+            <p>Polish cuisine celebrates seasons through traditional dishes: Easter's żurek (sour rye soup) and mazurek cakes, Christmas Eve's twelve-dish Wigilia feast featuring carp and pierogi, and harvest festivals with fresh bread and seasonal vegetables. These celebrations maintain cultural traditions while strengthening family and community bonds.</p>
+            
+            <h2>Bread Culture</h2>
+            <p>Polish bread traditions include dense rye breads, sweet challah-like chałka, and regional specialties like obwarzanek krakowski (Krakow bagels). Traditional bakeries maintain sourdough starters passed through generations, creating distinctive flavors that accompany most Polish meals. Bread holds sacred significance in Polish culture and hospitality.</p>
+            
+            <h2>Vodka & Spirits</h2>
+            <p>Poland's vodka tradition includes premium brands like Żubrówka (bison grass vodka) and regional fruit brandies. Traditional vodka service involves specific rituals and accompaniments like pickled vegetables or herring. These spirits often accompany celebrations and provide warmth during cold months, reflecting Polish social customs and hospitality traditions.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

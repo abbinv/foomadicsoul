@@ -3,93 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Austrian Food - Top 5 Traditional Dishes | Austria Cuisine</title>
-    <meta name="description" content="Discover authentic Austrian cuisine with Wiener Schnitzel, Sachertorte, Apfelstrudel, and traditional Alpine flavors.">
+    <title>Austrian Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        .dish-card:hover { transform: translateY(-5px); }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇦🇹 Austrian Cuisine</h1>
-            <p>Top 5 Traditional Austrian Dishes</p>
-        </header>
-        <div class="dishes-grid">
-            <div class="dish-card">
-                <h2 class="dish-title">Wiener Schnitzel</h2>
-                <p class="dish-desc">Breaded veal cutlet, Austria's most famous dish served with lemon.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Veal cutlet</li><li>Breadcrumbs</li><li>Lemon</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Sachertorte</h2>
-                <p class="dish-desc">Famous chocolate cake with apricot jam and dark chocolate glaze.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Chocolate sponge</li><li>Apricot jam</li><li>Chocolate glaze</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Apfelstrudel</h2>
-                <p class="dish-desc">Traditional apple strudel with thin pastry and spiced apple filling.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Phyllo pastry</li><li>Apples</li><li>Cinnamon</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Tafelspitz</h2>
-                <p class="dish-desc">Boiled beef served with vegetables and horseradish sauce.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Beef</li><li>Root vegetables</li><li>Horseradish</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Kaiserschmarrn</h2>
-                <p class="dish-desc">Shredded pancake with raisins, served with plum compote.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Pancake batter</li><li>Raisins</li><li>Plum compote</li></ul>
-                </div>
-            </div>
+            <div class="meta">Published on December 2024 | 5 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Austrian cuisine combines Alpine mountain traditions with Viennese imperial elegance, creating sophisticated dishes that reflect the former Austro-Hungarian Empire's cultural diversity. From hearty mountain fare to delicate pastries, Austrian cooking emphasizes quality ingredients, precise techniques, and the gemütlichkeit (cozy comfort) that defines Austrian hospitality.</p>
+            
+            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=500&h=300&fit=crop" alt="Austrian schnitzel and strudel">
+            
+            <h2>Wiener Schnitzel Excellence</h2>
+            <p>Authentic Wiener Schnitzel uses only veal, pounded thin, coated in breadcrumbs, and pan-fried in clarified butter until golden. The coating should puff away from the meat, creating a light, crispy exterior. Served with lemon and lingonberry sauce, this dish represents Austrian culinary precision and has strict preparation standards that distinguish authentic versions from imitations.</p>
+            
+            <h2>Strudel Artistry</h2>
+            <p>Austrian strudel requires paper-thin pastry stretched by hand until transparent, then filled with apples, cherries, or savory ingredients like spinach and cheese. Traditional preparation involves stretching dough over a large table covered with cloth, requiring skill developed over years. The delicate pastry layers create textural contrast with rich fillings.</p>
+            
+            <h2>Viennese Coffee Culture</h2>
+            <p>Vienna's coffee house culture, recognized by UNESCO, features dozens of coffee preparations from melange (similar to cappuccino) to einspänner (black coffee with whipped cream). Traditional coffee houses serve as social centers where patrons read newspapers, play chess, and enjoy pastries like Sachertorte. This culture influenced coffee traditions worldwide.</p>
+            
+            <h2>Imperial Pastry Traditions</h2>
+            <p>Austrian pastry chefs created legendary desserts including Sachertorte (chocolate cake with apricot jam), Linzer torte (almond pastry with jam), and Kaiserschmarrn (shredded pancake with plums). These desserts originated in imperial kitchens and require precise techniques that Austrian pastry schools still teach using traditional methods.</p>
+            
+            <h2>Alpine Specialties</h2>
+            <p>Mountain regions contribute hearty dishes like goulash, spätzle (egg noodles), and various dumpling preparations. Alpine ingredients include game meats, mountain cheeses, and foraged mushrooms. These dishes provide sustenance for outdoor activities while celebrating Austria's mountainous geography and rural traditions.</p>
+            
+            <h2>Wine Heritage</h2>
+            <p>Austrian wine regions produce exceptional white wines, particularly Grüner Veltliner and Riesling, along with elegant reds from Burgenland. Traditional heuriger (wine taverns) serve new wine with simple foods, creating social gathering places that maintain Austrian wine culture and rural hospitality traditions.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

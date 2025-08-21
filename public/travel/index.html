@@ -8,75 +8,154 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             min-height: 100vh;
             color: #333;
         }
         .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
-        }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
-        .countries-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-        .country-item {
+        header { text-align: center; margin-bottom: 3rem; color: #333; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.1); }
+        .topics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .topic-item {
             background: white;
-            border-radius: 10px;
-            padding: 1rem;
+            border-radius: 15px;
+            padding: 2rem;
             text-decoration: none;
             color: #333;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
             text-align: center;
         }
-        .country-item:hover { transform: translateY(-5px); }
-        .country-flag { font-size: 2rem; margin-bottom: 0.5rem; }
-        .country-name { font-weight: bold; }
+        .topic-item:hover { transform: translateY(-5px); }
+        .topic-icon { font-size: 3rem; margin-bottom: 1rem; }
+        .topic-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; }
+        .topic-desc { color: #666; line-height: 1.6; }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .page-btn {
+            background: white;
+            color: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid #a8edea;
+        }
+        .page-btn:hover, .page-btn.active {
+            background: #a8edea;
+            color: #333;
+        }
+        .search-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .search-input {
+            padding: 0.75rem 1rem;
+            border: 2px solid #a8edea;
+            border-radius: 25px;
+            font-size: 1rem;
+            width: 300px;
+            max-width: 100%;
+        }
+        .search-input:focus {
+            outline: none;
+            border-color: #4ecdc4;
+        }
     </style>
-    <script src="../config/ads-config.js"></script>
+    <script src="../assets/js/ads-config.js"></script>
+    <script src="../assets/js/common.js"></script>
 </head>
 <body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Home</a>
         <header>
             <h1>✈️ Travel</h1>
-            <p>Top 25 Most Visited Countries</p>
+            <p>Destinations & Travel Experiences</p>
         </header>
-        <div class="countries-grid">
-            <a href="france/index.html" class="country-item"><div class="country-flag">🇫🇷</div><div class="country-name">France</div></a>
-            <a href="spain/index.html" class="country-item"><div class="country-flag">🇪🇸</div><div class="country-name">Spain</div></a>
-            <a href="usa/index.html" class="country-item"><div class="country-flag">🇺🇸</div><div class="country-name">USA</div></a>
-            <a href="china/index.html" class="country-item"><div class="country-flag">🇨🇳</div><div class="country-name">China</div></a>
-            <a href="italy/index.html" class="country-item"><div class="country-flag">🇮🇹</div><div class="country-name">Italy</div></a>
-            <a href="turkey/index.html" class="country-item"><div class="country-flag">🇹🇷</div><div class="country-name">Turkey</div></a>
-            <a href="germany/index.html" class="country-item"><div class="country-flag">🇩🇪</div><div class="country-name">Germany</div></a>
-            <a href="thailand/index.html" class="country-item"><div class="country-flag">🇹🇭</div><div class="country-name">Thailand</div></a>
-            <a href="uk/index.html" class="country-item"><div class="country-flag">🇬🇧</div><div class="country-name">UK</div></a>
-            <a href="japan/index.html" class="country-item"><div class="country-flag">🇯🇵</div><div class="country-name">Japan</div></a>
-            <a href="greece/index.html" class="country-item"><div class="country-flag">🇬🇷</div><div class="country-name">Greece</div></a>
-            <a href="canada/index.html" class="country-item"><div class="country-flag">🇨🇦</div><div class="country-name">Canada</div></a>
-            <a href="australia/index.html" class="country-item"><div class="country-flag">🇦🇺</div><div class="country-name">Australia</div></a>
-            <a href="russia/index.html" class="country-item"><div class="country-flag">🇷🇺</div><div class="country-name">Russia</div></a>
-            <a href="austria/index.html" class="country-item"><div class="country-flag">🇦🇹</div><div class="country-name">Austria</div></a>
-            <a href="portugal/index.html" class="country-item"><div class="country-flag">🇵🇹</div><div class="country-name">Portugal</div></a>
-            <a href="netherlands/index.html" class="country-item"><div class="country-flag">🇳🇱</div><div class="country-name">Netherlands</div></a>
-            <a href="poland/index.html" class="country-item"><div class="country-flag">🇵🇱</div><div class="country-name">Poland</div></a>
-            <a href="czech-republic/index.html" class="country-item"><div class="country-flag">🇨🇿</div><div class="country-name">Czech Republic</div></a>
-            <a href="croatia/index.html" class="country-item"><div class="country-flag">🇭🇷</div><div class="country-name">Croatia</div></a>
-            <a href="morocco/index.html" class="country-item"><div class="country-flag">🇲🇦</div><div class="country-name">Morocco</div></a>
-            <a href="egypt/index.html" class="country-item"><div class="country-flag">🇪🇬</div><div class="country-name">Egypt</div></a>
-            <a href="brazil/index.html" class="country-item"><div class="country-flag">🇧🇷</div><div class="country-name">Brazil</div></a>
-            <a href="india/index.html" class="country-item"><div class="country-flag">🇮🇳</div><div class="country-name">India</div></a>
-            <a href="south-korea/index.html" class="country-item"><div class="country-flag">🇰🇷</div><div class="country-name">South Korea</div></a>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search destinations..." id="searchInput" oninput="filterTopics()">
         </div>
+        <div class="topics-grid" id="topicsGrid"></div>
+        <div class="pagination" id="pagination"></div>
     </div>
+    <div id="common-footer"></div>
     <script>
+        const topics = [
+            {title: 'France', icon: '🇫🇷', desc: 'Historic cities, cultural landmarks, and scenic landscapes.', url: 'france/index.html'},
+            {title: 'Spain', icon: '🇪🇸', desc: 'Beautiful beaches, vibrant culture, and architectural wonders.', url: 'spain/index.html'},
+            {title: 'USA', icon: '🇺🇸', desc: 'National parks, vibrant cities, and diverse landscapes.', url: 'usa/index.html'},
+            {title: 'China', icon: '🇨🇳', desc: 'Ancient history, modern cities, and cultural heritage sites.', url: 'china/index.html'},
+            {title: 'Italy', icon: '🇮🇹', desc: 'Art, history, cuisine, and stunning Mediterranean coastlines.', url: 'italy/index.html'},
+            {title: 'Turkey', icon: '🇹🇷', desc: 'Bridge between Europe and Asia with rich cultural heritage.', url: 'turkey/index.html'},
+            {title: 'Germany', icon: '🇩🇪', desc: 'Historic castles, modern cities, and Bavarian culture.', url: 'germany/index.html'},
+            {title: 'Thailand', icon: '🇹🇭', desc: 'Tropical beaches, ancient temples, and vibrant street life.', url: 'thailand/index.html'},
+            {title: 'UK', icon: '🇬🇧', desc: 'Historic landmarks, countryside, and cultural attractions.', url: 'uk/index.html'},
+            {title: 'Japan', icon: '🇯🇵', desc: 'Traditional culture, modern technology, and natural beauty.', url: 'japan/index.html'},
+            {title: 'Greece', icon: '🇬🇷', desc: 'Ancient ruins, beautiful islands, and Mediterranean charm.', url: 'greece/index.html'},
+            {title: 'Canada', icon: '🇨🇦', desc: 'Vast wilderness, friendly cities, and outdoor adventures.', url: 'canada/index.html'},
+            {title: 'Australia', icon: '🇦🇺', desc: 'Unique wildlife, stunning beaches, and outback adventures.', url: 'australia/index.html'},
+            {title: 'Russia', icon: '🇷🇺', desc: 'Vast landscapes, historic cities, and cultural treasures.', url: 'russia/index.html'},
+            {title: 'Austria', icon: '🇦🇹', desc: 'Alpine scenery, classical music heritage, and charming cities.', url: 'austria/index.html'},
+            {title: 'Portugal', icon: '🇵🇹', desc: 'Coastal beauty, historic towns, and warm hospitality.', url: 'portugal/index.html'},
+            {title: 'Netherlands', icon: '🇳🇱', desc: 'Canals, tulips, windmills, and vibrant city culture.', url: 'netherlands/index.html'},
+            {title: 'Poland', icon: '🇵🇱', desc: 'Medieval towns, rich history, and cultural heritage.', url: 'poland/index.html'},
+            {title: 'Czech Republic', icon: '🇨🇿', desc: 'Fairy-tale castles, historic Prague, and beer culture.', url: 'czech-republic/index.html'},
+            {title: 'Croatia', icon: '🇭🇷', desc: 'Adriatic coastline, historic cities, and natural parks.', url: 'croatia/index.html'},
+            {title: 'Morocco', icon: '🇲🇦', desc: 'Desert landscapes, imperial cities, and vibrant markets.', url: 'morocco/index.html'},
+            {title: 'Egypt', icon: '🇪🇬', desc: 'Ancient pyramids, Nile River, and archaeological wonders.', url: 'egypt/index.html'},
+            {title: 'Brazil', icon: '🇧🇷', desc: 'Tropical beaches, Amazon rainforest, and carnival culture.', url: 'brazil/index.html'},
+            {title: 'India', icon: '🇮🇳', desc: 'Diverse culture, historic monuments, and spiritual sites.', url: 'india/index.html'},
+            {title: 'South Korea', icon: '🇰🇷', desc: 'Modern cities, traditional culture, and technological innovation.', url: 'south-korea/index.html'}
+        ];
+        
+        let currentPage = 1;
+        const itemsPerPage = 6;
+        let filteredTopics = topics;
+        
+        function displayPage(page) {
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = filteredTopics.slice(start, end);
+            
+            document.getElementById('topicsGrid').innerHTML = pageItems.map(topic => 
+                `<a href="${topic.url}" class="topic-item"><div class="topic-icon">${topic.icon}</div><div class="topic-title">${topic.title}</div><div class="topic-desc">${topic.desc}</div></a>`
+            ).join('');
+            
+            const totalPages = Math.ceil(filteredTopics.length / itemsPerPage);
+            let paginationHTML = '';
+            
+            if (page > 1) paginationHTML += `<a href="#" class="page-btn" onclick="goToPage(${page - 1})">← Prev</a>`;
+            
+            for (let i = 1; i <= totalPages; i++) {
+                paginationHTML += `<a href="#" class="page-btn ${i === page ? 'active' : ''}" onclick="goToPage(${i})">${i}</a>`;
+            }
+            
+            if (page < totalPages) paginationHTML += `<a href="#" class="page-btn" onclick="goToPage(${page + 1})">Next →</a>`;
+            
+            document.getElementById('pagination').innerHTML = paginationHTML;
+        }
+        
+        function goToPage(page) {
+            currentPage = page;
+            displayPage(page);
+        }
+        
+        function filterTopics() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            filteredTopics = topics.filter(topic => 
+                topic.title.toLowerCase().includes(searchTerm) || 
+                topic.desc.toLowerCase().includes(searchTerm)
+            );
+            currentPage = 1;
+            displayPage(1);
+        }
+        
+        displayPage(1);
+        
         if (typeof loadAdSense === 'function') {
             loadAdSense();
         }

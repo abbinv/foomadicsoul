@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stoicism - Philosophy</title>
+    <title>Stoicism - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -12,83 +12,131 @@
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(0,0,0,0.1);
-            color: #333;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
-        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
         header { text-align: center; margin-bottom: 3rem; color: #333; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .concepts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .concept-card {
+        h1 { font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.1); }
+        .topics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .topic-item {
             background: white;
             border-radius: 15px;
             padding: 2rem;
+            text-decoration: none;
+            color: #333;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
         }
-        .concept-title { color: #666; font-size: 1.5rem; margin-bottom: 1rem; }
-        .concept-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .key-points { margin-top: 1rem; }
-        .key-points ul { margin-left: 1.5rem; }
+        .topic-item:hover { transform: translateY(-5px); }
+        .topic-icon { font-size: 3rem; margin-bottom: 1rem; }
+        .topic-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; }
+        .topic-desc { color: #666; line-height: 1.6; }
+        .search-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .search-input {
+            padding: 0.75rem 1rem;
+            border: 2px solid #a8edea;
+            border-radius: 25px;
+            font-size: 1rem;
+            width: 300px;
+            max-width: 100%;
+        }
+        .search-input:focus {
+            outline: none;
+            border-color: #fed6e3;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .page-btn {
+            background: white;
+            color: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid #a8edea;
+        }
+        .page-btn:hover, .page-btn.active {
+            background: #a8edea;
+            color: #333;
+        }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
 <body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Philosophy</a>
         <header>
             <h1>🏛️ Stoicism</h1>
-            <p>5 Core Principles</p>
+            <p>Ancient Wisdom for Modern Life</p>
         </header>
-        <div class="concepts-grid">
-            <div class="concept-card">
-                <h2 class="concept-title">Focus on What You Control</h2>
-                <p class="concept-desc">The fundamental Stoic principle of distinguishing between what is within our power and what is not.</p>
-                <div class="key-points">
-                    <strong>Key aspects:</strong>
-                    <ul><li>Our thoughts and actions</li><li>Our responses to events</li><li>Our values and choices</li></ul>
-                </div>
-            </div>
-            <div class="concept-card">
-                <h2 class="concept-title">Virtue as the Highest Good</h2>
-                <p class="concept-desc">Living according to the four cardinal virtues: wisdom, justice, courage, and temperance.</p>
-                <div class="key-points">
-                    <strong>Key aspects:</strong>
-                    <ul><li>Wisdom in decision-making</li><li>Justice in relationships</li><li>Courage in adversity</li></ul>
-                </div>
-            </div>
-            <div class="concept-card">
-                <h2 class="concept-title">Acceptance of Fate</h2>
-                <p class="concept-desc">Embracing what happens to us while focusing our energy on our response and attitude.</p>
-                <div class="key-points">
-                    <strong>Key aspects:</strong>
-                    <ul><li>Amor fati (love of fate)</li><li>Present moment awareness</li><li>Emotional equilibrium</li></ul>
-                </div>
-            </div>
-            <div class="concept-card">
-                <h2 class="concept-title">Negative Visualization</h2>
-                <p class="concept-desc">Imagining loss to increase gratitude and reduce attachment to external things.</p>
-                <div class="key-points">
-                    <strong>Key aspects:</strong>
-                    <ul><li>Appreciation of what we have</li><li>Preparation for setbacks</li><li>Reduced anxiety about loss</li></ul>
-                </div>
-            </div>
-            <div class="concept-card">
-                <h2 class="concept-title">Evening Reflection</h2>
-                <p class="concept-desc">Daily practice of reviewing our actions, thoughts, and progress in virtue.</p>
-                <div class="key-points">
-                    <strong>Key aspects:</strong>
-                    <ul><li>Self-examination</li><li>Learning from mistakes</li><li>Continuous improvement</li></ul>
-                </div>
-            </div>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search stoic concepts..." id="searchInput" oninput="filterTopics()">
         </div>
+        <div class="topics-grid" id="topicsGrid"></div>
+        <div class="pagination" id="pagination"></div>
     </div>
+    <div id="common-footer"></div>
     <script>
+        const topics = [
+            {title: 'The Four Virtues', icon: '⚖️', desc: 'Wisdom, courage, justice, and temperance - the foundation of Stoic ethics and character development.', url: 'four-virtues.html'},
+            {title: 'Dichotomy of Control', icon: '🎯', desc: 'Focus on what you can control and accept what you cannot - the core principle of Stoic philosophy.', url: 'dichotomy-control.html'},
+            {title: 'Memento Mori', icon: '💀', desc: 'Remember death - a practice to appreciate life and maintain perspective on what truly matters.', url: 'memento-mori.html'},
+            {title: 'Negative Visualization', icon: '🤔', desc: 'Imagine loss to increase gratitude and prepare mentally for life\'s challenges and setbacks.', url: 'negative-visualization.html'},
+            {title: 'Present Moment', icon: '⏰', desc: 'Focus on the here and now, as it\'s the only time we can truly influence and control.', url: 'present-moment.html'},
+            {title: 'Emotional Resilience', icon: '💪', desc: 'Build mental strength through rational thinking and acceptance of life\'s inevitable difficulties.', url: 'emotional-resilience.html'}
+        ];
+        
+        let currentPage = 1;
+        const itemsPerPage = 6;
+        let filteredTopics = topics;
+        
+        function displayPage(page) {
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = filteredTopics.slice(start, end);
+            
+            document.getElementById('topicsGrid').innerHTML = pageItems.map(topic => 
+                `<a href="${topic.url}" class="topic-item"><div class="topic-icon">${topic.icon}</div><div class="topic-title">${topic.title}</div><div class="topic-desc">${topic.desc}</div></a>`
+            ).join('');
+            
+            const totalPages = Math.ceil(filteredTopics.length / itemsPerPage);
+            let paginationHTML = '';
+            
+            if (page > 1) paginationHTML += `<a href="#" class="page-btn" onclick="goToPage(${page - 1})">← Prev</a>`;
+            
+            for (let i = 1; i <= totalPages; i++) {
+                paginationHTML += `<a href="#" class="page-btn ${i === page ? 'active' : ''}" onclick="goToPage(${i})">${i}</a>`;
+            }
+            
+            if (page < totalPages) paginationHTML += `<a href="#" class="page-btn" onclick="goToPage(${page + 1})">Next →</a>`;
+            
+            document.getElementById('pagination').innerHTML = paginationHTML;
+        }
+        
+        function goToPage(page) {
+            currentPage = page;
+            displayPage(page);
+        }
+        
+        function filterTopics() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            filteredTopics = topics.filter(topic => 
+                topic.title.toLowerCase().includes(searchTerm) || 
+                topic.desc.toLowerCase().includes(searchTerm)
+            );
+            currentPage = 1;
+            displayPage(1);
+        }
+        
+        displayPage(1);
+        
         if (typeof loadAdSense === 'function') {
             loadAdSense();
         }

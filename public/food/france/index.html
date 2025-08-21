@@ -3,109 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>French Food - Food</title>
+    <title>French Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
     </style>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇫🇷 French Cuisine</h1>
-            <p>Top 5 Popular Dishes</p>
-        </header>
-        <div class="dishes-grid">
-            <div class="dish-card">
-                <h2 class="dish-title">Coq au Vin</h2>
-                <p class="dish-desc">Classic French dish of chicken braised with wine, mushrooms, and garlic, originating from Burgundy.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul>
-                        <li>Chicken</li>
-                        <li>Red wine</li>
-                        <li>Pearl onions</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Bouillabaisse</h2>
-                <p class="dish-desc">Traditional Provençal fish stew from Marseille, served with rouille sauce and crusty bread.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul>
-                        <li>Mixed fish</li>
-                        <li>Saffron</li>
-                        <li>Fennel</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Ratatouille</h2>
-                <p class="dish-desc">Vegetable stew from Nice featuring eggplant, zucchini, peppers, and tomatoes with herbs de Provence.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul>
-                        <li>Eggplant</li>
-                        <li>Zucchini</li>
-                        <li>Tomatoes</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Beef Bourguignon</h2>
-                <p class="dish-desc">Slow-cooked beef stew in red wine with vegetables, a signature dish of Burgundy cuisine.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul>
-                        <li>Beef chuck</li>
-                        <li>Burgundy wine</li>
-                        <li>Bacon lardons</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Crème Brûlée</h2>
-                <p class="dish-desc">Rich custard dessert topped with caramelized sugar, creating a crispy contrast to the creamy base.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul>
-                        <li>Heavy cream</li>
-                        <li>Vanilla beans</li>
-                        <li>Egg yolks</li>
-                    </ul>
-                </div>
-            </div>
+            <div class="meta">Published on December 2024 | 6 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>French cuisine represents the pinnacle of culinary artistry, with techniques and traditions that have influenced global gastronomy for centuries. From rustic countryside bistros to Michelin-starred establishments, France offers an unparalleled dining experience rooted in regional terroir and seasonal ingredients.</p>
+            
+            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=500&h=300&fit=crop" alt="French pastries and croissants">
+            
+            <h2>Classic Techniques</h2>
+            <p>French culinary techniques form the backbone of professional cooking worldwide. The five mother sauces - béchamel, velouté, espagnole, hollandaise, and tomato - create the foundation for countless derivatives. Techniques like mise en place, brunoise cuts, and proper knife skills originated in French kitchens and remain essential today.</p>
+            
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&h=300&fit=crop" alt="French fine dining and cuisine">
+            
+            <h2>Regional Cuisines</h2>
+            <p>Each French region boasts distinct specialties: Provence's bouillabaisse and ratatouille, Normandy's apple-based dishes and Calvados, Alsace's Germanic influences with choucroute, and Lyon's hearty bouchon cuisine. The Loire Valley offers delicate river fish preparations, while Brittany excels in crêpes and seafood.</p>
+            
+            <h2>Pastry Excellence</h2>
+            <p>French pâtisserie represents culinary perfection with croissants' laminated dough, macarons' precise technique, and elaborate croquembouche towers. Classic desserts like tarte tatin, crème brûlée, and mille-feuille showcase French pastry chefs' mastery of texture, flavor, and presentation.</p>
+            
+            <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=500&h=300&fit=crop" alt="French wine and cheese pairing">
+            
+            <h2>Wine & Cheese Heritage</h2>
+            <p>France produces over 400 cheese varieties, from creamy Camembert to pungent Roquefort, each protected by AOC regulations. Wine regions like Bordeaux, Burgundy, Champagne, and Rhône Valley create perfect pairings with local cuisine, following centuries-old traditions of terroir expression.</p>
+            
+            <h2>Dining Culture</h2>
+            <p>French dining emphasizes leisurely meals with multiple courses, proper wine pairings, and seasonal ingredients. The concept of terroir - expressing local soil and climate through food - remains central to French culinary philosophy, influencing everything from bread to cheese to wine production.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

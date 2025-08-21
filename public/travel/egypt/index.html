@@ -3,93 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Egypt Travel Guide - Top 5 Destinations | Visit Egypt</title>
-    <meta name="description" content="Explore Egypt's top destinations: Cairo, Luxor, Aswan, Alexandria, and Red Sea. Complete Egypt travel guide with pyramids and ancient wonders.">
+    <title>Egypt Travel - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .destination-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        .destination-card:hover { transform: translateY(-5px); }
-        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
-        .destination-desc { color: #666; line-height: 1.6; }
-        .highlights { margin-top: 1rem; }
-        .highlights ul { margin-left: 1.5rem; }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Travel</a>
-        <header>
-            <h1>🇪🇬 Egypt</h1>
-            <p>Top 5 Egyptian Destinations</p>
-        </header>
-        <div class="destinations-grid">
-            <div class="destination-card">
-                <h2 class="destination-title">Cairo & Giza</h2>
-                <p class="destination-desc">Capital city with the Great Pyramids, Sphinx, and Egyptian Museum treasures.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Great Pyramid of Giza</li><li>Sphinx</li><li>Egyptian Museum</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Luxor</h2>
-                <p class="destination-desc">Ancient Thebes with Valley of the Kings and magnificent temples.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Valley of the Kings</li><li>Karnak Temple</li><li>Luxor Temple</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Aswan</h2>
-                <p class="destination-desc">Southern city with Nubian culture, felucca boats, and Abu Simbel temples.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Abu Simbel</li><li>Philae Temple</li><li>Nubian Villages</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Alexandria</h2>
-                <p class="destination-desc">Mediterranean coastal city with ancient library ruins and Greco-Roman heritage.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Bibliotheca Alexandrina</li><li>Qaitbay Citadel</li><li>Catacombs</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Red Sea</h2>
-                <p class="destination-desc">World-class diving and snorkeling with coral reefs and beach resorts.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Hurghada</li><li>Sharm El Sheikh</li><li>Coral Reefs</li></ul>
-                </div>
-            </div>
+        <div class="article-header">
+            <h1>🇪🇬 Egypt Travel</h1>
+            <div class="meta">Published on December 2024 | 6 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Egypt offers unparalleled access to ancient civilization through pyramids, temples, and monuments that have fascinated humanity for millennia. From the Giza pyramids to Nile River cruises, Egypt provides archaeological wonders and cultural experiences that connect visitors to pharaonic heritage and modern Egyptian life.</p>
+            
+            <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?w=500&h=300&fit=crop" alt="Egyptian pyramids and Nile">
+            
+            <h2>Giza's Eternal Monuments</h2>
+            <p>The Great Pyramid of Giza, the only surviving Wonder of the Ancient World, demonstrates pharaonic engineering mastery and religious beliefs about afterlife. The Sphinx guards these monuments with its enigmatic expression, while the Solar Boat Museum displays the reconstructed vessel intended to carry Pharaoh Khufu through the afterlife. Sound and light shows provide evening entertainment that brings ancient stories to life.</p>
+            
+            <h2>Luxor's Open-Air Museum</h2>
+            <p>Luxor contains the world's greatest concentration of ancient monuments, including Karnak Temple's massive columns and hieroglyphic inscriptions, Luxor Temple's evening illumination, and the Valley of the Kings' royal tombs with preserved wall paintings. The Valley of the Queens and nobles' tombs provide additional insights into ancient Egyptian burial practices and artistic achievements.</p>
+            
+            <h2>Nile River Journeys</h2>
+            <p>Nile cruises between Luxor and Aswan offer relaxing travel through landscapes unchanged since pharaonic times, with stops at Edfu and Kom Ombo temples that demonstrate different aspects of ancient Egyptian religion. Traditional felucca sailing boats provide authentic experiences on the river that sustained Egyptian civilization, while luxury cruise ships offer modern comfort amid ancient scenery.</p>
+            
+            <h2>Islamic Cairo</h2>
+            <p>Cairo's Islamic quarter preserves medieval architecture through mosques, madrasas, and bazaars that demonstrate Egypt's Islamic heritage following pharaonic and Coptic periods. The Khan el-Khalili bazaar offers traditional crafts, spices, and cultural experiences, while the Citadel provides panoramic city views and military history. These sites show Egypt's continuous cultural evolution.</p>
+            
+            <h2>Red Sea Adventures</h2>
+            <p>Egypt's Red Sea coast offers world-class diving and snorkeling among coral reefs and marine life that thrive in crystal-clear waters. Hurghada and Sharm el-Sheikh provide resort amenities and water sports, while more remote locations offer pristine diving experiences. These coastal areas provide relaxation and adventure as alternatives to cultural sightseeing.</p>
+            
+            <h2>Modern Egyptian Culture</h2>
+            <p>Contemporary Egypt balances ancient heritage with modern life through bustling Cairo streets, traditional coffee houses, and cultural events that celebrate Egyptian identity. Local markets, restaurants, and festivals provide authentic experiences with Egyptian hospitality, cuisine, and social customs that continue traditions while embracing modernity.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

@@ -3,145 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Korean Food - Top 5 K-Food Dishes | Authentic Korean Recipes</title>
-    <meta name="description" content="Explore authentic Korean cuisine with Kimchi, Bulgogi, Bibimbap, and Korean BBQ. Traditional K-food recipes and cooking techniques from South Korea.">
-    <meta name="keywords" content="Korean food, K-food, Kimchi recipe, Bulgogi, Korean BBQ, Bibimbap, Korean cuisine">
+    <title>Korean Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
-        }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .ad-space {
-            background: rgba(255,255,255,0.1);
-            border: 2px dashed rgba(255,255,255,0.3);
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
             border-radius: 10px;
-            padding: 2rem;
-            text-align: center;
-            margin: 2rem 0;
-            color: white;
-            min-height: 250px;
-        }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        .dish-card:hover { transform: translateY(-5px); }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
-        .content-section {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 2rem 0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
 <body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
-            <h1>🇰🇷 Korean Cuisine (K-Food)</h1>
-            <p>Top 5 Authentic Korean Dishes</p>
-        </header>
-
-        <div class="ad-space">
-            <!-- AdSense Display Ad -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-8437328263455404"
-                 data-ad-slot="1111111111"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
+        <div class="article-header">
+            <h1>🇰🇷 Korean Cuisine</h1>
+            <div class="meta">Published on December 2024 | 5 min read</div>
         </div>
-
-        <div class="content-section">
-            <h2>Korean Food Culture (K-Food)</h2>
-            <p>Korean cuisine, known as K-Food, has gained global popularity through the Korean Wave (Hallyu). Characterized by fermented foods, bold flavors, and healthy ingredients, Korean food emphasizes balance, nutrition, and communal dining. The use of gochujang (chili paste), kimchi, and banchan (side dishes) creates a unique culinary experience.</p>
-        </div>
-
-        <div class="dishes-grid">
-            <div class="dish-card">
-                <h2 class="dish-title">Kimchi</h2>
-                <p class="dish-desc">Fermented cabbage with chili peppers, garlic, and ginger - Korea's national dish.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Napa cabbage</li><li>Gochugaru (chili flakes)</li><li>Garlic & ginger</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Bulgogi</h2>
-                <p class="dish-desc">Marinated grilled beef with sweet and savory flavors, perfect with rice.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Thinly sliced beef</li><li>Soy sauce marinade</li><li>Asian pear</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Bibimbap</h2>
-                <p class="dish-desc">Mixed rice bowl with vegetables, meat, and gochujang sauce.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Steamed rice</li><li>Assorted vegetables</li><li>Gochujang</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Korean BBQ (Galbi)</h2>
-                <p class="dish-desc">Grilled marinated short ribs, a centerpiece of Korean dining culture.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Beef short ribs</li><li>Soy-based marinade</li><li>Sesame oil</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Japchae</h2>
-                <p class="dish-desc">Sweet potato starch noodles stir-fried with vegetables and meat.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Sweet potato noodles</li><li>Vegetables</li><li>Sesame oil</li></ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="ad-space">
-            <!-- AdSense In-feed Ad -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-format="fluid"
-                 data-ad-layout-key="-6t+ed+2i-1n-4w"
-                 data-ad-client="ca-pub-8437328263455404"
-                 data-ad-slot="2222222222"></ins>
+        
+        <div class="content">
+            <p>Korean cuisine masterfully balances fermented flavors, spicy heat, and umami depth through techniques perfected over thousands of years. Emphasizing seasonal ingredients, communal dining, and the health benefits of fermented foods, Korean cooking creates complex flavor profiles that promote both pleasure and wellness.</p>
+            
+            <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=500&h=300&fit=crop" alt="Korean BBQ and kimchi">
+            
+            <h2>Kimchi Culture</h2>
+            <p>Kimchi represents Korea's fermentation mastery, with over 200 varieties using different vegetables, seasonings, and fermentation periods. Traditional kimjang (kimchi-making) brings families together each autumn to prepare winter supplies. The fermentation process creates beneficial probiotics while developing complex flavors from simple ingredients like napa cabbage, gochugaru (chili flakes), and garlic.</p>
+            
+            <h2>Korean BBQ Tradition</h2>
+            <p>Korean barbecue (gogigui) emphasizes high-quality meats grilled at the table, promoting social interaction and customization. Bulgogi's sweet-savory marinade, galbi's tender short ribs, and samgyeopsal's unmarinated pork belly each offer different experiences. The ritual of wrapping grilled meat in lettuce with ssamjang sauce creates perfect flavor balance.</p>
+            
+            <h2>Banchan Side Dishes</h2>
+            <p>Korean meals feature multiple banchan (side dishes) that provide nutritional balance and flavor variety. These small plates include pickled vegetables, seasoned spinach, bean sprouts, and various kimchi types. Banchan reflects Korean philosophy that meals should offer diverse tastes, textures, and nutrients while encouraging communal sharing.</p>
+            
+            <h2>Temple Food Philosophy</h2>
+            <p>Korean Buddhist temple cuisine avoids garlic, onions, and meat while creating deeply satisfying dishes using vegetables, grains, and legumes. This tradition emphasizes seasonal ingredients, minimal processing, and mindful eating. Temple food techniques influence modern Korean vegetarian cuisine and health-conscious cooking throughout Korea.</p>
+            
+            <h2>Modern Korean Wave</h2>
+            <p>Contemporary Korean cuisine gains global recognition through the Korean Wave (Hallyu), with dishes like Korean fried chicken, hotteok (sweet pancakes), and Korean corn dogs becoming international favorites. Modern Korean chefs blend traditional techniques with global ingredients, creating innovative dishes that maintain Korean flavor principles while appealing to international palates.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
     <script>
         if (typeof loadAdSense === 'function') {
             loadAdSense();
         }
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </body>
 </html>

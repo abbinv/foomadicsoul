@@ -3,89 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UK Travel - Travel</title>
+    <title>UK Travel - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .destination-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
-        .destination-desc { color: #666; line-height: 1.6; }
-        .highlights { margin-top: 1rem; }
-        .highlights ul { margin-left: 1.5rem; }
     </style>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Travel</a>
-        <header>
-            <h1>🇬🇧 United Kingdom</h1>
-            <p>Top 5 Destinations</p>
-        </header>
-        <div class="destinations-grid">
-            <div class="destination-card">
-                <h2 class="destination-title">London</h2>
-                <p class="destination-desc">Historic capital with royal palaces, world-class museums, and iconic landmarks.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Big Ben</li><li>Tower Bridge</li><li>British Museum</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Edinburgh</h2>
-                <p class="destination-desc">Scottish capital with medieval Old Town and elegant Georgian New Town.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Edinburgh Castle</li><li>Royal Mile</li><li>Arthur's Seat</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Bath</h2>
-                <p class="destination-desc">Georgian spa town famous for Roman baths and stunning architecture.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Roman Baths</li><li>Royal Crescent</li><li>Bath Abbey</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Stonehenge</h2>
-                <p class="destination-desc">Mysterious prehistoric monument on Salisbury Plain, UNESCO World Heritage site.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Stone Circle</li><li>Visitor Centre</li><li>Salisbury Cathedral</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Lake District</h2>
-                <p class="destination-desc">Scenic national park with lakes, mountains, and literary heritage.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Lake Windermere</li><li>Scafell Pike</li><li>Beatrix Potter Gallery</li></ul>
-                </div>
-            </div>
+        <div class="article-header">
+            <h1>🇬🇧 UK Travel</h1>
+            <div class="meta">Published on December 2024 | 6 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>The United Kingdom combines royal heritage, literary history, and stunning landscapes across England, Scotland, Wales, and Northern Ireland. From London's iconic landmarks to Scotland's Highland wilderness, the UK offers travelers centuries of history, cultural traditions, and natural beauty that have inspired countless stories and legends.</p>
+            
+            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=500&h=300&fit=crop" alt="Big Ben London">
+            
+            <h2>London's Royal Grandeur</h2>
+            <p>London showcases British heritage through Buckingham Palace's Changing of the Guard, Tower of London's Crown Jewels, and Westminster Abbey's royal ceremonies. Big Ben and Parliament represent democratic traditions, while the British Museum houses global treasures. Modern attractions include the London Eye, Tate Modern, and vibrant neighborhoods like Camden and Notting Hill that blend history with contemporary culture.</p>
+            
+            <h2>Scottish Highlands</h2>
+            <p>Scotland's Highlands offer dramatic landscapes with ancient castles, mysterious lochs, and whisky distilleries set among heather-covered mountains. Edinburgh's Royal Mile connects the castle to Holyrood Palace, while the annual Festival transforms the city into a cultural celebration. Isle of Skye's rugged beauty, Loch Ness monster legends, and Highland Games demonstrate Scottish culture and natural splendor.</p>
+            
+            <h2>English Countryside</h2>
+            <p>The Cotswolds epitomize English countryside charm with honey-colored stone villages, thatched cottages, and rolling green hills dotted with sheep. Bath's Georgian architecture and Roman baths, Stratford-upon-Avon's Shakespeare heritage, and the Lake District's literary connections to Wordsworth and Beatrix Potter create quintessentially English experiences that celebrate literature, history, and natural beauty.</p>
+            
+            <h2>Welsh Culture</h2>
+            <p>Wales preserves Celtic traditions through its Welsh language, medieval castles, and dramatic coastlines. Snowdonia National Park offers mountain hiking and scenic railways, while Pembrokeshire's coastal path provides stunning sea views and wildlife watching. Cardiff's modern attractions complement ancient sites, and traditional Welsh culture thrives through music festivals, rugby matches, and local traditions.</p>
+            
+            <h2>Literary Heritage</h2>
+            <p>The UK's literary legacy spans Shakespeare's Globe Theatre, Jane Austen's Bath, the Brontë sisters' Yorkshire moors, and Harry Potter filming locations throughout the country. Literary tours, historic libraries, and writers' homes provide insights into Britain's contribution to world literature, while contemporary bookshops and literary festivals continue this cultural tradition.</p>
+            
+            <h2>Cultural Traditions</h2>
+            <p>British traditions include afternoon tea ceremonies, pub culture with real ales and hearty meals, and seasonal celebrations like Guy Fawkes Night and Christmas markets. Royal ceremonies, changing seasons in historic gardens, and traditional crafts demonstrate continuity with the past while modern Britain embraces multiculturalism and innovation in cities across the kingdom.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

@@ -3,93 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canadian Food - Top 5 Traditional Dishes | Canada Cuisine</title>
-    <meta name="description" content="Discover authentic Canadian cuisine with Poutine, Maple Syrup, Tourtière, and traditional Canadian flavors.">
+    <title>Canadian Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        .dish-card:hover { transform: translateY(-5px); }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇨🇦 Canadian Cuisine</h1>
-            <p>Top 5 Traditional Canadian Dishes</p>
-        </header>
-        <div class="dishes-grid">
-            <div class="dish-card">
-                <h2 class="dish-title">Poutine</h2>
-                <p class="dish-desc">Quebec's famous dish with fries, cheese curds, and gravy.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>French fries</li><li>Cheese curds</li><li>Brown gravy</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Maple Syrup</h2>
-                <p class="dish-desc">Canada's liquid gold, harvested from maple trees and served on pancakes.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Maple tree sap</li><li>Natural sugars</li><li>Traditional processing</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Tourtière</h2>
-                <p class="dish-desc">Traditional Quebec meat pie, especially popular during holidays.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Ground pork</li><li>Pie crust</li><li>Spices</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Butter Tarts</h2>
-                <p class="dish-desc">Sweet pastry tarts filled with butter, sugar, and eggs.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Pastry shells</li><li>Butter</li><li>Brown sugar</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Bannock</h2>
-                <p class="dish-desc">Traditional Indigenous flatbread, often cooked over open fire.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Flour</li><li>Baking powder</li><li>Salt</li></ul>
-                </div>
-            </div>
+            <div class="meta">Published on December 2024 | 5 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Canadian cuisine reflects the country's multicultural heritage, indigenous traditions, and vast geographical diversity, creating a unique culinary identity that celebrates both regional specialties and immigrant influences. From Maritime seafood to Prairie grains and Pacific salmon, Canadian cooking emphasizes quality local ingredients and seasonal preparation methods.</p>
+            
+            <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=500&h=300&fit=crop" alt="Canadian poutine and maple syrup">
+            
+            <h2>Poutine Phenomenon</h2>
+            <p>Poutine, originating in rural Quebec during the 1950s, combines french fries, cheese curds, and gravy in a dish that became Canada's unofficial national food. Authentic poutine requires fresh cheese curds that squeak when bitten, while variations include smoked meat, lobster, or vegetarian options. This comfort food represents Canadian ingenuity and regional pride.</p>
+            
+            <h2>Maple Syrup Heritage</h2>
+            <p>Canada produces 71% of the world's maple syrup, with Quebec leading production using traditional and modern techniques. Indigenous peoples first developed maple syrup extraction methods, which European settlers adopted and refined. Pure maple syrup grades range from delicate to robust, each offering distinct flavors for culinary applications beyond pancakes.</p>
+            
+            <h2>Indigenous Contributions</h2>
+            <p>Indigenous Canadian cuisine contributes bannock bread, wild game preparations, and foraged ingredients like fiddleheads and wild rice. Traditional smoking and preservation techniques, along with ingredients like saskatoon berries and cedar-planked salmon, influence modern Canadian cooking while honoring First Nations culinary wisdom and sustainable practices.</p>
+            
+            <h2>Regional Specialties</h2>
+            <p>Maritime provinces offer lobster rolls and scallops, Quebec provides tourtière and sugar pie, Ontario contributes butter tarts and peameal bacon, while British Columbia excels in Pacific salmon and wine. Each region's climate, geography, and cultural influences created distinct culinary identities within Canadian cuisine.</p>
+            
+            <h2>Multicultural Mosaic</h2>
+            <p>Canadian cities showcase incredible culinary diversity through immigrant communities: Chinese-Canadian dishes, Ukrainian pierogies, Italian-Canadian adaptations, and countless other influences. This multiculturalism creates dynamic food scenes in cities like Toronto, Vancouver, and Montreal, where traditional and fusion cuisines coexist and evolve.</p>
+            
+            <h2>Seasonal Celebrations</h2>
+            <p>Canadian food traditions celebrate seasons and holidays: Canada Day barbecues, Thanksgiving turkey dinners, winter comfort foods, and summer cottage cuisine. These celebrations often feature local ingredients and reflect Canada's connection to natural cycles, outdoor activities, and community gatherings that define Canadian lifestyle and values.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

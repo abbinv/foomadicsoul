@@ -3,93 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moroccan Food - Top 5 Traditional Dishes | Morocco Cuisine</title>
-    <meta name="description" content="Explore authentic Moroccan cuisine with Tagine, Couscous, Pastilla, and traditional North African spices and flavors.">
+    <title>Moroccan Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        .dish-card:hover { transform: translateY(-5px); }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇲🇦 Moroccan Cuisine</h1>
-            <p>Top 5 Traditional Moroccan Dishes</p>
-        </header>
-        <div class="dishes-grid">
-            <div class="dish-card">
-                <h2 class="dish-title">Tagine</h2>
-                <p class="dish-desc">Slow-cooked stew with meat, vegetables, and aromatic spices in a clay pot.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Lamb or chicken</li><li>Preserved lemons</li><li>Moroccan spices</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Couscous</h2>
-                <p class="dish-desc">Steamed semolina grains served with vegetables and meat, Friday tradition.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Semolina</li><li>Seven vegetables</li><li>Meat or chicken</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Pastilla</h2>
-                <p class="dish-desc">Sweet and savory pie with pigeon or chicken, almonds, and cinnamon.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Phyllo pastry</li><li>Pigeon/chicken</li><li>Almonds</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Harira</h2>
-                <p class="dish-desc">Traditional soup with tomatoes, lentils, and chickpeas, popular during Ramadan.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Tomatoes</li><li>Lentils</li><li>Chickpeas</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Mint Tea</h2>
-                <p class="dish-desc">Sweet green tea with fresh mint, served throughout the day as hospitality.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Green tea</li><li>Fresh mint</li><li>Sugar</li></ul>
-                </div>
-            </div>
+            <div class="meta">Published on December 2024 | 5 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Moroccan cuisine represents a sophisticated blend of Berber, Arab, Andalusian, and French influences, creating aromatic dishes that engage all senses. Known for complex spice blends, slow-cooking techniques, and the balance of sweet and savory flavors, Moroccan cooking reflects the country's position as a cultural crossroads between Africa, Europe, and the Middle East.</p>
+            
+            <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?w=500&h=300&fit=crop" alt="Moroccan tagine and spices">
+            
+            <h2>Tagine Mastery</h2>
+            <p>The conical tagine pot creates unique cooking conditions, with steam circulating to keep ingredients moist while concentrating flavors. Classic combinations include chicken with preserved lemons and olives, lamb with apricots and almonds, and vegetable tagines with seasonal produce. The slow-cooking process allows spices to meld while maintaining ingredient integrity.</p>
+            
+            <h2>Spice Alchemy</h2>
+            <p>Ras el hanout, Morocco's signature spice blend, can contain 30+ ingredients including rose petals, cinnamon, cumin, and ras el hanout varies by region and family recipes. Other essential spices include harissa for heat, preserved lemons for tang, and argan oil for nutty richness. Moroccan cooks balance these complex flavors with masterful precision.</p>
+            
+            <h2>Couscous Tradition</h2>
+            <p>Friday couscous represents Morocco's most important meal, with families gathering to share steamed semolina grains topped with vegetables, meat, and aromatic broth. Hand-rolling couscous requires skill passed through generations, while the traditional couscoussier pot ensures perfect texture. Regional variations include sweet couscous with cinnamon and almonds.</p>
+            
+            <h2>Mint Tea Ceremony</h2>
+            <p>Moroccan mint tea (atay) involves elaborate preparation rituals that demonstrate hospitality and respect. Green tea, fresh mint, and sugar are combined in specific proportions, then poured from height to create foam. The ceremony includes three glasses, each with different strength, following the saying "the first glass is as gentle as life, the second as strong as love, the third as bitter as death."</p>
+            
+            <h2>Pastry Excellence</h2>
+            <p>Moroccan pastries showcase the cuisine's sweet sophistication, from honey-soaked chebakia during Ramadan to almond-filled gazelle horns and rose-scented ma'amoul. Pastilla, a savory-sweet pie with pigeon or chicken, demonstrates the Moroccan mastery of balancing contrasting flavors within delicate phyllo pastry layers.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

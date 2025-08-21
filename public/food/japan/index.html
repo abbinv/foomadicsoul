@@ -3,89 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Japanese Food - Food</title>
+    <title>Japanese Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
     </style>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇯🇵 Japanese Cuisine</h1>
-            <p>Top 5 Popular Dishes</p>
-        </header>
-        <div class="dishes-grid">
-            <div class="dish-card">
-                <h2 class="dish-title">Sushi</h2>
-                <p class="dish-desc">Fresh raw fish over seasoned rice, representing the pinnacle of Japanese culinary art.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Sushi rice</li><li>Fresh fish</li><li>Nori seaweed</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Ramen</h2>
-                <p class="dish-desc">Hearty noodle soup with rich broth, perfect for any season and region.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Wheat noodles</li><li>Miso/Shoyu broth</li><li>Chashu pork</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Tempura</h2>
-                <p class="dish-desc">Light, crispy battered and fried seafood and vegetables with delicate flavor.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Shrimp</li><li>Vegetables</li><li>Tempura batter</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Yakitori</h2>
-                <p class="dish-desc">Grilled chicken skewers with tare sauce, popular street food and izakaya staple.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Chicken</li><li>Tare sauce</li><li>Bamboo skewers</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Miso Soup</h2>
-                <p class="dish-desc">Traditional soup made from fermented soybean paste, served with most meals.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Miso paste</li><li>Tofu</li><li>Wakame seaweed</li></ul>
-                </div>
-            </div>
+            <div class="meta">Published on December 2024 | 6 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Japanese cuisine, or washoku, represents a harmonious balance of taste, texture, appearance, and seasonal awareness. Recognized by UNESCO as an Intangible Cultural Heritage, Japanese cooking emphasizes natural flavors, minimal processing, and respect for ingredients' inherent qualities.</p>
+            
+            <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=500&h=300&fit=crop" alt="Fresh sushi and sashimi">
+            
+            <h2>Sushi & Sashimi Mastery</h2>
+            <p>Sushi represents the pinnacle of Japanese culinary artistry, requiring years of training to master. The perfect sushi rice, seasoned with rice vinegar, sugar, and salt, must be body temperature when paired with pristine fish. Edo-mae sushi from Tokyo emphasizes aged fish and traditional techniques, while modern styles incorporate global influences.</p>
+            
+            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=500&h=300&fit=crop" alt="Traditional ramen bowl">
+            
+            <h2>Ramen Regional Styles</h2>
+            <p>Ramen varies dramatically across Japan's regions: Tokyo's shoyu (soy sauce) base, Sapporo's miso richness, Hakata's tonkotsu pork bone broth, and Kitakata's niboshi (dried sardine) flavor. Each bowl represents hours of preparation, with broths simmered for up to 20 hours to achieve perfect depth and complexity.</p>
+            
+            <h2>Kaiseki Tradition</h2>
+            <p>Kaiseki, Japan's haute cuisine, follows strict seasonal principles with multiple small courses highlighting natural flavors. Originally developed for tea ceremonies, kaiseki emphasizes visual presentation, seasonal ingredients, and the philosophy of ichigo ichie - treasuring each unique moment and encounter.</p>
+            
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&h=300&fit=crop" alt="Japanese tea ceremony and traditional sweets">
+            
+            <h2>Umami & Fermentation</h2>
+            <p>Japanese cuisine pioneered umami understanding through ingredients like kombu seaweed, katsuobushi (bonito flakes), and shiitake mushrooms. Fermented products including miso, soy sauce, sake, and mirin add complex flavors while preserving foods naturally, reflecting centuries of culinary wisdom.</p>
+            
+            <h2>Seasonal Philosophy</h2>
+            <p>Japanese cooking celebrates seasonal transitions with specific ingredients and preparations. Spring brings sakura mochi and bamboo shoots, summer offers cold soba and grilled eel, autumn features matsutake mushrooms and persimmons, while winter showcases hot pot dishes and preserved foods.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

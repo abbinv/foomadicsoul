@@ -3,93 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Croatian Food - Top 5 Traditional Dishes | Croatia Cuisine</title>
-    <meta name="description" content="Explore authentic Croatian cuisine with Peka, Cevapcici, Palacinke, and Mediterranean Balkan flavors from Croatia.">
+    <title>Croatian Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        .dish-card:hover { transform: translateY(-5px); }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇭🇷 Croatian Cuisine</h1>
-            <p>Top 5 Traditional Croatian Dishes</p>
-        </header>
-        <div class="dishes-grid">
-            <div class="dish-card">
-                <h2 class="dish-title">Peka</h2>
-                <p class="dish-desc">Traditional dish cooked under a bell-shaped lid with meat and vegetables.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Lamb or veal</li><li>Potatoes</li><li>Vegetables</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Cevapcici</h2>
-                <p class="dish-desc">Grilled minced meat sausages served with onions and flatbread.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Ground meat</li><li>Onions</li><li>Flatbread</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Black Risotto</h2>
-                <p class="dish-desc">Adriatic specialty with cuttlefish or squid ink giving it black color.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Arborio rice</li><li>Cuttlefish</li><li>Squid ink</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Strukli</h2>
-                <p class="dish-desc">Traditional pastry with cottage cheese, served baked or boiled.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Thin pastry</li><li>Cottage cheese</li><li>Eggs</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Palacinke</h2>
-                <p class="dish-desc">Thin crepes filled with jam, chocolate, or cheese.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Crepe batter</li><li>Various fillings</li><li>Sugar</li></ul>
-                </div>
-            </div>
+            <div class="meta">Published on December 2024 | 5 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Croatian cuisine showcases remarkable diversity across its regions, from Mediterranean coastal flavors to Central European inland traditions. This culinary richness reflects Croatia's position at the crossroads of different cultures, creating distinct regional identities that celebrate local ingredients, traditional techniques, and the country's complex historical influences.</p>
+            
+            <img src="https://images.unsplash.com/photo-1544982503-9f984c14501a?w=500&h=300&fit=crop" alt="Croatian seafood and Mediterranean dishes">
+            
+            <h2>Adriatic Seafood Excellence</h2>
+            <p>Croatia's pristine Adriatic coastline provides exceptional seafood including fresh fish, shellfish, and crustaceans. Traditional preparations like brodetto (fish stew), grilled fish with olive oil and herbs, and black risotto with cuttlefish ink showcase simple techniques that highlight natural flavors. Coastal restaurants often serve catch-of-the-day selections prepared with minimal seasoning.</p>
+            
+            <h2>Istrian Truffle Treasures</h2>
+            <p>Istria's truffle-rich forests produce both white and black truffles that rival Italian varieties. Traditional truffle hunting with trained dogs continues ancient practices, while modern restaurants create innovative dishes featuring these prized fungi. Istrian cuisine also includes excellent olive oils, wines, and pasta dishes that reflect Italian influences.</p>
+            
+            <h2>Continental Comfort Foods</h2>
+            <p>Inland Croatia offers hearty dishes influenced by Austrian and Hungarian cuisines: štrukli (cheese pastry), čobanac (spicy meat stew), and various sausage preparations. These substantial dishes reflect agricultural traditions and provide comfort during cold continental winters, using local meats, vegetables, and preservation techniques.</p>
+            
+            <h2>Island Specialties</h2>
+            <p>Croatian islands each offer unique culinary identities: Pag's famous sheep cheese, Vis's traditional fishing recipes, Hvar's lavender-infused dishes, and Korčula's wine traditions. Island isolation preserved ancient recipes and techniques while creating distinct flavor profiles that reflect local ingredients and maritime influences.</p>
+            
+            <h2>Wine Heritage</h2>
+            <p>Croatia produces exceptional wines from indigenous grape varieties like Plavac Mali and Malvazija Istarska, along with international varieties. Wine regions include Istria's sophisticated whites, Dalmatia's robust reds, and continental areas' diverse offerings. Traditional wine cellars and modern wineries showcase Croatia's viticultural potential.</p>
+            
+            <h2>Traditional Preservation</h2>
+            <p>Croatian cuisine excels in food preservation through smoking, curing, and drying techniques. Pršut (prosciutto) from Istria and Dalmatia, various smoked fish preparations, and preserved vegetables sustained communities through winter months while creating distinctive flavors that define Croatian taste preferences and culinary identity.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

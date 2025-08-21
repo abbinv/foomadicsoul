@@ -3,93 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Egyptian Food - Top 5 Traditional Dishes | Egypt Cuisine</title>
-    <meta name="description" content="Discover authentic Egyptian cuisine with Koshari, Ful Medames, Molokhia, and traditional Middle Eastern flavors from Egypt.">
+    <title>Egyptian Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        .dish-card:hover { transform: translateY(-5px); }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇪🇬 Egyptian Cuisine</h1>
-            <p>Top 5 Traditional Egyptian Dishes</p>
-        </header>
-        <div class="dishes-grid">
-            <div class="dish-card">
-                <h2 class="dish-title">Koshari</h2>
-                <p class="dish-desc">Egypt's national dish with rice, lentils, pasta, and spicy tomato sauce.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Rice & lentils</li><li>Pasta</li><li>Tomato sauce</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Ful Medames</h2>
-                <p class="dish-desc">Traditional breakfast of slow-cooked fava beans with olive oil and spices.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Fava beans</li><li>Olive oil</li><li>Garlic</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Molokhia</h2>
-                <p class="dish-desc">Green soup made from jute leaves, served with rice and meat.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Jute leaves</li><li>Chicken broth</li><li>Garlic</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Mahshi</h2>
-                <p class="dish-desc">Stuffed vegetables with rice, herbs, and sometimes meat.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Vegetables</li><li>Rice stuffing</li><li>Fresh herbs</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Umm Ali</h2>
-                <p class="dish-desc">Egyptian bread pudding dessert with milk, nuts, and raisins.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Puff pastry</li><li>Milk</li><li>Nuts & raisins</li></ul>
-                </div>
-            </div>
+            <div class="meta">Published on December 2024 | 5 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Egyptian cuisine represents one of the world's oldest culinary traditions, with recipes and techniques dating back to ancient pharaonic times. Influenced by the Nile River's fertility, Mediterranean trade routes, and Arab conquests, Egyptian cooking emphasizes legumes, grains, and vegetables that sustained civilizations for millennia.</p>
+            
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop" alt="Egyptian ful medames and flatbread">
+            
+            <h2>Ful Medames Heritage</h2>
+            <p>Egypt's national dish, ful medames, consists of slow-cooked fava beans seasoned with garlic, lemon, and olive oil, traditionally prepared in copper pots called qidra. Archaeological evidence suggests ancient Egyptians ate similar fava bean preparations, making this possibly the world's oldest recipe still in continuous use, connecting modern Egyptians to their pharaonic ancestors.</p>
+            
+            <h2>Koshari Fusion</h2>
+            <p>Koshari combines rice, lentils, pasta, and chickpeas topped with spiced tomato sauce and crispy onions, representing Egypt's multicultural influences. This beloved street food reflects Italian pasta, Indian lentils, and Middle Eastern spices, creating a uniquely Egyptian dish that provides complete nutrition at affordable prices for all social classes.</p>
+            
+            <h2>Bread Culture</h2>
+            <p>Bread (aish) holds sacred significance in Egyptian culture, with the word literally meaning "life." Traditional baladi bread, baked in communal ovens, provides the foundation for most meals. Ancient Egyptians perfected bread-making techniques, and modern Egypt maintains this reverence for bread as both sustenance and cultural symbol.</p>
+            
+            <h2>Nile Valley Agriculture</h2>
+            <p>The Nile River's annual floods created fertile soil that supported diverse crops including wheat, barley, onions, garlic, and dates. Egyptian cuisine maximizes these ingredients through techniques like fermentation, drying, and preservation that allowed ancient civilizations to thrive in desert conditions while creating flavorful, nutritious meals.</p>
+            
+            <h2>Ramadan Traditions</h2>
+            <p>Egyptian Ramadan cuisine features special dishes like qatayef (stuffed pancakes), kunafa (cheese pastry), and various fruit juices for iftar meals. These traditions blend Islamic customs with ancient Egyptian hospitality, creating elaborate meals that strengthen family bonds and community connections during the holy month.</p>
+            
+            <h2>Spice Trade Legacy</h2>
+            <p>Egypt's position on ancient spice routes introduced cumin, coriander, cinnamon, and other aromatics that define Egyptian flavors. Traditional spice blends like dukkah (nuts, seeds, and spices) and baharat create complex flavor profiles that transform simple ingredients into satisfying, aromatic dishes reflecting Egypt's role in global trade.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

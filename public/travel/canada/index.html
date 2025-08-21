@@ -3,152 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canada Travel Guide - Top 5 Destinations | Visit Canada</title>
-    <meta name="description" content="Discover Canada's top destinations: Toronto, Vancouver, Banff, Quebec City, and Niagara Falls. Complete travel guide with tips and attractions.">
-    <meta name="keywords" content="Canada travel, Toronto, Vancouver, Banff National Park, Quebec City, Niagara Falls, Canadian destinations">
+    <title>Canada Travel - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
-        }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .ad-space {
-            background: rgba(255,255,255,0.1);
-            border: 2px dashed rgba(255,255,255,0.3);
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
             border-radius: 10px;
-            padding: 2rem;
-            text-align: center;
-            margin: 2rem 0;
-            color: white;
-            min-height: 280px;
-        }
-        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .destination-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        .destination-card:hover { transform: translateY(-5px); }
-        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
-        .destination-desc { color: #666; line-height: 1.6; }
-        .highlights { margin-top: 1rem; }
-        .highlights ul { margin-left: 1.5rem; }
-        .content-section {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 2rem 0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
 <body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Travel</a>
-        <header>
-            <h1>🇨🇦 Canada</h1>
-            <p>Top 5 Must-Visit Destinations</p>
-        </header>
-
-        <div class="ad-space">
-            <!-- AdSense Banner Ad -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-8437328263455404"
-                 data-ad-slot="3333333333"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
+        <div class="article-header">
+            <h1>🇨🇦 Canada Travel</h1>
+            <div class="meta">Published on December 2024 | 6 min read</div>
         </div>
-
-        <div class="content-section">
-            <h2>Discover Canada's Natural Beauty</h2>
-            <p>Canada offers breathtaking landscapes from coast to coast, featuring pristine wilderness, vibrant cities, and rich cultural heritage. From the Rocky Mountains to the Atlantic shores, Canada provides unforgettable experiences for every type of traveler. The country's commitment to preserving natural beauty makes it a premier destination for outdoor enthusiasts and culture seekers alike.</p>
-        </div>
-
-        <div class="destinations-grid">
-            <div class="destination-card">
-                <h2 class="destination-title">Toronto</h2>
-                <p class="destination-desc">Canada's largest city with CN Tower, diverse neighborhoods, and world-class museums.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>CN Tower & EdgeWalk</li><li>Royal Ontario Museum</li><li>Distillery District</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Vancouver</h2>
-                <p class="destination-desc">Pacific coast city surrounded by mountains, beaches, and Stanley Park.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Stanley Park Seawall</li><li>Granville Island</li><li>Capilano Suspension Bridge</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Banff National Park</h2>
-                <p class="destination-desc">Rocky Mountain paradise with turquoise lakes, glaciers, and wildlife.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Lake Louise</li><li>Moraine Lake</li><li>Icefields Parkway</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Quebec City</h2>
-                <p class="destination-desc">Historic walled city with European charm and French Canadian culture.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Old Quebec (Vieux-Québec)</li><li>Château Frontenac</li><li>Plains of Abraham</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Niagara Falls</h2>
-                <p class="destination-desc">Iconic waterfalls on the border with spectacular views and boat tours.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Maid of the Mist</li><li>Journey Behind Falls</li><li>Niagara-on-the-Lake</li></ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="ad-space">
-            <!-- AdSense Multiplex Ad -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-format="autorelaxed"
-                 data-ad-client="ca-pub-8437328263455404"
-                 data-ad-slot="4444444444"></ins>
-        </div>
-
-        <div class="content-section">
-            <h2>Canadian Travel Tips</h2>
-            <p><strong>Best Time to Visit:</strong> Summer (June-August) for outdoor activities, winter for skiing and northern lights.<br>
-            <strong>Currency:</strong> Canadian Dollar (CAD)<br>
-            <strong>Language:</strong> English and French (official languages)<br>
-            <strong>Transportation:</strong> VIA Rail connects major cities, car rental recommended for national parks<br>
-            <strong>Weather:</strong> Varies greatly by region and season, pack layers</p>
+        
+        <div class="content">
+            <p>Canada offers extraordinary natural beauty across the world's second-largest country, from Rocky Mountain peaks to Atlantic coastlines, pristine wilderness to vibrant multicultural cities. Known for friendly hospitality and outdoor adventures, Canada provides diverse experiences that celebrate both untamed nature and sophisticated urban culture.</p>
+            
+            <img src="https://images.unsplash.com/photo-1503614472-8c93d56cd601?w=500&h=300&fit=crop" alt="Canadian Rockies and wilderness">
+            
+            <h2>Rocky Mountain Majesty</h2>
+            <p>The Canadian Rockies showcase dramatic peaks, turquoise lakes, and abundant wildlife in Banff and Jasper National Parks. Lake Louise's emerald waters reflect snow-capped mountains, while the Icefields Parkway offers one of the world's most scenic drives. Activities include hiking, skiing, wildlife viewing, and staying in mountain lodges that provide luxury amid wilderness. These parks preserve pristine ecosystems while offering world-class outdoor recreation.</p>
+            
+            <h2>Vibrant Cities</h2>
+            <p>Toronto combines multicultural neighborhoods, world-class museums, and the iconic CN Tower with diverse dining scenes reflecting global immigration. Vancouver balances urban sophistication with outdoor access, offering mountains, ocean, and forests within the city limits. Montreal preserves French culture in North America with cobblestone streets, European architecture, and vibrant arts scenes that celebrate Quebec's unique heritage.</p>
+            
+            <h2>Maritime Provinces</h2>
+            <p>Atlantic Canada offers rugged coastlines, lighthouse-dotted shores, and maritime culture centered on fishing traditions and Celtic heritage. Prince Edward Island provides red sand beaches and Anne of Green Gables tourism, while Nova Scotia's Halifax combines historic sites with contemporary culture. Newfoundland's dramatic landscapes and unique culture offer authentic experiences in Canada's easternmost province.</p>
+            
+            <h2>Wilderness Adventures</h2>
+            <p>Canada's vast wilderness provides unparalleled outdoor experiences: canoeing through Algonquin's lakes, dog sledding in the Yukon, polar bear viewing in Churchill, and Northern Lights displays in remote locations. National and provincial parks protect diverse ecosystems from Arctic tundra to temperate rainforests, offering camping, hiking, fishing, and wildlife photography opportunities in pristine natural settings.</p>
+            
+            <h2>Indigenous Culture</h2>
+            <p>First Nations, Inuit, and Métis cultures contribute rich traditions through art, storytelling, and cultural centers that share indigenous perspectives on Canadian history and contemporary life. Traditional experiences include powwows, cultural performances, and learning about sustainable relationships with nature that indigenous peoples maintained for thousands of years before European contact.</p>
+            
+            <h2>Seasonal Experiences</h2>
+            <p>Canada's four distinct seasons create varied travel experiences: summer's midnight sun and outdoor festivals, autumn's spectacular fall colors, winter's snow sports and ice hotels, and spring's wildlife emergence and maple syrup production. Each season offers unique activities and landscapes that showcase Canada's climate diversity and seasonal beauty across different regions and provinces.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
     <script>
         if (typeof loadAdSense === 'function') {
             loadAdSense();
         }
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </body>
 </html>

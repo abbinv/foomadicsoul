@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climate Change - Trending</title>
+    <title>Climate Change - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -12,80 +12,57 @@
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(0,0,0,0.1);
-            color: #333;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: #333; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .trends-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .trend-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        .trend-title { color: #ff6b9d; font-size: 1.5rem; margin-bottom: 1rem; }
-        .trend-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .impact-points { margin-top: 1rem; }
-        .impact-points ul { margin-left: 1.5rem; }
     </style>
+    <script src="../assets/js/ads-config.js"></script>
+    <script src="../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Trending</a>
-        <header>
+        <div class="article-header">
             <h1>🌍 Climate Change</h1>
-            <p>5 Key Climate Initiatives</p>
-        </header>
-        <div class="trends-grid">
-            <a href="renewable-energy.html" class="trend-card" style="text-decoration: none; color: inherit;">
-                <h2 class="trend-title">Renewable Energy Boom</h2>
-                <p class="trend-desc">Solar, wind, and battery technology costs plummeting, making clean energy mainstream.</p>
-                <div class="impact-points">
-                    <strong>Impact areas:</strong>
-                    <ul><li>Grid transformation</li><li>Energy independence</li><li>Job creation</li></ul>
-                </div>
-            </a>
-            <a href="electric-vehicles.html" class="trend-card" style="text-decoration: none; color: inherit;">
-                <h2 class="trend-title">Electric Vehicle Revolution</h2>
-                <p class="trend-desc">EVs becoming affordable and practical, with charging infrastructure rapidly expanding.</p>
-                <div class="impact-points">
-                    <strong>Impact areas:</strong>
-                    <ul><li>Transportation emissions</li><li>Air quality improvement</li><li>Battery innovation</li></ul>
-                </div>
-            </a>
-            <a href="carbon-capture.html" class="trend-card" style="text-decoration: none; color: inherit;">
-                <h2 class="trend-title">Carbon Capture Technology</h2>
-                <p class="trend-desc">Advanced methods to remove CO2 from atmosphere and industrial processes.</p>
-                <div class="impact-points">
-                    <strong>Impact areas:</strong>
-                    <ul><li>Industrial decarbonization</li><li>Atmospheric CO2 reduction</li><li>Climate mitigation</li></ul>
-                </div>
-            </a>
-            <a href="sustainable-agriculture.html" class="trend-card" style="text-decoration: none; color: inherit;">
-                <h2 class="trend-title">Sustainable Agriculture</h2>
-                <p class="trend-desc">Regenerative farming practices and lab-grown alternatives reducing environmental impact.</p>
-                <div class="impact-points">
-                    <strong>Impact areas:</strong>
-                    <ul><li>Soil health restoration</li><li>Water conservation</li><li>Food security</li></ul>
-                </div>
-            </a>
-            <a href="green-finance.html" class="trend-card" style="text-decoration: none; color: inherit;">
-                <h2 class="trend-title">Green Finance</h2>
-                <p class="trend-desc">ESG investing and climate-focused financial products driving sustainable business practices.</p>
-                <div class="impact-points">
-                    <strong>Impact areas:</strong>
-                    <ul><li>Corporate sustainability</li><li>Green bonds</li><li>Climate risk assessment</li></ul>
-                </div>
-            </a>
+            <div class="meta">Published on December 2024 | 6 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Global efforts to combat climate change through renewable energy, sustainability, and environmental policies.</p>
+            
+            <img src="https://images.unsplash.com/photo-1569163139394-de44cb5894ce?w=500&h=300&fit=crop" alt="Renewable energy and solar panels">
+            
+            <h2>Renewable Energy</h2>
+            <p>Solar, wind, and hydroelectric power are becoming more efficient and cost-effective alternatives to fossil fuels.</p>
+            
+            <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=500&h=300&fit=crop" alt="Wind turbines and clean energy">
+            
+            <h2>Environmental Action</h2>
+            <p>Individual and collective actions including carbon reduction, sustainable practices, and policy advocacy for climate solutions.</p>
+            
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=500&h=300&fit=crop" alt="Environmental conservation efforts">
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

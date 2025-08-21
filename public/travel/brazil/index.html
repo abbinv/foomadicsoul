@@ -3,152 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brazil Travel Guide - Top 5 Destinations | Visit Brazil</title>
-    <meta name="description" content="Explore Brazil's top destinations: Rio de Janeiro, São Paulo, Amazon Rainforest, Salvador, and Iguazu Falls. Complete Brazil travel guide.">
-    <meta name="keywords" content="Brazil travel, Rio de Janeiro, São Paulo, Amazon rainforest, Salvador, Iguazu Falls, Brazilian destinations">
+    <title>Brazil Travel - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
-        }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .ad-space {
-            background: rgba(255,255,255,0.1);
-            border: 2px dashed rgba(255,255,255,0.3);
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
             border-radius: 10px;
-            padding: 2rem;
-            text-align: center;
-            margin: 2rem 0;
-            color: white;
-            min-height: 300px;
-        }
-        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .destination-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        .destination-card:hover { transform: translateY(-5px); }
-        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
-        .destination-desc { color: #666; line-height: 1.6; }
-        .highlights { margin-top: 1rem; }
-        .highlights ul { margin-left: 1.5rem; }
-        .content-section {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 2rem 0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
 <body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Travel</a>
-        <header>
-            <h1>🇧🇷 Brazil</h1>
-            <p>Top 5 Brazilian Destinations</p>
-        </header>
-
-        <div class="ad-space">
-            <!-- AdSense Large Rectangle -->
-            <ins class="adsbygoogle"
-                 style="display:inline-block;width:336px;height:280px"
-                 data-ad-client="ca-pub-8437328263455404"
-                 data-ad-slot="5555555555"></ins>
+        <div class="article-header">
+            <h1>🇧🇷 Brazil Travel</h1>
+            <div class="meta">Published on December 2024 | 6 min read</div>
         </div>
-
-        <div class="content-section">
-            <h2>Brazil: Land of Diversity and Adventure</h2>
-            <p>Brazil captivates visitors with its incredible diversity - from the vibrant beaches of Rio to the vast Amazon rainforest, from colonial architecture in Salvador to the modern skyline of São Paulo. This South American giant offers everything from world-famous carnival celebrations to pristine natural wonders, making it a destination that satisfies every type of traveler.</p>
-        </div>
-
-        <div class="destinations-grid">
-            <div class="destination-card">
-                <h2 class="destination-title">Rio de Janeiro</h2>
-                <p class="destination-desc">Marvelous city with Christ the Redeemer, Copacabana Beach, and vibrant carnival culture.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Christ the Redeemer</li><li>Sugarloaf Mountain</li><li>Copacabana & Ipanema</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Amazon Rainforest</h2>
-                <p class="destination-desc">World's largest tropical rainforest with incredible biodiversity and indigenous cultures.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Manaus & Meeting of Waters</li><li>Amazon River cruises</li><li>Wildlife spotting</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">São Paulo</h2>
-                <p class="destination-desc">Brazil's largest city with world-class museums, dining, and vibrant nightlife.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>São Paulo Museum of Art</li><li>Vila Madalena district</li><li>Municipal Market</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Salvador</h2>
-                <p class="destination-desc">Historic colonial city with Afro-Brazilian culture, colorful architecture, and music.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Pelourinho historic center</li><li>Elevador Lacerda</li><li>Capoeira performances</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Iguazu Falls</h2>
-                <p class="destination-desc">Spectacular waterfalls on the border with Argentina, UNESCO World Heritage site.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Devil's Throat viewpoint</li><li>Helicopter tours</li><li>Bird Park</li></ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="ad-space">
-            <!-- AdSense Responsive Ad -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-8437328263455404"
-                 data-ad-slot="6666666666"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-        </div>
-
-        <div class="content-section">
-            <h2>Essential Brazil Travel Information</h2>
-            <p><strong>Best Time:</strong> December-March (summer) for beaches, June-September for Amazon<br>
-            <strong>Language:</strong> Portuguese<br>
-            <strong>Currency:</strong> Brazilian Real (BRL)<br>
-            <strong>Visa:</strong> Check requirements based on nationality<br>
-            <strong>Health:</strong> Yellow fever vaccination recommended for Amazon region<br>
-            <strong>Safety:</strong> Exercise caution in large cities, use registered taxis</p>
+        
+        <div class="content">
+            <p>Brazil captivates travelers with its incredible diversity, from Rio's iconic beaches and Amazon rainforest to vibrant carnival celebrations and warm Brazilian hospitality. This vast South American country offers natural wonders, cultural richness, and festive energy that create unforgettable experiences across diverse regions and ecosystems.</p>
+            
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=500&h=300&fit=crop" alt="Rio de Janeiro Brazil beaches">
+            
+            <h2>Rio's Iconic Beauty</h2>
+            <p>Rio de Janeiro combines stunning natural settings with vibrant urban culture through Copacabana and Ipanema beaches, Christ the Redeemer statue atop Corcovado mountain, and Sugarloaf Mountain's cable car views. The city's neighborhoods offer different experiences: Santa Teresa's artistic bohemian atmosphere, Lapa's nightlife and samba clubs, and favela tours that provide social insights. Rio's energy peaks during Carnival with elaborate parades and street celebrations.</p>
+            
+            <h2>Amazon Rainforest Adventures</h2>
+            <p>The Amazon rainforest offers unparalleled biodiversity through jungle lodges, river cruises, and guided expeditions that reveal exotic wildlife, indigenous cultures, and ecological systems crucial to global climate. Manaus provides gateway access to the rainforest, while remote locations offer authentic experiences with traditional communities and pristine nature. These adventures emphasize conservation and sustainable tourism practices.</p>
+            
+            <h2>Carnival Culture</h2>
+            <p>Brazilian Carnival represents the world's largest festival with elaborate parades, samba schools, and street parties that celebrate Brazilian creativity, music, and cultural diversity. Rio's Sambadrome hosts spectacular competitions, while Salvador's street carnival and regional celebrations throughout Brazil offer different carnival experiences. This cultural phenomenon demonstrates Brazilian joy, artistic expression, and community spirit.</p>
+            
+            <h2>Diverse Landscapes</h2>
+            <p>Brazil's vast territory encompasses diverse ecosystems: Pantanal wetlands with exceptional wildlife viewing, Iguazu Falls' thundering cascades shared with Argentina, and Chapada Diamantina's dramatic plateaus and waterfalls. Each region offers distinct experiences from beach relaxation and jungle exploration to adventure sports and cultural immersion in different Brazilian communities.</p>
+            
+            <h2>Cultural Melting Pot</h2>
+            <p>Brazilian culture blends indigenous, African, and European influences through music (samba, bossa nova, forró), cuisine (feijoada, açaí, churrasco), and religious traditions (Candomblé, Catholicism) that create unique regional identities. This cultural fusion appears in art, architecture, festivals, and daily life throughout Brazil's diverse regions and communities.</p>
+            
+            <h2>Beach Paradise</h2>
+            <p>Brazil's extensive coastline offers diverse beach experiences: Rio's urban beaches with volleyball and caipirinhas, Bahia's Afro-Brazilian culture and colonial architecture, and remote beaches in states like Ceará and Santa Catarina that provide pristine settings for relaxation, water sports, and beachside dining. Each coastal region maintains distinct character while sharing Brazilian beach culture and hospitality.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
     <script>
         if (typeof loadAdSense === 'function') {
             loadAdSense();
         }
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </body>
 </html>

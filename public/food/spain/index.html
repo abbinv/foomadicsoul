@@ -3,92 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spanish Food - Top 5 Dishes</title>
+    <title>Spanish Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        .dish-card:hover { transform: translateY(-5px); }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
     </style>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇪🇸 Spanish Cuisine</h1>
-            <p>Top 5 Popular Dishes</p>
-        </header>
-        <div class="dishes-grid">
-            <a href="paella.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Paella Valenciana</h2>
-                <p class="dish-desc">Traditional rice dish from Valencia with saffron, chicken, rabbit, and green beans.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Bomba rice</li><li>Saffron</li><li>Chicken & rabbit</li></ul>
-                </div>
-            </a>
-            <a href="tapas.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Tapas Selection</h2>
-                <p class="dish-desc">Small plates perfect for sharing - jamón ibérico, patatas bravas, and more.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Jamón ibérico</li><li>Manchego cheese</li><li>Olives</li></ul>
-                </div>
-            </a>
-            <a href="gazpacho.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Gazpacho</h2>
-                <p class="dish-desc">Cold tomato soup from Andalusia, perfect for hot summer days.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Ripe tomatoes</li><li>Cucumber</li><li>Bread crumbs</li></ul>
-                </div>
-            </a>
-            <a href="tortilla-espanola.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Tortilla Española</h2>
-                <p class="dish-desc">Thick potato omelet, a staple of Spanish cuisine served hot or cold.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Potatoes</li><li>Eggs</li><li>Olive oil</li></ul>
-                </div>
-            </a>
-            <a href="churros.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Churros con Chocolate</h2>
-                <p class="dish-desc">Fried dough pastry served with thick hot chocolate for dipping.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Choux pastry</li><li>Dark chocolate</li><li>Cinnamon sugar</li></ul>
-                </div>
-            </a>
+            <div class="meta">Published on December 2024 | 5 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Spanish cuisine reflects the country's diverse geography and rich history, from Moorish influences in Andalusia to Basque culinary innovations in the north. With 17 autonomous regions each offering distinct specialties, Spain's food culture emphasizes communal dining, quality ingredients, and time-honored traditions passed through generations.</p>
+            
+            <img src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=500&h=300&fit=crop" alt="Spanish paella with seafood">
+            
+            <h2>Paella Mastery</h2>
+            <p>Originating in Valencia's rice fields, authentic paella uses bomba rice, saffron, and regional ingredients like rabbit, chicken, beans, and snails. Seafood paella from coastal areas features prawns, mussels, and squid, while modern variations include vegetarian options. The socarrat (crispy bottom layer) indicates perfect preparation in traditional paelleras.</p>
+            
+            <h2>Tapas Tradition</h2>
+            <p>Tapas culture encourages social dining with small plates designed for sharing and conversation. Classic tapas include jamón ibérico from acorn-fed pigs, manchego cheese aged in La Mancha caves, patatas bravas with spicy sauce, and gambas al ajillo (garlic shrimp). Each region offers unique tapas reflecting local ingredients and preferences.</p>
+            
+            <h2>Regional Specialties</h2>
+            <p>Basque Country excels in pintxos and innovative cuisine, Catalonia offers pan con tomate and crema catalana, Andalusia provides gazpacho and fried fish, while Galicia specializes in seafood and empanadas. Asturias contributes fabada bean stew, and Castile offers roasted meats and hearty stews reflecting inland agricultural traditions.</p>
+            
+            <h2>Iberian Ham Heritage</h2>
+            <p>Jamón ibérico represents Spain's charcuterie pinnacle, with black Iberian pigs roaming oak forests eating acorns that flavor the meat. The curing process takes 2-4 years, creating complex flavors ranging from sweet to nutty. Bellota grade ham from acorn-fed pigs commands premium prices and represents centuries of Spanish meat-curing expertise.</p>
+            
+            <h2>Wine & Sherry Culture</h2>
+            <p>Spain produces diverse wines from Rioja's tempranillo to Ribera del Duero's bold reds and Albariño's crisp whites from Galicia. Jerez produces the world's finest sherry, from dry fino to sweet Pedro Ximénez, using the solera aging system. Cava sparkling wine from Catalonia provides festive celebrations throughout Spanish culture.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

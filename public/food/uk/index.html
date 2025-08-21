@@ -3,92 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>British Food - Top 5 Dishes</title>
+    <title>British Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        .dish-card:hover { transform: translateY(-5px); }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
     </style>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇬🇧 British Cuisine</h1>
-            <p>Top 5 Popular Dishes</p>
-        </header>
-        <div class="dishes-grid">
-            <div class="dish-card">
-                <h2 class="dish-title">Fish and Chips</h2>
-                <p class="dish-desc">Battered fish with thick-cut chips, served with mushy peas and tartar sauce.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>White fish</li><li>Potatoes</li><li>Beer batter</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Shepherd's Pie</h2>
-                <p class="dish-desc">Minced lamb with vegetables topped with creamy mashed potatoes.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Ground lamb</li><li>Mashed potatoes</li><li>Mixed vegetables</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Bangers and Mash</h2>
-                <p class="dish-desc">Sausages with mashed potatoes and onion gravy.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Pork sausages</li><li>Mashed potatoes</li><li>Onion gravy</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Sunday Roast</h2>
-                <p class="dish-desc">Traditional roast beef with Yorkshire pudding, roast vegetables, and gravy.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Roast beef</li><li>Yorkshire pudding</li><li>Roast vegetables</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Afternoon Tea</h2>
-                <p class="dish-desc">Traditional tea service with scones, finger sandwiches, and pastries.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Scones</li><li>Clotted cream</li><li>Finger sandwiches</li></ul>
-                </div>
-            </div>
+            <div class="meta">Published on December 2024 | 5 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>British cuisine has evolved from hearty traditional fare to innovative modern cooking, reflecting the nation's agricultural heritage, maritime history, and multicultural influences. From classic pub meals to Michelin-starred restaurants, British food culture celebrates both time-honored recipes and contemporary culinary creativity that has gained international recognition.</p>
+            
+            <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=500&h=300&fit=crop" alt="Fish and chips British food">
+            
+            <h2>Fish and Chips Heritage</h2>
+            <p>Britain's national dish combines crispy battered fish with thick-cut chips, traditionally served with mushy peas and malt vinegar. Originating in the 19th century, fish and chips shops became community gathering places. The best preparations use sustainable white fish like cod or haddock, hand-cut potatoes, and beef dripping for authentic flavors that define British seaside culture.</p>
+            
+            <h2>Afternoon Tea Tradition</h2>
+            <p>Afternoon tea, introduced by Anna, Duchess of Bedford in 1840, features delicate finger sandwiches, scones with clotted cream and jam, and petit fours served with fine tea. This elegant ritual represents British hospitality and social customs, with proper etiquette governing everything from tea pouring to scone preparation, maintaining traditions across generations.</p>
+            
+            <h2>Pub Food Culture</h2>
+            <p>British pubs serve as community centers offering hearty meals like shepherd's pie, bangers and mash, and Sunday roasts. Modern gastropubs elevate traditional dishes with quality ingredients and refined techniques while maintaining the welcoming atmosphere that makes pubs central to British social life and culinary identity.</p>
+            
+            <h2>Regional Specialties</h2>
+            <p>Scotland contributes haggis, shortbread, and whisky, Wales offers lamb dishes and bara brith, while Northern England provides Yorkshire pudding and Lancashire hotpot. Each region's climate, agriculture, and cultural history created distinct specialties that reflect local ingredients and cooking traditions passed through generations.</p>
+            
+            <h2>Modern British Renaissance</h2>
+            <p>Contemporary British cuisine embraces seasonal ingredients, innovative techniques, and global influences while honoring traditional foundations. Celebrity chefs and local restaurants showcase British produce, artisanal products, and creative interpretations of classic dishes, earning international acclaim and changing perceptions of British food worldwide.</p>
+            
+            <h2>Breakfast Traditions</h2>
+            <p>The full English breakfast includes eggs, bacon, sausages, black pudding, baked beans, grilled tomatoes, and toast, providing hearty sustenance that reflects Britain's working-class heritage. Regional variations like Scottish breakfast with haggis or Ulster fry with potato bread demonstrate local preferences within this beloved morning tradition.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

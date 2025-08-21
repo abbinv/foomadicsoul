@@ -39,45 +39,112 @@
         .topic-icon { font-size: 3rem; margin-bottom: 1rem; }
         .topic-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; }
         .topic-desc { color: #666; line-height: 1.6; }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .page-btn {
+            background: white;
+            color: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid #a8edea;
+        }
+        .page-btn:hover, .page-btn.active {
+            background: #a8edea;
+            color: #333;
+        }
+        .search-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .search-input {
+            padding: 0.75rem 1rem;
+            border: 2px solid #a8edea;
+            border-radius: 25px;
+            font-size: 1rem;
+            width: 300px;
+            max-width: 100%;
+        }
+        .search-input:focus {
+            outline: none;
+            border-color: #fed6e3;
+        }
     </style>
-    <script src="../config/ads-config.js"></script>
+    <script src="../assets/js/ads-config.js"></script>
+    <script src="../assets/js/common.js"></script>
 </head>
 <body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Home</a>
         <header>
             <h1>🤔 Philosophy</h1>
-            <p>5 Major Philosophical Schools</p>
+            <p>Major Philosophical Schools</p>
         </header>
-        <div class="topics-grid">
-            <a href="stoicism/index.html" class="topic-item">
-                <div class="topic-icon">🏛️</div>
-                <div class="topic-title">Stoicism</div>
-                <div class="topic-desc">Ancient philosophy focused on virtue, wisdom, and emotional resilience through acceptance of what we cannot control.</div>
-            </a>
-            <a href="existentialism/index.html" class="topic-item">
-                <div class="topic-icon">🎭</div>
-                <div class="topic-title">Existentialism</div>
-                <div class="topic-desc">Philosophy emphasizing individual existence, freedom, and choice in creating meaning and purpose in life.</div>
-            </a>
-            <a href="buddhism/index.html" class="topic-item">
-                <div class="topic-icon">☸️</div>
-                <div class="topic-title">Buddhism</div>
-                <div class="topic-desc">Eastern philosophy and religion focused on ending suffering through mindfulness, compassion, and enlightenment.</div>
-            </a>
-            <a href="ethics/index.html" class="topic-item">
-                <div class="topic-icon">⚖️</div>
-                <div class="topic-title">Ethics</div>
-                <div class="topic-desc">Branch of philosophy dealing with moral principles, right and wrong, and how we should live and act.</div>
-            </a>
-            <a href="logic/index.html" class="topic-item">
-                <div class="topic-icon">🧠</div>
-                <div class="topic-title">Logic</div>
-                <div class="topic-desc">Study of valid reasoning, critical thinking, and the principles of sound argumentation and inference.</div>
-            </a>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search philosophy topics..." id="searchInput" oninput="filterTopics()">
         </div>
+        <div class="topics-grid" id="topicsGrid"></div>
+        <div class="pagination" id="pagination"></div>
     </div>
+    <div id="common-footer"></div>
     <script>
+        const topics = [
+            {title: 'Stoicism', icon: '🏛️', desc: 'Ancient philosophy focused on virtue, wisdom, and emotional resilience through acceptance of what we cannot control.', url: 'stoicism/index.html'},
+            {title: 'Existentialism', icon: '🎭', desc: 'Philosophy emphasizing individual existence, freedom, and choice in creating meaning and purpose in life.', url: 'existentialism/index.html'},
+            {title: 'Buddhism', icon: '☸️', desc: 'Eastern philosophy and religion focused on ending suffering through mindfulness, compassion, and enlightenment.', url: 'buddhism/index.html'},
+            {title: 'Ethics', icon: '⚖️', desc: 'Branch of philosophy dealing with moral principles, right and wrong, and how we should live and act.', url: 'ethics/index.html'},
+            {title: 'Logic', icon: '🧠', desc: 'Study of valid reasoning, critical thinking, and the principles of sound argumentation and inference.', url: 'logic/index.html'}
+        ];
+        
+        let currentPage = 1;
+        const itemsPerPage = 6;
+        let filteredTopics = topics;
+        
+        function displayPage(page) {
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = filteredTopics.slice(start, end);
+            
+            document.getElementById('topicsGrid').innerHTML = pageItems.map(topic => 
+                `<a href="${topic.url}" class="topic-item"><div class="topic-icon">${topic.icon}</div><div class="topic-title">${topic.title}</div><div class="topic-desc">${topic.desc}</div></a>`
+            ).join('');
+            
+            const totalPages = Math.ceil(filteredTopics.length / itemsPerPage);
+            let paginationHTML = '';
+            
+            if (page > 1) paginationHTML += `<a href="#" class="page-btn" onclick="goToPage(${page - 1})">← Prev</a>`;
+            
+            for (let i = 1; i <= totalPages; i++) {
+                paginationHTML += `<a href="#" class="page-btn ${i === page ? 'active' : ''}" onclick="goToPage(${i})">${i}</a>`;
+            }
+            
+            if (page < totalPages) paginationHTML += `<a href="#" class="page-btn" onclick="goToPage(${page + 1})">Next →</a>`;
+            
+            document.getElementById('pagination').innerHTML = paginationHTML;
+        }
+        
+        function goToPage(page) {
+            currentPage = page;
+            displayPage(page);
+        }
+        
+        function filterTopics() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            filteredTopics = topics.filter(topic => 
+                topic.title.toLowerCase().includes(searchTerm) || 
+                topic.desc.toLowerCase().includes(searchTerm)
+            );
+            currentPage = 1;
+            displayPage(1);
+        }
+        
+        displayPage(1);
+        
         if (typeof loadAdSense === 'function') {
             loadAdSense();
         }

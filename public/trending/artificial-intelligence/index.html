@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artificial Intelligence - Trending</title>
+    <title>Artificial Intelligence - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -12,82 +12,53 @@
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(0,0,0,0.1);
-            color: #333;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: #333; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .trends-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .trend-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        .trend-title { color: #ff6b9d; font-size: 1.5rem; margin-bottom: 1rem; }
-        .trend-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .impact-points { margin-top: 1rem; }
-        .impact-points ul { margin-left: 1.5rem; }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../assets/js/ads-config.js"></script>
+    <script src="../assets/js/common.js"></script>
 </head>
 <body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Trending</a>
-        <header>
+        <div class="article-header">
             <h1>🤖 Artificial Intelligence</h1>
-            <p>5 Major AI Developments</p>
-        </header>
-        <div class="trends-grid">
-            <a href="large-language-models.html" class="trend-card" style="text-decoration: none; color: inherit;">
-                <h2 class="trend-title">Large Language Models</h2>
-                <p class="trend-desc">ChatGPT, Claude, and similar AI systems transforming how we interact with technology and information.</p>
-                <div class="impact-points">
-                    <strong>Impact areas:</strong>
-                    <ul><li>Content creation</li><li>Customer service</li><li>Education and tutoring</li></ul>
-                </div>
-            </a>
-            <a href="ai-healthcare.html" class="trend-card" style="text-decoration: none; color: inherit;">
-                <h2 class="trend-title">AI in Healthcare</h2>
-                <p class="trend-desc">Machine learning revolutionizing diagnosis, drug discovery, and personalized treatment plans.</p>
-                <div class="impact-points">
-                    <strong>Impact areas:</strong>
-                    <ul><li>Medical imaging</li><li>Drug development</li><li>Predictive analytics</li></ul>
-                </div>
-            </a>
-            <a href="autonomous-vehicles.html" class="trend-card" style="text-decoration: none; color: inherit;">
-                <h2 class="trend-title">Autonomous Vehicles</h2>
-                <p class="trend-desc">Self-driving cars and delivery systems becoming reality with advanced AI navigation.</p>
-                <div class="impact-points">
-                    <strong>Impact areas:</strong>
-                    <ul><li>Transportation safety</li><li>Logistics efficiency</li><li>Urban planning</li></ul>
-                </div>
-            </a>
-            <a href="ai-art.html" class="trend-card" style="text-decoration: none; color: inherit;">
-                <h2 class="trend-title">AI Art and Creativity</h2>
-                <p class="trend-desc">Generative AI creating art, music, and content, challenging traditional creative processes.</p>
-                <div class="impact-points">
-                    <strong>Impact areas:</strong>
-                    <ul><li>Digital art creation</li><li>Music composition</li><li>Video production</li></ul>
-                </div>
-            </a>
-            <a href="ai-ethics.html" class="trend-card" style="text-decoration: none; color: inherit;">
-                <h2 class="trend-title">AI Ethics and Regulation</h2>
-                <p class="trend-desc">Growing focus on responsible AI development, bias prevention, and regulatory frameworks.</p>
-                <div class="impact-points">
-                    <strong>Impact areas:</strong>
-                    <ul><li>Privacy protection</li><li>Algorithmic fairness</li><li>Job displacement concerns</li></ul>
-                </div>
-            </a>
+            <div class="meta">Published on December 2024 | 7 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>AI revolution transforming industries, from ChatGPT to autonomous systems reshaping how we work and live.</p>
+            
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=300&fit=crop" alt="AI and machine learning technology">
+            
+            <h2>Generative AI</h2>
+            <p>Large language models like ChatGPT are revolutionizing content creation, coding, and human-computer interaction.</p>
+            
+            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=500&h=300&fit=crop" alt="AI chatbot and language models">
+            
+            <h2>Industry Impact</h2>
+            <p>AI is transforming healthcare, finance, transportation, and education through automation and intelligent decision-making.</p>
+            
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500&h=300&fit=crop" alt="AI in various industries">
         </div>
     </div>
+    <div id="common-footer"></div>
     <script>
         if (typeof loadAdSense === 'function') {
             loadAdSense();

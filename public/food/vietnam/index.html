@@ -3,151 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vietnamese Food - Top 5 Authentic Dishes | Traditional Recipes</title>
-    <meta name="description" content="Discover authentic Vietnamese cuisine with Pho, Banh Mi, Spring Rolls, and more. Traditional recipes, cooking tips, and cultural insights from Vietnam.">
-    <meta name="keywords" content="Vietnamese food, Pho recipe, Banh Mi, Vietnamese cuisine, Asian food, traditional dishes">
+    <title>Vietnamese Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
-        }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .ad-space {
-            background: rgba(255,255,255,0.1);
-            border: 2px dashed rgba(255,255,255,0.3);
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
             border-radius: 10px;
-            padding: 2rem;
-            text-align: center;
-            margin: 2rem 0;
-            color: white;
-            font-size: 0.9rem;
-        }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        .dish-card:hover { transform: translateY(-5px); }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
-        .content-section {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 2rem 0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
 <body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇻🇳 Vietnamese Cuisine</h1>
-            <p>Top 5 Authentic Vietnamese Dishes</p>
-        </header>
-
-        <div class="ad-space">
-            <!-- AdSense Ad Unit 1 -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-8437328263455404"
-                 data-ad-slot="1234567890"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
+            <div class="meta">Published on December 2024 | 5 min read</div>
         </div>
-
-        <div class="content-section">
-            <h2>Vietnamese Culinary Heritage</h2>
-            <p>Vietnamese cuisine is renowned for its fresh ingredients, aromatic herbs, and perfect balance of sweet, sour, salty, and spicy flavors. Influenced by Chinese, French, and Southeast Asian cooking traditions, Vietnamese food emphasizes healthy preparation methods and vibrant, colorful presentations.</p>
-        </div>
-
-        <div class="dishes-grid">
-            <a href="pho.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Pho</h2>
-                <p class="dish-desc">Iconic Vietnamese noodle soup with aromatic broth, rice noodles, herbs, and meat.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Rice noodles</li><li>Beef or chicken broth</li><li>Fresh herbs</li></ul>
-                </div>
-            </a>
-            <a href="banh-mi.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Banh Mi</h2>
-                <p class="dish-desc">Vietnamese sandwich with French baguette, pickled vegetables, and various fillings.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>French baguette</li><li>Pickled carrots</li><li>Cilantro</li></ul>
-                </div>
-            </a>
-            <a href="spring-rolls.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Fresh Spring Rolls</h2>
-                <p class="dish-desc">Light rice paper rolls filled with shrimp, herbs, and vegetables, served with peanut sauce.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Rice paper</li><li>Shrimp</li><li>Fresh herbs</li></ul>
-                </div>
-            </a>
-            <a href="bun-bo-hue.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Bun Bo Hue</h2>
-                <p class="dish-desc">Spicy noodle soup from Hue with thick rice noodles and lemongrass broth.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Thick rice noodles</li><li>Lemongrass</li><li>Beef</li></ul>
-                </div>
-            </a>
-            <a href="cao-lau.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Cao Lau</h2>
-                <p class="dish-desc">Hoi An specialty with thick noodles, pork, and crispy rice crackers.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Thick noodles</li><li>Pork</li><li>Rice crackers</li></ul>
-                </div>
-            </a>
-        </div>
-
-        <div class="ad-space">
-            <!-- AdSense Ad Unit 2 -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-8437328263455404"
-                 data-ad-slot="0987654321"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-        </div>
-
-        <div class="content-section">
-            <h2>Vietnamese Cooking Techniques</h2>
-            <p>Vietnamese cooking emphasizes fresh ingredients and minimal processing. Common techniques include stir-frying, steaming, grilling, and slow-simmering broths. The use of fish sauce, lime juice, and fresh herbs creates the distinctive Vietnamese flavor profile that has made this cuisine popular worldwide.</p>
+        
+        <div class="content">
+            <p>Vietnamese cuisine emphasizes fresh ingredients, balanced flavors, and healthy preparation methods that create light yet satisfying dishes. Influenced by Chinese techniques, French colonial ingredients, and indigenous Southeast Asian flavors, Vietnamese cooking achieves harmony through the interplay of sweet, sour, salty, spicy, and umami elements.</p>
+            
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&h=300&fit=crop" alt="Vietnamese pho soup">
+            
+            <h2>Pho Philosophy</h2>
+            <p>Pho represents Vietnamese cuisine's soul, with aromatic broths simmered for 12+ hours using beef or chicken bones, star anise, cinnamon, and ginger. Northern pho (Pho Bac) offers cleaner flavors with wider noodles, while Southern pho includes more herbs and sweeter broths. The ritual of customizing pho with herbs, lime, and chili reflects Vietnamese dining philosophy.</p>
+            
+            <h2>Fresh Herb Culture</h2>
+            <p>Vietnamese cuisine relies heavily on fresh herbs served alongside most dishes: cilantro for brightness, Thai basil for anise notes, mint for cooling effects, and dill for unique Vietnamese flavor combinations. Herb plates (rau thơm) accompany meals, allowing diners to customize flavors while adding nutritional value and digestive benefits.</p>
+            
+            <h2>French Colonial Influence</h2>
+            <p>French colonization introduced baguettes, coffee, and dairy products that Vietnamese cooks adapted brilliantly. Banh mi sandwiches combine French bread with Vietnamese ingredients like pickled vegetables, cilantro, and various meats. Vietnamese coffee culture features strong robusta beans with condensed milk, creating ca phe sua da (iced coffee) beloved worldwide.</p>
+            
+            <h2>Regional Variations</h2>
+            <p>Northern Vietnamese cuisine emphasizes subtle flavors and black pepper, Central Vietnam offers spicy, complex dishes influenced by royal Hue cuisine, while Southern Vietnam incorporates more sugar, coconut, and tropical fruits. Each region's climate and history created distinct flavor profiles within the unified Vietnamese culinary identity.</p>
+            
+            <h2>Street Food Excellence</h2>
+            <p>Vietnamese street food represents authentic flavors accessible to all social classes. Banh xeo (sizzling crepes), bun cha (grilled pork with noodles), and fresh spring rolls showcase the cuisine's emphasis on fresh ingredients, balanced nutrition, and interactive dining where diners wrap, dip, and customize their meals.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
     <script>
         if (typeof loadAdSense === 'function') {
             loadAdSense();
         }
-        // Initialize AdSense ads
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </body>
 </html>

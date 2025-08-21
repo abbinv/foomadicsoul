@@ -3,92 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>German Food - Top 5 Dishes</title>
+    <title>German Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        .dish-card:hover { transform: translateY(-5px); }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
     </style>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇩🇪 German Cuisine</h1>
-            <p>Top 5 Popular Dishes</p>
-        </header>
-        <div class="dishes-grid">
-            <div class="dish-card">
-                <h2 class="dish-title">Sauerbraten</h2>
-                <p class="dish-desc">Traditional pot roast marinated in vinegar and spices, served with red cabbage.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Beef roast</li><li>Vinegar marinade</li><li>Red cabbage</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Bratwurst</h2>
-                <p class="dish-desc">Grilled German sausage served with sauerkraut and mustard.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Pork sausage</li><li>Sauerkraut</li><li>German mustard</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Schnitzel</h2>
-                <p class="dish-desc">Breaded and fried cutlet, traditionally made with veal or pork.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Veal cutlet</li><li>Breadcrumbs</li><li>Lemon</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Pretzels</h2>
-                <p class="dish-desc">Traditional twisted bread with coarse salt, perfect with beer.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Bread dough</li><li>Coarse salt</li><li>Baking soda</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Black Forest Cake</h2>
-                <p class="dish-desc">Chocolate cake with cherries, whipped cream, and kirsch liqueur.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Chocolate cake</li><li>Cherries</li><li>Whipped cream</li></ul>
-                </div>
-            </div>
+            <div class="meta">Published on December 2024 | 5 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>German cuisine emphasizes hearty, satisfying dishes that reflect the country's agricultural heritage and regional diversity. From Bavarian beer gardens to Northern seafood specialties, German cooking celebrates quality ingredients, traditional techniques, and the social aspects of dining that bring communities together around substantial, flavorful meals.</p>
+            
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=500&h=300&fit=crop" alt="German sausages and beer">
+            
+            <h2>Sausage Mastery</h2>
+            <p>Germany produces over 1,500 sausage varieties, each region specializing in unique preparations and seasonings. Bratwurst from Nuremberg, currywurst from Berlin, weisswurst from Bavaria, and leberwurst from various regions showcase different techniques, spices, and serving traditions. German butchers maintain centuries-old recipes while adhering to strict quality standards.</p>
+            
+            <h2>Beer Culture Heritage</h2>
+            <p>German beer culture follows the Reinheitsgebot (purity law) from 1516, allowing only water, hops, malt, and yeast in beer production. Regional styles include Bavarian wheat beers, Cologne's Kölsch, and countless local varieties. Beer gardens and brewhouses serve as community gathering places where food and beer create social bonds across German society.</p>
+            
+            <h2>Regional Specialties</h2>
+            <p>Northern Germany offers seafood dishes like Labskaus and fresh fish from the Baltic and North Seas, while Bavaria provides hearty meat dishes, dumplings, and sweet pastries. The Rhineland contributes sauerbraten and himmel un erde, while Eastern regions offer influences from neighboring countries, creating Germany's diverse culinary landscape.</p>
+            
+            <h2>Bread Excellence</h2>
+            <p>Germany produces over 300 bread varieties, from dense rye breads to pretzel rolls, each region maintaining distinct baking traditions. German bakers undergo rigorous training, and bread quality remains a source of national pride. Breakfast and dinner often center around fresh bread with various spreads, cold cuts, and cheeses.</p>
+            
+            <h2>Seasonal Celebrations</h2>
+            <p>German cuisine celebrates seasons through festivals and special foods: Oktoberfest's beer and sausages, Christmas markets' lebkuchen and glühwein, Easter's lamb dishes, and asparagus season's spargel preparations. These celebrations maintain cultural traditions while bringing communities together around shared culinary experiences.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

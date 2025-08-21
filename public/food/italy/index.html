@@ -3,111 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Italian Food - Food</title>
+    <title>Italian Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
 <body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇮🇹 Italian Cuisine</h1>
-            <p>Top 5 Popular Dishes</p>
-        </header>
-        <div class="dishes-grid">
-            <a href="pizza-margherita.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Pizza Margherita</h2>
-                <p class="dish-desc">Classic Neapolitan pizza with tomato sauce, mozzarella, and fresh basil representing the Italian flag.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul>
-                        <li>San Marzano tomatoes</li>
-                        <li>Mozzarella di bufala</li>
-                        <li>Fresh basil</li>
-                    </ul>
-                </div>
-            </a>
-            <a href="spaghetti-carbonara.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Spaghetti Carbonara</h2>
-                <p class="dish-desc">Roman pasta dish with eggs, pecorino cheese, guanciale, and black pepper - no cream!</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul>
-                        <li>Spaghetti</li>
-                        <li>Guanciale</li>
-                        <li>Pecorino Romano</li>
-                    </ul>
-                </div>
-            </a>
-            <a href="risotto-milanese.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Risotto alla Milanese</h2>
-                <p class="dish-desc">Creamy Northern Italian rice dish flavored with saffron, giving it a distinctive golden color.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul>
-                        <li>Arborio rice</li>
-                        <li>Saffron</li>
-                        <li>Parmigiano-Reggiano</li>
-                    </ul>
-                </div>
-            </a>
-            <a href="osso-buco.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Osso Buco</h2>
-                <p class="dish-desc">Braised veal shanks cooked with vegetables, white wine, and broth, traditionally served with risotto.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul>
-                        <li>Veal shanks</li>
-                        <li>Gremolata</li>
-                        <li>White wine</li>
-                    </ul>
-                </div>
-            </a>
-            <a href="tiramisu.html" class="dish-card" style="text-decoration: none; color: inherit;">
-                <h2 class="dish-title">Tiramisu</h2>
-                <p class="dish-desc">Coffee-flavored dessert made with ladyfingers, mascarpone cheese, eggs, sugar, and cocoa.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul>
-                        <li>Ladyfingers</li>
-                        <li>Mascarpone</li>
-                        <li>Espresso coffee</li>
-                    </ul>
-                </div>
-            </a>
+            <div class="meta">Published on December 2024 | 6 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Italian cuisine is renowned worldwide for its pasta, pizza, and regional specialties from the heart of Mediterranean cooking traditions. With over 20 regions each offering distinct culinary identities, Italy presents a diverse tapestry of flavors rooted in centuries-old traditions.</p>
+            
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=300&fit=crop" alt="Traditional Italian pizza">
+            
+            <h2>Pasta Perfection</h2>
+            <p>Italy boasts over 300 pasta shapes, each designed for specific sauces and preparations. From the silky carbonara of Rome using eggs, pecorino, and guanciale, to the rich bolognese of Emilia-Romagna that simmers for hours, pasta represents the soul of Italian cooking. Fresh pasta made with eggs in the north contrasts beautifully with the durum wheat dried pasta of the south.</p>
+            
+            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=500&h=300&fit=crop" alt="Fresh Italian pasta dishes">
+            
+            <h2>Pizza Heritage</h2>
+            <p>Originating in Naples, authentic pizza features a thin, leopard-spotted crust from high-temperature wood-fired ovens. The classic Margherita, created in 1889 to honor Queen Margherita, showcases the Italian flag colors with tomatoes, mozzarella, and basil. Regional variations include Roman pizza al taglio and Sicilian sfincione.</p>
+            
+            <h2>Regional Specialties</h2>
+            <p>Northern Italy excels in risottos, polentas, and cream-based sauces, while the south celebrates tomatoes, olive oil, and seafood. Tuscany offers Chianti wines and bistecca alla fiorentina, Sicily provides arancini and cannoli, and Emilia-Romagna gifts the world with Parmigiano-Reggiano and prosciutto di Parma.</p>
+            
+            <img src="https://images.unsplash.com/photo-1498579397066-22750a3cb424?w=500&h=300&fit=crop" alt="Italian regional cuisine and ingredients">
+            
+            <h2>Wine Culture</h2>
+            <p>Italy produces more wine than any other country, with prestigious regions like Tuscany's Chianti Classico, Piedmont's Barolo, and Veneto's Prosecco. Each region pairs its wines perfectly with local cuisine, creating harmonious flavor combinations passed down through generations.</p>
+            
+            <h2>Dessert Traditions</h2>
+            <p>Italian dolci range from Sicily's ricotta-filled cannoli and cassata to Veneto's tiramisu and Lombardy's panettone. Gelato, with its dense texture and intense flavors, represents Italy's mastery of frozen desserts, while espresso culture provides the perfect ending to any meal.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
     <script>
         if (typeof loadAdSense === 'function') {
             loadAdSense();

@@ -3,89 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>USA Travel - Travel</title>
+    <title>USA Travel - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .destination-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
-        .destination-desc { color: #666; line-height: 1.6; }
-        .highlights { margin-top: 1rem; }
-        .highlights ul { margin-left: 1.5rem; }
     </style>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Travel</a>
-        <header>
-            <h1>🇺🇸 USA</h1>
-            <p>Top 5 Destinations</p>
-        </header>
-        <div class="destinations-grid">
-            <div class="destination-card">
-                <h2 class="destination-title">New York City</h2>
-                <p class="destination-desc">The Big Apple with iconic skyline, Broadway shows, and world-famous landmarks.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Statue of Liberty</li><li>Times Square</li><li>Central Park</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Grand Canyon</h2>
-                <p class="destination-desc">Natural wonder in Arizona offering breathtaking views and hiking adventures.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>South Rim</li><li>Bright Angel Trail</li><li>Desert View</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">San Francisco</h2>
-                <p class="destination-desc">Golden Gate Bridge, cable cars, and diverse neighborhoods by the bay.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Golden Gate Bridge</li><li>Alcatraz Island</li><li>Fisherman's Wharf</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Yellowstone</h2>
-                <p class="destination-desc">America's first national park with geysers, wildlife, and pristine wilderness.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Old Faithful</li><li>Grand Prismatic Spring</li><li>Mammoth Hot Springs</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Las Vegas</h2>
-                <p class="destination-desc">Entertainment capital with casinos, shows, and desert adventures nearby.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>The Strip</li><li>Bellagio Fountains</li><li>Red Rock Canyon</li></ul>
-                </div>
-            </div>
+        <div class="article-header">
+            <h1>🇺🇸 USA Travel</h1>
+            <div class="meta">Published on December 2024 | 6 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>The United States offers extraordinary diversity across 50 states, from bustling metropolises and pristine national parks to cultural landmarks and natural wonders. This vast country provides endless travel opportunities, whether seeking urban adventures, outdoor recreation, historical sites, or cultural experiences that reflect America's melting pot heritage and pioneering spirit.</p>
+            
+            <img src="https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=500&h=300&fit=crop" alt="New York City skyline">
+            
+            <h2>Iconic American Cities</h2>
+            <p>New York City pulses with energy from Times Square's bright lights to Central Park's green oasis, Broadway shows, and world-class museums like the Metropolitan and MoMA. Los Angeles combines Hollywood glamour with beach culture, innovative dining, and entertainment industry attractions. Chicago showcases architectural marvels, deep-dish pizza, and lakefront beauty, while San Francisco offers Golden Gate Bridge views, cable cars, and tech innovation culture.</p>
+            
+            <h2>National Park Wonders</h2>
+            <p>America's national park system protects extraordinary landscapes: Grand Canyon's vast geological formations, Yellowstone's geothermal features and wildlife, Yosemite's granite cliffs and waterfalls, and Great Smoky Mountains' biodiversity. These parks offer hiking, camping, wildlife viewing, and photography opportunities while preserving natural heritage for future generations through conservation efforts and educational programs.</p>
+            
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop" alt="Grand Canyon national park">
+            
+            <h2>Regional Diversity</h2>
+            <p>The American South offers hospitality, blues music, and historic cities like Charleston and New Orleans. New England provides fall foliage, colonial history, and coastal charm. The Southwest features desert landscapes, Native American culture, and Spanish colonial architecture. The Pacific Northwest combines urban sophistication with outdoor recreation, while Alaska and Hawaii offer unique frontier and tropical experiences respectively.</p>
+            
+            <h2>Cultural Landmarks</h2>
+            <p>Washington D.C. houses the nation's capital with Smithsonian museums, monuments, and government buildings that tell America's story. Mount Rushmore, Statue of Liberty, and Independence Hall represent national symbols and founding principles. Route 66 embodies the American road trip spirit, while music cities like Nashville, Memphis, and Austin celebrate diverse musical heritage from country to jazz to rock.</p>
+            
+            <h2>Outdoor Adventures</h2>
+            <p>America's diverse geography enables countless outdoor activities: skiing in Colorado's Rocky Mountains, surfing California's Pacific coast, hiking Appalachian trails, fishing Alaska's wilderness, and exploring Florida's Everglades. National and state parks, forests, and recreation areas provide infrastructure for camping, hiking, water sports, and wildlife observation across varied ecosystems and climates.</p>
+            
+            <h2>Entertainment & Innovation</h2>
+            <p>Theme parks like Disney World and Universal Studios create magical experiences, while Las Vegas offers entertainment spectacles and gaming. Silicon Valley showcases technological innovation, Hollywood provides entertainment industry tours, and sports venues across the country celebrate American athletic culture. These attractions demonstrate American creativity, entrepreneurship, and entertainment industry leadership that influences global culture.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

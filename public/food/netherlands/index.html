@@ -3,93 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dutch Food - Top 5 Traditional Dishes | Netherlands Cuisine</title>
-    <meta name="description" content="Discover authentic Dutch cuisine with Stroopwafel, Bitterballen, Dutch Cheese, and traditional Netherlands flavors.">
+    <title>Dutch Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        .dish-card:hover { transform: translateY(-5px); }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇳🇱 Dutch Cuisine</h1>
-            <p>Top 5 Traditional Dutch Dishes</p>
-        </header>
-        <div class="dishes-grid">
-            <div class="dish-card">
-                <h2 class="dish-title">Stroopwafel</h2>
-                <p class="dish-desc">Thin waffle cookies filled with caramel syrup, best enjoyed warm over coffee.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Waffle batter</li><li>Caramel syrup</li><li>Butter</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Bitterballen</h2>
-                <p class="dish-desc">Deep-fried meatballs with creamy ragout filling, popular bar snack.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Beef ragout</li><li>Breadcrumbs</li><li>Mustard</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Dutch Cheese</h2>
-                <p class="dish-desc">World-famous Gouda and Edam cheeses, aged to perfection.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Cow's milk</li><li>Cheese cultures</li><li>Salt</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Erwtensoep</h2>
-                <p class="dish-desc">Thick split pea soup with smoked sausage, winter comfort food.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Split peas</li><li>Smoked sausage</li><li>Vegetables</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Poffertjes</h2>
-                <p class="dish-desc">Small fluffy pancakes served with butter and powdered sugar.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Buckwheat flour</li><li>Yeast</li><li>Powdered sugar</li></ul>
-                </div>
-            </div>
+            <div class="meta">Published on December 2024 | 5 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Dutch cuisine reflects the country's maritime heritage, agricultural abundance, and practical approach to cooking that emphasizes quality ingredients and straightforward preparation. From world-famous cheeses to innovative modern restaurants, Dutch food culture balances traditional comfort foods with contemporary culinary creativity and sustainable practices.</p>
+            
+            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=500&h=300&fit=crop" alt="Dutch cheese and stroopwafels">
+            
+            <h2>Cheese Mastery</h2>
+            <p>The Netherlands produces world-renowned cheeses including Gouda, Edam, and aged varieties that develop complex flavors over years. Traditional cheese markets in Alkmaar and Edam maintain centuries-old trading rituals, while modern cheese makers experiment with innovative flavors and techniques. Dutch cheese-making expertise influences global dairy production standards.</p>
+            
+            <h2>Stroopwafel Tradition</h2>
+            <p>Stroopwafels, thin waffle cookies filled with caramel syrup, originated in Gouda during the 18th century. Traditional preparation involves pressing dough in special irons, then slicing and filling with warm syrup. Fresh stroopwafels from street vendors offer superior texture and flavor compared to packaged versions, representing Dutch street food excellence.</p>
+            
+            <h2>Herring Culture</h2>
+            <p>Raw herring (haring) holds special significance in Dutch cuisine, traditionally eaten by holding the fish by the tail and lowering it into the mouth. New herring season begins with Vlaggetjesdag (Flag Day) celebrations. Proper herring preparation involves specific curing techniques and serving with chopped onions and pickles, reflecting Dutch maritime traditions.</p>
+            
+            <h2>Comfort Food Classics</h2>
+            <p>Dutch comfort foods include stamppot (mashed potatoes with vegetables), erwtensoep (split pea soup), and bitterballen (deep-fried meatballs). These hearty dishes sustained Dutch communities through harsh winters and reflect the practical, no-nonsense approach to cooking that characterizes traditional Dutch cuisine.</p>
+            
+            <h2>Modern Culinary Innovation</h2>
+            <p>Contemporary Dutch cuisine embraces sustainability, local sourcing, and innovative techniques while honoring traditional foundations. Michelin-starred restaurants showcase Dutch ingredients and creativity, while food halls and markets celebrate both international influences and regional specialties, creating a dynamic modern food scene.</p>
+            
+            <h2>Seasonal Celebrations</h2>
+            <p>Dutch food traditions celebrate seasons and holidays: King's Day orange-themed treats, Sinterklaas pepernoten cookies, and New Year's oliebollen (oil balls). These celebrations maintain cultural traditions while bringing communities together around shared culinary experiences that define Dutch social customs.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

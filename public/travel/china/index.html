@@ -3,89 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>China Travel - Travel</title>
+    <title>China Travel - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .destination-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
-        .destination-desc { color: #666; line-height: 1.6; }
-        .highlights { margin-top: 1rem; }
-        .highlights ul { margin-left: 1.5rem; }
     </style>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Travel</a>
-        <header>
-            <h1>🇨🇳 China</h1>
-            <p>Top 5 Destinations</p>
-        </header>
-        <div class="destinations-grid">
-            <div class="destination-card">
-                <h2 class="destination-title">Beijing</h2>
-                <p class="destination-desc">Capital city with ancient palaces, temples, and the iconic Great Wall nearby.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Forbidden City</li><li>Great Wall</li><li>Temple of Heaven</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Shanghai</h2>
-                <p class="destination-desc">Modern metropolis with futuristic skyline and historic waterfront districts.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>The Bund</li><li>Yu Garden</li><li>Oriental Pearl Tower</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Xi'an</h2>
-                <p class="destination-desc">Ancient capital famous for the Terracotta Army and Silk Road history.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Terracotta Warriors</li><li>Ancient City Wall</li><li>Big Wild Goose Pagoda</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Guilin</h2>
-                <p class="destination-desc">Stunning karst landscape with limestone peaks and scenic Li River cruises.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Li River</li><li>Reed Flute Cave</li><li>Elephant Trunk Hill</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Chengdu</h2>
-                <p class="destination-desc">Panda capital with spicy Sichuan cuisine and relaxed teahouse culture.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Giant Panda Base</li><li>Jinli Ancient Street</li><li>Wuhou Shrine</li></ul>
-                </div>
-            </div>
+        <div class="article-header">
+            <h1>🇨🇳 China Travel</h1>
+            <div class="meta">Published on December 2024 | 6 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>China presents an extraordinary journey through 5,000 years of civilization, combining ancient wonders with rapid modernization across diverse landscapes and cultures. From the Great Wall's mountain ridges to Shanghai's futuristic skyline, China offers travelers immense historical depth, cultural richness, and natural beauty that spans deserts, mountains, rivers, and coastlines.</p>
+            
+            <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=500&h=300&fit=crop" alt="Great Wall of China">
+            
+            <h2>Ancient Imperial Heritage</h2>
+            <p>The Great Wall stretches over 13,000 miles across mountains and deserts, representing humanity's most ambitious construction project and China's determination to protect its civilization. Beijing's Forbidden City showcases imperial architecture with 9,999 rooms, intricate courtyards, and treasures spanning dynasties. Xi'an's Terracotta Warriors guard Emperor Qin's tomb with thousands of life-sized clay soldiers, each uniquely crafted, demonstrating ancient artistic mastery and imperial power.</p>
+            
+            <h2>Modern Metropolises</h2>
+            <p>Shanghai combines colonial architecture along the Bund with Pudong's futuristic skyscrapers, creating dramatic contrasts between old and new China. Beijing balances ancient hutong neighborhoods with modern Olympic venues and contemporary art districts. Shenzhen transformed from fishing village to tech hub in decades, while Hong Kong maintains its unique East-meets-West character with stunning harbor views and international cuisine.</p>
+            
+            <h2>Natural Wonders</h2>
+            <p>Guilin's limestone karst landscapes inspire traditional Chinese paintings with dramatic peaks reflected in Li River waters. Zhangjiajie's towering sandstone pillars inspired Avatar's floating mountains and offer thrilling glass walkways. Tibet's high-altitude plateaus, sacred mountains, and Buddhist monasteries provide spiritual experiences, while Yunnan's diverse ethnic minorities and terraced rice fields showcase China's cultural and geographical diversity.</p>
+            
+            <h2>Cultural Immersion</h2>
+            <p>Traditional experiences include tea ceremonies in authentic teahouses, Peking Opera performances with elaborate costumes and makeup, and martial arts demonstrations in Shaolin Temple. Chinese gardens in Suzhou demonstrate landscape design philosophy, while calligraphy and painting classes offer artistic insights. Festivals like Chinese New Year and Mid-Autumn Festival provide cultural celebrations with dragon dances, fireworks, and traditional foods.</p>
+            
+            <h2>Culinary Adventures</h2>
+            <p>Chinese cuisine varies dramatically by region: Beijing's Peking duck, Sichuan's spicy hotpot, Cantonese dim sum, and Shanghai's soup dumplings represent distinct culinary traditions. Street food markets offer authentic local flavors, while cooking classes teach traditional techniques. Tea culture spans green, oolong, and pu-erh varieties, each with specific preparation rituals and health benefits rooted in Chinese medicine.</p>
+            
+            <h2>Silk Road Legacy</h2>
+            <p>Western China's Silk Road cities like Kashgar and Turpan preserve ancient trading post atmospheres with Islamic architecture, bazaars, and desert oases. These regions showcase ethnic diversity through Uyghur, Tibetan, and other minority cultures with distinct languages, customs, and cuisines. The historic trade routes connected China to Central Asia and Europe, creating cultural exchanges that shaped civilizations for centuries.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

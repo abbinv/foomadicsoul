@@ -3,89 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spain Travel - Travel</title>
+    <title>Spain Travel - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .destination-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
-        .destination-desc { color: #666; line-height: 1.6; }
-        .highlights { margin-top: 1rem; }
-        .highlights ul { margin-left: 1.5rem; }
     </style>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Travel</a>
-        <header>
-            <h1>🇪🇸 Spain</h1>
-            <p>Top 5 Destinations</p>
-        </header>
-        <div class="destinations-grid">
-            <div class="destination-card">
-                <h2 class="destination-title">Barcelona</h2>
-                <p class="destination-desc">Vibrant Catalonian city with Gaudí architecture, beaches, and rich cultural heritage.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Sagrada Familia</li><li>Park Güell</li><li>Las Ramblas</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Madrid</h2>
-                <p class="destination-desc">Spain's capital with world-class museums, royal palaces, and vibrant nightlife.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Prado Museum</li><li>Royal Palace</li><li>Retiro Park</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Seville</h2>
-                <p class="destination-desc">Andalusian gem with Moorish architecture, flamenco culture, and historic charm.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Alcázar Palace</li><li>Seville Cathedral</li><li>Barrio Santa Cruz</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Granada</h2>
-                <p class="destination-desc">Home to the magnificent Alhambra palace and stunning Sierra Nevada views.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Alhambra</li><li>Generalife Gardens</li><li>Albaicín Quarter</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Valencia</h2>
-                <p class="destination-desc">Mediterranean coastal city known for paella, modern architecture, and beaches.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>City of Arts and Sciences</li><li>Central Market</li><li>Malvarosa Beach</li></ul>
-                </div>
-            </div>
+        <div class="article-header">
+            <h1>🇪🇸 Spain Travel</h1>
+            <div class="meta">Published on December 2024 | 7 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Spain captivates travelers with its passionate culture, stunning architecture, and diverse landscapes ranging from Mediterranean beaches to Pyrenean peaks. Rich in history, art, and traditions, Spain offers everything from world-class museums and architectural wonders to vibrant festivals and culinary excellence that reflects the country's regional diversity and cultural depth.</p>
+            
+            <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=500&h=300&fit=crop" alt="Sagrada Familia Barcelona">
+            
+            <h2>Architectural Masterpieces</h2>
+            <p>Barcelona showcases Antoni Gaudí's extraordinary vision through the Sagrada Família's soaring spires, Park Güell's whimsical mosaics, and Casa Batlló's organic curves. Granada's Alhambra represents Moorish architectural perfection with intricate Islamic geometric patterns and peaceful courtyards. Madrid's Royal Palace, Seville's cathedral, and Santiago de Compostela's Romanesque architecture demonstrate Spain's diverse historical influences and artistic achievements.</p>
+            
+            <img src="https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=500&h=300&fit=crop" alt="Spanish beaches and coastline">
+            
+            <h2>Coastal Paradises</h2>
+            <p>Spain's coastlines offer diverse beach experiences: Costa del Sol's sunny resorts and golf courses, Costa Brava's rugged cliffs and hidden coves, and Basque Country's dramatic Atlantic shores. The Balearic Islands provide party atmospheres in Ibiza, family-friendly beaches in Mallorca, and tranquil escapes in Menorca. Canary Islands offer year-round warmth, volcanic landscapes, and unique ecosystems just off Africa's coast.</p>
+            
+            <h2>Cultural Immersion</h2>
+            <p>Flamenco's passionate rhythms originated in Andalusia, where authentic performances in intimate tablaos showcase this UNESCO-recognized art form. Spanish festivals like Running of the Bulls in Pamplona, La Tomatina's tomato fights, and Semana Santa's religious processions demonstrate regional traditions and community spirit. Art lovers explore Prado's masterpieces, Guggenheim Bilbao's contemporary collections, and Picasso's birthplace in Málaga.</p>
+            
+            <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=500&h=300&fit=crop" alt="Spanish flamenco and culture">
+            
+            <h2>Regional Diversity</h2>
+            <p>Each Spanish region offers distinct experiences: Catalonia's modernist architecture and Mediterranean cuisine, Andalusia's Moorish heritage and olive groves, Basque Country's unique language and innovative gastronomy, and Galicia's Celtic influences and pilgrimage routes. This diversity creates multiple travel experiences within one country, from cosmopolitan cities to rural villages preserving ancient traditions.</p>
+            
+            <h2>Culinary Excellence</h2>
+            <p>Spanish gastronomy extends beyond tapas to include regional specialties like Basque pintxos, Valencian paella, and Galician seafood. Wine regions produce exceptional varieties from Rioja's tempranillo to Ribera del Duero's bold reds. Food markets, cooking classes, and restaurant scenes in cities like San Sebastián and Barcelona offer world-class culinary experiences that celebrate local ingredients and innovative techniques.</p>
+            
+            <h2>Historic Cities</h2>
+            <p>Madrid combines royal grandeur with vibrant nightlife, world-class museums, and beautiful parks like Retiro. Seville enchants with its cathedral, Alcázar palace, and charming neighborhoods perfect for evening strolls. Toledo's medieval streets preserve Christian, Jewish, and Islamic heritage, while Santiago de Compostela welcomes pilgrims completing the famous Camino de Santiago pilgrimage route across northern Spain.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

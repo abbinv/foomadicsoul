@@ -3,91 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greece Travel - Top 5 Destinations</title>
+    <title>Greece Travel - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .destination-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        .destination-card:hover { transform: translateY(-5px); }
-        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
-        .destination-desc { color: #666; line-height: 1.6; }
-        .highlights { margin-top: 1rem; }
-        .highlights ul { margin-left: 1.5rem; }
     </style>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Travel</a>
-        <header>
-            <h1>🇬🇷 Greece</h1>
-            <p>Top 5 Destinations</p>
-        </header>
-        <div class="destinations-grid">
-            <div class="destination-card">
-                <h2 class="destination-title">Athens</h2>
-                <p class="destination-desc">Ancient capital with Acropolis, Parthenon, and rich archaeological heritage.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Acropolis</li><li>Parthenon</li><li>Ancient Agora</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Santorini</h2>
-                <p class="destination-desc">Volcanic island with white-washed buildings, blue domes, and stunning sunsets.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Oia sunset</li><li>Red Beach</li><li>Fira town</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Mykonos</h2>
-                <p class="destination-desc">Cosmopolitan island with vibrant nightlife, beaches, and windmills.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Little Venice</li><li>Windmills</li><li>Paradise Beach</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Crete</h2>
-                <p class="destination-desc">Largest Greek island with Minoan palaces, beaches, and mountain villages.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Knossos Palace</li><li>Samaria Gorge</li><li>Chania Old Town</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Delphi</h2>
-                <p class="destination-desc">Ancient sanctuary and oracle site with temple ruins and mountain views.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Temple of Apollo</li><li>Ancient Theatre</li><li>Delphi Museum</li></ul>
-                </div>
-            </div>
+        <div class="article-header">
+            <h1>🇬🇷 Greece Travel</h1>
+            <div class="meta">Published on December 2024 | 6 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Greece combines ancient civilization with stunning Mediterranean beauty, offering travelers the birthplace of democracy, philosophy, and Olympic Games alongside pristine islands and warm hospitality. From Athens' classical monuments to Santorini's sunset views, Greece provides cultural immersion and natural splendor that has inspired visitors for millennia.</p>
+            
+            <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=500&h=300&fit=crop" alt="Santorini Greece islands">
+            
+            <h2>Ancient Athens</h2>
+            <p>The Acropolis towers over Athens with the Parthenon representing architectural perfection and democratic ideals that influenced Western civilization. The Ancient Agora, where Socrates taught and democracy developed, connects visitors to philosophical foundations. Modern Athens balances ancient sites with vibrant neighborhoods like Plaka's traditional tavernas and Psyrri's contemporary art scene, creating dynamic contrasts between classical heritage and modern Greek life.</p>
+            
+            <h2>Island Paradise</h2>
+            <p>Greek islands offer diverse experiences: Santorini's volcanic cliffs and famous sunsets, Mykonos' cosmopolitan beaches and nightlife, and Crete's Minoan palaces and diverse landscapes. Lesser-known islands like Naxos, Paros, and Sifnos provide authentic experiences with traditional villages, local festivals, and pristine beaches. Each island maintains unique character while sharing Greek hospitality, cuisine, and stunning Aegean Sea settings.</p>
+            
+            <h2>Archaeological Wonders</h2>
+            <p>Delphi's ancient oracle site offers mountain views and spiritual significance where Greeks consulted the gods for guidance. Olympia's original Olympic stadium and temples honor athletic traditions that continue today. Meteora's monasteries perch impossibly on rock pillars, combining natural wonder with Byzantine spiritual heritage. These sites demonstrate Greece's role as the foundation of Western culture, religion, and athletic competition.</p>
+            
+            <h2>Mediterranean Lifestyle</h2>
+            <p>Greek culture emphasizes leisurely meals, family gatherings, and outdoor living that reflects Mediterranean values. Traditional tavernas serve fresh seafood, local wines, and dishes prepared with olive oil and herbs grown on Greek hillsides. Evening strolls (volta), coffee culture, and festival celebrations create social experiences that welcome visitors into authentic Greek community life and hospitality traditions.</p>
+            
+            <h2>Natural Beauty</h2>
+            <p>Greece's diverse landscapes include dramatic coastlines, mountain villages, and pristine beaches with crystal-clear waters. The Peloponnese combines ancient sites with scenic drives through olive groves and vineyards. Northern Greece offers mountain hiking, traditional villages, and cultural sites like Thessaloniki's Byzantine churches. These varied environments provide outdoor activities and scenic beauty beyond the famous islands.</p>
+            
+            <h2>Cultural Traditions</h2>
+            <p>Greek Orthodox traditions influence daily life through religious festivals, traditional music, and folk dances that celebrate regional identities. Local festivals honor patron saints with processions, feasts, and community celebrations that welcome visitors. Traditional crafts like pottery, weaving, and jewelry-making continue ancient techniques, while modern Greek culture embraces both preservation of heritage and contemporary artistic expression.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

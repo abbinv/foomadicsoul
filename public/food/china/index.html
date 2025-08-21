@@ -3,89 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chinese Food - Food</title>
+    <title>Chinese Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
     </style>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇨🇳 Chinese Cuisine</h1>
-            <p>Top 5 Popular Dishes</p>
-        </header>
-        <div class="dishes-grid">
-            <div class="dish-card">
-                <h2 class="dish-title">Peking Duck</h2>
-                <p class="dish-desc">Crispy roasted duck served with pancakes, scallions, and hoisin sauce from Beijing.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Whole duck</li><li>Thin pancakes</li><li>Hoisin sauce</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Kung Pao Chicken</h2>
-                <p class="dish-desc">Spicy Sichuan stir-fry with chicken, peanuts, and dried chilies in savory sauce.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Chicken</li><li>Peanuts</li><li>Sichuan peppercorns</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Xiaolongbao</h2>
-                <p class="dish-desc">Steamed soup dumplings from Shanghai filled with pork and flavorful broth.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Dumpling wrapper</li><li>Pork filling</li><li>Gelatinized broth</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Mapo Tofu</h2>
-                <p class="dish-desc">Spicy Sichuan dish with silky tofu in numbing chili and bean sauce.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Soft tofu</li><li>Doubanjiang</li><li>Ground pork</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Sweet and Sour Pork</h2>
-                <p class="dish-desc">Crispy pork pieces in tangy sauce with pineapple and bell peppers.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Pork tenderloin</li><li>Pineapple</li><li>Bell peppers</li></ul>
-                </div>
-            </div>
+            <div class="meta">Published on December 2024 | 6 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Chinese cuisine encompasses 5,000 years of culinary evolution across vast geographical regions, creating one of the world's most diverse and sophisticated food cultures. With eight major regional cuisines and countless local variations, Chinese cooking balances flavors, textures, colors, and nutritional principles.</p>
+            
+            <img src="https://images.unsplash.com/photo-1526318896980-cf78c088247c?w=500&h=300&fit=crop" alt="Traditional dim sum selection">
+            
+            <h2>Eight Great Cuisines</h2>
+            <p>Sichuan cuisine features bold spices and numbing mala flavors, Cantonese emphasizes fresh ingredients and subtle seasonings, Shandong offers hearty northern fare with wheat-based dishes, and Jiangsu presents refined, slightly sweet preparations. Fujian specializes in seafood and soups, Hunan brings fiery heat, Anhui features wild ingredients, and Zhejiang offers delicate, fresh flavors.</p>
+            
+            <img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=500&h=300&fit=crop" alt="Stir-fried Chinese dishes">
+            
+            <h2>Wok Mastery</h2>
+            <p>The wok, invented over 2,000 years ago, enables rapid high-heat cooking that preserves nutrients and creates distinctive textures. Techniques include stir-frying (chao), deep-frying (zha), steaming (zheng), braising (shao), and smoking (xun). Proper wok hei - the breath of the wok - imparts a unique smoky flavor impossible to achieve with other cookware.</p>
+            
+            <h2>Dim Sum Tradition</h2>
+            <p>Originating in Guangdong teahouses, dim sum represents "touching the heart" with small plates designed for sharing. Classic items include har gow (shrimp dumplings), siu mai (pork dumplings), char siu bao (BBQ pork buns), and egg tarts, each requiring specialized techniques and precise timing.</p>
+            
+            <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=500&h=300&fit=crop" alt="Chinese tea culture and ceremony">
+            
+            <h2>Tea Culture</h2>
+            <p>Chinese tea culture spans thousands of years with six main categories: green, white, yellow, oolong, black, and pu-erh. Tea ceremonies emphasize mindfulness and respect, while specific teas pair with different dishes - jasmine with dim sum, oolong with roasted meats, and pu-erh with rich, fatty foods.</p>
+            
+            <h2>Philosophy of Balance</h2>
+            <p>Chinese cuisine follows Traditional Chinese Medicine principles, balancing hot and cold foods, incorporating five flavors (sweet, sour, bitter, spicy, salty), and using ingredients for both nutrition and medicinal properties. Dishes aim for harmony in color, aroma, taste, and texture while promoting health and longevity.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

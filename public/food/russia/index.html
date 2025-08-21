@@ -3,93 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Russian Food - Top 5 Traditional Dishes | Russia Cuisine</title>
-    <meta name="description" content="Discover authentic Russian cuisine with Borscht, Beef Stroganoff, Pelmeni, and traditional Eastern European flavors.">
+    <title>Russian Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        .dish-card:hover { transform: translateY(-5px); }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇷🇺 Russian Cuisine</h1>
-            <p>Top 5 Traditional Russian Dishes</p>
-        </header>
-        <div class="dishes-grid">
-            <div class="dish-card">
-                <h2 class="dish-title">Borscht</h2>
-                <p class="dish-desc">Traditional beet soup served hot or cold with sour cream.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Beetroot</li><li>Cabbage</li><li>Sour cream</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Beef Stroganoff</h2>
-                <p class="dish-desc">Tender beef strips in creamy mushroom sauce, served with rice or noodles.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Beef strips</li><li>Mushrooms</li><li>Sour cream</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Pelmeni</h2>
-                <p class="dish-desc">Russian dumplings filled with meat, served with butter and sour cream.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Dough</li><li>Ground meat</li><li>Onions</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Blini</h2>
-                <p class="dish-desc">Thin pancakes served with various toppings, sweet or savory.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Flour</li><li>Eggs</li><li>Milk</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Olivier Salad</h2>
-                <p class="dish-desc">Popular potato salad with vegetables, eggs, and mayonnaise.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Potatoes</li><li>Eggs</li><li>Mayonnaise</li></ul>
-                </div>
-            </div>
+            <div class="meta">Published on December 2024 | 5 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Russian cuisine developed to sustain people through harsh winters and vast distances, creating hearty, warming dishes that provide comfort and nutrition. Influenced by Slavic traditions, Mongol invasions, and French court cuisine, Russian cooking emphasizes preservation techniques, root vegetables, and substantial meals that reflect the country's challenging climate and rich cultural history.</p>
+            
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop" alt="Russian borscht and dumplings">
+            
+            <h2>Borscht Variations</h2>
+            <p>Borscht, Russia's iconic beet soup, varies significantly across regions and seasons. Ukrainian-style borscht includes cabbage and meat, while Russian versions may feature fish or remain vegetarian. Cold summer borscht provides refreshing relief, while hot winter versions offer warming sustenance. Each family maintains secret ingredients and techniques passed through generations.</p>
+            
+            <h2>Pelmeni Tradition</h2>
+            <p>Pelmeni, often called "the heart of Russian cuisine," consists of thin dough wrapped around meat filling, similar to Chinese dumplings reflecting Silk Road influences. Families gather to make large batches, storing them frozen for winter meals. Traditional fillings include pork, beef, and lamb, while modern variations incorporate fish, mushrooms, or vegetables.</p>
+            
+            <h2>Preservation Mastery</h2>
+            <p>Russian cuisine excels in food preservation through pickling, smoking, salting, and fermentation. Sauerkraut, pickled cucumbers, and preserved fish sustained populations through long winters when fresh produce was unavailable. These techniques created distinctive sour flavors that define Russian taste preferences and nutritional wisdom.</p>
+            
+            <h2>Blini Culture</h2>
+            <p>Blini, thin pancakes similar to crepes, hold special significance in Russian culture, particularly during Maslenitsa (Butter Week) before Lent. These versatile pancakes accompany both sweet and savory fillings, from caviar and sour cream to jam and honey. Blini symbolize the sun's return and spring's arrival in Russian folklore.</p>
+            
+            <h2>Tea Culture</h2>
+            <p>Russian tea culture centers around the samovar, a traditional water heater that creates social gathering opportunities. Strong tea concentrate (zavarka) is diluted with hot water and served with sugar, jam, or honey. Tea drinking accompanies lengthy conversations and provides warmth during cold months, making it central to Russian hospitality.</p>
+            
+            <h2>Imperial Influences</h2>
+            <p>French chefs in Russian imperial courts created sophisticated dishes like beef stroganoff and chicken Kiev, blending European techniques with Russian ingredients. These dishes gained international recognition while representing Russia's aristocratic culinary heritage, though traditional peasant foods remained the foundation of Russian cuisine.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

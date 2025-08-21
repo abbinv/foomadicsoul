@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethics - Philosophy</title>
+    <title>Ethics - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -12,80 +12,57 @@
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(0,0,0,0.1);
-            color: #333;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: #333; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .concepts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .concept-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        .concept-title { color: #666; font-size: 1.5rem; margin-bottom: 1rem; }
-        .concept-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .key-points { margin-top: 1rem; }
-        .key-points ul { margin-left: 1.5rem; }
     </style>
+    <script src="../assets/js/ads-config.js"></script>
+    <script src="../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Philosophy</a>
-        <header>
+        <div class="article-header">
             <h1>⚖️ Ethics</h1>
-            <p>5 Ethical Frameworks</p>
-        </header>
-        <div class="concepts-grid">
-            <div class="concept-card">
-                <h2 class="concept-title">Utilitarianism</h2>
-                <p class="concept-desc">Actions are right when they produce the greatest good for the greatest number of people.</p>
-                <div class="key-points">
-                    <strong>Key aspects:</strong>
-                    <ul><li>Greatest happiness principle</li><li>Consequentialist approach</li><li>Collective well-being</li></ul>
-                </div>
-            </div>
-            <div class="concept-card">
-                <h2 class="concept-title">Deontological Ethics</h2>
-                <p class="concept-desc">Moral duties and rules determine right action, regardless of consequences.</p>
-                <div class="key-points">
-                    <strong>Key aspects:</strong>
-                    <ul><li>Categorical imperatives</li><li>Universal moral laws</li><li>Duty-based morality</li></ul>
-                </div>
-            </div>
-            <div class="concept-card">
-                <h2 class="concept-title">Virtue Ethics</h2>
-                <p class="concept-desc">Focus on character traits and what kind of person one should be.</p>
-                <div class="key-points">
-                    <strong>Key aspects:</strong>
-                    <ul><li>Character development</li><li>Moral virtues</li><li>Practical wisdom</li></ul>
-                </div>
-            </div>
-            <div class="concept-card">
-                <h2 class="concept-title">Care Ethics</h2>
-                <p class="concept-desc">Emphasizes relationships, care, and responsibility in moral decision-making.</p>
-                <div class="key-points">
-                    <strong>Key aspects:</strong>
-                    <ul><li>Relational morality</li><li>Empathy and care</li><li>Contextual ethics</li></ul>
-                </div>
-            </div>
-            <div class="concept-card">
-                <h2 class="concept-title">Applied Ethics</h2>
-                <p class="concept-desc">Practical application of moral principles to real-world issues and dilemmas.</p>
-                <div class="key-points">
-                    <strong>Key aspects:</strong>
-                    <ul><li>Bioethics</li><li>Business ethics</li><li>Environmental ethics</li></ul>
-                </div>
-            </div>
+            <div class="meta">Published on December 2024 | 5 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Branch of philosophy dealing with moral principles, right and wrong, and how we should live and act.</p>
+            
+            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=500&h=300&fit=crop" alt="Scales of justice representing ethical decisions">
+            
+            <h2>Moral Principles</h2>
+            <p>Universal guidelines for distinguishing right from wrong, considering consequences, duties, and virtues in decision-making.</p>
+            
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=300&fit=crop" alt="Moral compass and ethical guidance">
+            
+            <h2>Applied Ethics</h2>
+            <p>Practical application of moral principles to real-world situations in business, medicine, technology, and personal relationships.</p>
+            
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=500&h=300&fit=crop" alt="Ethical decision making in practice">
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

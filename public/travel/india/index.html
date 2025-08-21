@@ -3,93 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>India Travel Guide - Top 5 Destinations | Visit India</title>
-    <meta name="description" content="Explore India's top destinations: Delhi, Agra, Rajasthan, Kerala, and Goa. Complete India travel guide with cultural experiences.">
+    <title>India Travel - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .destination-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        .destination-card:hover { transform: translateY(-5px); }
-        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
-        .destination-desc { color: #666; line-height: 1.6; }
-        .highlights { margin-top: 1rem; }
-        .highlights ul { margin-left: 1.5rem; }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Travel</a>
-        <header>
-            <h1>🇮🇳 India</h1>
-            <p>Top 5 Indian Destinations</p>
-        </header>
-        <div class="destinations-grid">
-            <div class="destination-card">
-                <h2 class="destination-title">Delhi</h2>
-                <p class="destination-desc">Capital city blending Mughal heritage with modern India, gateway to Golden Triangle.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Red Fort</li><li>India Gate</li><li>Lotus Temple</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Agra</h2>
-                <p class="destination-desc">Home to the iconic Taj Mahal, one of the Seven Wonders of the World.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Taj Mahal</li><li>Agra Fort</li><li>Mehtab Bagh</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Rajasthan</h2>
-                <p class="destination-desc">Land of kings with palaces, forts, and desert landscapes in Jaipur and Udaipur.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Amber Fort</li><li>City Palace Udaipur</li><li>Thar Desert</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Kerala</h2>
-                <p class="destination-desc">God's Own Country with backwaters, spice plantations, and Ayurvedic treatments.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Alleppey Backwaters</li><li>Munnar Tea Gardens</li><li>Kochi Fort</li></ul>
-                </div>
-            </div>
-            <div class="destination-card">
-                <h2 class="destination-title">Goa</h2>
-                <p class="destination-desc">Coastal paradise with Portuguese heritage, beaches, and vibrant nightlife.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Baga Beach</li><li>Old Goa Churches</li><li>Spice Plantations</li></ul>
-                </div>
-            </div>
+        <div class="article-header">
+            <h1>🇮🇳 India Travel</h1>
+            <div class="meta">Published on December 2024 | 6 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>India offers extraordinary diversity across 28 states and 8 union territories, combining ancient spirituality, magnificent monuments, and vibrant cultures that create sensory experiences unlike anywhere else. From the Taj Mahal's marble perfection to Kerala's tropical backwaters, India provides transformative journeys through one of the world's oldest civilizations.</p>
+            
+            <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=500&h=300&fit=crop" alt="Taj Mahal India">
+            
+            <h2>Golden Triangle Wonders</h2>
+            <p>The Golden Triangle connects Delhi's Mughal monuments and bustling markets, Agra's Taj Mahal and Red Fort, and Jaipur's Pink City palaces and forts that demonstrate different aspects of Indian history and architecture. Each city offers distinct experiences: Delhi's street food and government buildings, Agra's marble inlay craftsmanship, and Jaipur's royal heritage and gem trading traditions.</p>
+            
+            <h2>Spiritual Journeys</h2>
+            <p>India's spiritual heritage encompasses Hindu pilgrimage sites like Varanasi's ghats along the Ganges River, Buddhist sites including Bodh Gaya where Buddha achieved enlightenment, and Sikh Golden Temple in Amritsar. These sacred places offer meditation retreats, yoga training, and spiritual experiences that attract seekers from around the world while providing insights into Indian religious traditions.</p>
+            
+            <h2>Rajasthan's Royal Heritage</h2>
+            <p>Rajasthan's desert state showcases maharaja palaces, hilltop forts, and colorful cities that preserve royal traditions through luxury heritage hotels, camel safaris, and cultural performances. Udaipur's lake palaces, Jodhpur's blue city, and Jaisalmer's golden fort create fairy-tale settings while desert camps provide authentic experiences with Rajasthani hospitality and traditional music.</p>
+            
+            <h2>Kerala's Tropical Paradise</h2>
+            <p>Kerala's backwaters offer houseboat cruises through palm-fringed canals, spice plantation tours, and Ayurvedic wellness treatments that demonstrate South India's distinct culture and natural beauty. The state combines beaches, mountains, and cultural experiences including Kathakali dance performances and traditional cooking classes that showcase regional diversity within Indian culture.</p>
+            
+            <h2>Cultural Immersion</h2>
+            <p>Indian culture encompasses diverse languages, cuisines, festivals, and traditions that vary dramatically by region while sharing common threads of hospitality, spirituality, and family values. Local experiences include staying with families, participating in festivals like Holi and Diwali, and learning traditional crafts that provide authentic insights into Indian society and customs.</p>
+            
+            <h2>Natural Diversity</h2>
+            <p>India's geography spans Himalayan peaks for trekking and mountaineering, tropical beaches in Goa and Tamil Nadu, wildlife sanctuaries with tigers and elephants, and hill stations that provide cool retreats from plains heat. This diversity creates multiple travel experiences within one country, from adventure sports and wildlife viewing to beach relaxation and mountain exploration.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

@@ -3,92 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Germany Travel - Top 5 Destinations</title>
+    <title>Germany Travel - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .destination-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        .destination-card:hover { transform: translateY(-5px); }
-        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
-        .destination-desc { color: #666; line-height: 1.6; }
-        .highlights { margin-top: 1rem; }
-        .highlights ul { margin-left: 1.5rem; }
     </style>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Travel</a>
-        <header>
-            <h1>🇩🇪 Germany</h1>
-            <p>Top 5 Destinations</p>
-        </header>
-        <div class="destinations-grid">
-            <a href="berlin.html" class="destination-card" style="text-decoration: none; color: inherit;">
-                <h2 class="destination-title">Berlin</h2>
-                <p class="destination-desc">Historic capital with rich history, vibrant culture, and modern attractions.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Brandenburg Gate</li><li>Berlin Wall</li><li>Museum Island</li></ul>
-                </div>
-            </a>
-            <a href="munich.html" class="destination-card" style="text-decoration: none; color: inherit;">
-                <h2 class="destination-title">Munich</h2>
-                <p class="destination-desc">Bavarian capital famous for Oktoberfest, beer gardens, and Alpine charm.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Marienplatz</li><li>Neuschwanstein Castle</li><li>English Garden</li></ul>
-                </div>
-            </a>
-            <a href="cologne.html" class="destination-card" style="text-decoration: none; color: inherit;">
-                <h2 class="destination-title">Cologne</h2>
-                <p class="destination-desc">Ancient city on the Rhine with stunning Gothic cathedral and art museums.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Cologne Cathedral</li><li>Rhine River</li><li>Museum Ludwig</li></ul>
-                </div>
-            </a>
-            <a href="hamburg.html" class="destination-card" style="text-decoration: none; color: inherit;">
-                <h2 class="destination-title">Hamburg</h2>
-                <p class="destination-desc">Maritime city with historic port, canals, and vibrant nightlife district.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Speicherstadt</li><li>Reeperbahn</li><li>Miniatur Wunderland</li></ul>
-                </div>
-            </a>
-            <a href="dresden.html" class="destination-card" style="text-decoration: none; color: inherit;">
-                <h2 class="destination-title">Dresden</h2>
-                <p class="destination-desc">Baroque jewel rebuilt after WWII, known as Florence on the Elbe.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Frauenkirche</li><li>Zwinger Palace</li><li>Semperoper</li></ul>
-                </div>
-            </a>
+        <div class="article-header">
+            <h1>🇩🇪 Germany Travel</h1>
+            <div class="meta">Published on December 2024 | 6 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Germany combines rich historical heritage with modern innovation, offering travelers medieval castles, vibrant cities, and cultural experiences that span from fairy-tale landscapes to cutting-edge technology. From Berlin's dynamic arts scene to Bavaria's Alpine traditions, Germany provides diverse experiences that celebrate both its complex past and progressive present.</p>
+            
+            <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=500&h=300&fit=crop" alt="Neuschwanstein Castle Germany">
+            
+            <h2>Fairy-Tale Castles</h2>
+            <p>Neuschwanstein Castle inspired Disney's Sleeping Beauty castle with its romantic towers and mountain setting, representing King Ludwig II's architectural fantasies. The Romantic Road connects medieval towns like Rothenburg ob der Tauber and Dinkelsbühl with well-preserved walls, half-timbered houses, and cobblestone streets. Rhine Valley castles perch dramatically on hillsides above vineyards, offering river cruises past dozens of fortress ruins and wine estates.</p>
+            
+            <h2>Berlin's Dynamic Culture</h2>
+            <p>Berlin pulses with creative energy through street art, galleries, and nightlife that reflects the city's complex history and reunification. Brandenburg Gate symbolizes German unity, while remnants of the Berlin Wall serve as powerful historical reminders. Museums on Museum Island house world-class collections, and neighborhoods like Kreuzberg and Prenzlauer Berg showcase contemporary German culture through cafes, markets, and alternative venues.</p>
+            
+            <h2>Bavarian Traditions</h2>
+            <p>Munich combines traditional Bavarian culture with modern sophistication, from Oktoberfest's beer halls and lederhosen to world-class museums and opera houses. The Bavarian Alps offer stunning mountain scenery, hiking trails, and charming villages like Garmisch-Partenkirchen. Traditional experiences include beer garden gatherings, Alpine folk festivals, and visits to monasteries that brew beer using centuries-old recipes.</p>
+            
+            <h2>Christmas Market Magic</h2>
+            <p>German Christmas markets transform city centers into winter wonderlands with wooden stalls selling handcrafted ornaments, gingerbread, and Glühwein (mulled wine). Dresden's Striezelmarkt, Nuremberg's Christkindlmärkte, and Cologne's multiple markets each offer unique atmospheres and regional specialties. These markets preserve medieval trading traditions while creating magical holiday experiences that attract visitors from around the world.</p>
+            
+            <h2>Cultural Heritage</h2>
+            <p>Germany's cultural contributions include classical music heritage in cities like Leipzig (Bach), Bonn (Beethoven), and Bayreuth (Wagner), along with literary traditions celebrated in Weimar (Goethe). The country's philosophical and scientific achievements are honored in universities and museums, while modern cultural scenes in Hamburg, Cologne, and Frankfurt demonstrate Germany's continued creative innovation and international influence.</p>
+            
+            <h2>Natural Landscapes</h2>
+            <p>The Black Forest offers cuckoo clock workshops, hiking trails, and spa towns with thermal springs, while the Baltic Sea coast provides beaches, seaside resorts, and historic Hanseatic cities. Saxon Switzerland's sandstone formations create dramatic hiking opportunities, and the Moselle Valley's steep vineyards produce exceptional Riesling wines alongside picturesque river towns and medieval ruins.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

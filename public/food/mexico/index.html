@@ -3,89 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mexican Food - Food</title>
+    <title>Mexican Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
     </style>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇲🇽 Mexican Cuisine</h1>
-            <p>Top 5 Popular Dishes</p>
-        </header>
-        <div class="dishes-grid">
-            <div class="dish-card">
-                <h2 class="dish-title">Tacos al Pastor</h2>
-                <p class="dish-desc">Marinated pork cooked on a vertical spit, served with pineapple and onions.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Pork shoulder</li><li>Pineapple</li><li>Corn tortillas</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Mole Poblano</h2>
-                <p class="dish-desc">Complex sauce with chocolate and chilies, traditionally served over turkey or chicken.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Various chilies</li><li>Chocolate</li><li>Spices and nuts</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Chiles Rellenos</h2>
-                <p class="dish-desc">Poblano peppers stuffed with cheese, battered, and fried until golden.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Poblano peppers</li><li>Cheese</li><li>Egg batter</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Pozole</h2>
-                <p class="dish-desc">Traditional soup with hominy corn, pork or chicken, and red chili broth.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Hominy corn</li><li>Pork shoulder</li><li>Guajillo chilies</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Churros</h2>
-                <p class="dish-desc">Fried dough pastry rolled in cinnamon sugar, often served with chocolate sauce.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Choux pastry</li><li>Cinnamon sugar</li><li>Chocolate sauce</li></ul>
-                </div>
-            </div>
+            <div class="meta">Published on December 2024 | 5 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Mexican cuisine represents a rich fusion of indigenous Mesoamerican ingredients with Spanish colonial influences, creating one of the world's most vibrant and complex culinary traditions. Recognized by UNESCO as an Intangible Cultural Heritage, Mexican cooking celebrates ancient techniques, diverse regional specialties, and the sacred trinity of corn, beans, and squash.</p>
+            
+            <img src="https://images.unsplash.com/photo-1565299585323-38174c4a6471?w=500&h=300&fit=crop" alt="Mexican tacos and traditional food">
+            
+            <h2>Ancient Foundations</h2>
+            <p>Mexican cuisine builds upon 9,000 years of corn cultivation, with nixtamalization (lime-treating corn) creating masa for tortillas, tamales, and countless preparations. Indigenous ingredients like cacao, vanilla, tomatoes, and chili peppers transformed global cuisine, while traditional cooking methods using volcanic stone molcajetes and clay comals continue today.</p>
+            
+            <h2>Chili Pepper Mastery</h2>
+            <p>Mexico cultivates over 60 chili varieties, each contributing unique heat levels, flavors, and colors. Poblanos offer mild earthiness, jalapeños provide bright heat, serranos deliver intense spice, while dried chilies like anchos, chipotles, and guajillos create complex sauce foundations. The Scoville scale originated to measure Mexican chili heat.</p>
+            
+            <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=500&h=300&fit=crop" alt="Mexican spices and chili peppers">
+            
+            <h2>Mole Complexity</h2>
+            <p>Mole sauces represent Mexican cuisine's pinnacle, combining 20+ ingredients including various chilies, chocolate, nuts, seeds, and spices. Oaxaca's mole negro requires days of preparation, while Puebla's mole poblano balances sweet and savory elements. Each family guards secret recipes passed through generations, creating infinite variations.</p>
+            
+            <h2>Regional Diversity</h2>
+            <p>Mexican cuisine varies dramatically by region: Yucatan's Mayan-influenced cochinita pibil, Oaxaca's indigenous ingredients and mezcal, Veracruz's Spanish-influenced seafood, and Baja California's wine country fusion. Each state offers distinct specialties reflecting local climate, agriculture, and cultural influences.</p>
+            
+            <h2>Street Food Culture</h2>
+            <p>Mexican street food represents authentic flavors accessible to all social classes. Tacos al pastor combine Lebanese and Mexican influences, elote (street corn) showcases indigenous corn reverence, and churros provide sweet satisfaction. Food trucks and street vendors maintain traditional recipes while adapting to modern urban life.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>

@@ -3,139 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portuguese Food - Top 5 Traditional Dishes | Portugal Cuisine</title>
-    <meta name="description" content="Discover authentic Portuguese cuisine with Pastéis de Nata, Bacalhau, Francesinha, and traditional recipes from Portugal.">
-    <meta name="keywords" content="Portuguese food, Pastéis de Nata, Bacalhau, Francesinha, Portugal cuisine, traditional dishes">
+    <title>Portuguese Cuisine - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
-        }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .ad-space {
-            background: rgba(255,255,255,0.1);
-            border: 2px dashed rgba(255,255,255,0.3);
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
             border-radius: 10px;
-            padding: 2rem;
-            text-align: center;
-            margin: 2rem 0;
-            color: white;
-            min-height: 250px;
-        }
-        .dishes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .dish-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-        }
-        .dish-card:hover { transform: translateY(-5px); }
-        .dish-title { color: #ff6b6b; font-size: 1.5rem; margin-bottom: 1rem; }
-        .dish-desc { color: #666; line-height: 1.6; margin-bottom: 1rem; }
-        .ingredients { margin-top: 1rem; }
-        .ingredients ul { margin-left: 1.5rem; }
-        .content-section {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 2rem 0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
-    <script src="../../config/ads-config.js"></script>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Food</a>
-        <header>
+        <div class="article-header">
             <h1>🇵🇹 Portuguese Cuisine</h1>
-            <p>Top 5 Traditional Portuguese Dishes</p>
-        </header>
-
-        <div class="ad-space">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-8437328263455404"
-                 data-ad-slot="7777777777"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
+            <div class="meta">Published on December 2024 | 5 min read</div>
         </div>
-
-        <div class="content-section">
-            <h2>Portuguese Culinary Heritage</h2>
-            <p>Portuguese cuisine reflects the country's maritime history and global explorations. Known for fresh seafood, especially codfish (bacalhau), Portuguese cooking combines Mediterranean influences with spices from former colonies. The cuisine emphasizes simple preparation methods that highlight natural flavors, creating hearty and satisfying dishes.</p>
-        </div>
-
-        <div class="dishes-grid">
-            <div class="dish-card">
-                <h2 class="dish-title">Pastéis de Nata</h2>
-                <p class="dish-desc">Iconic Portuguese custard tarts with flaky pastry and caramelized tops.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Puff pastry</li><li>Egg custard</li><li>Cinnamon</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Bacalhau à Brás</h2>
-                <p class="dish-desc">Traditional codfish dish with eggs, potatoes, and onions.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Salt cod</li><li>Eggs</li><li>Matchstick potatoes</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Francesinha</h2>
-                <p class="dish-desc">Porto's famous sandwich with meat, cheese, and beer sauce.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Bread</li><li>Various meats</li><li>Cheese sauce</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Caldo Verde</h2>
-                <p class="dish-desc">Traditional kale soup with chorizo and potatoes.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Kale</li><li>Chorizo</li><li>Potatoes</li></ul>
-                </div>
-            </div>
-            <div class="dish-card">
-                <h2 class="dish-title">Grilled Sardines</h2>
-                <p class="dish-desc">Fresh sardines grilled with sea salt, especially popular during festivals.</p>
-                <div class="ingredients">
-                    <strong>Key ingredients:</strong>
-                    <ul><li>Fresh sardines</li><li>Sea salt</li><li>Olive oil</li></ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="ad-space">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-8437328263455404"
-                 data-ad-slot="8888888888"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
+        
+        <div class="content">
+            <p>Portuguese cuisine reflects the nation's maritime heritage and global exploration history, combining Atlantic seafood with influences from former colonies in Brazil, Africa, and Asia. This coastal cuisine emphasizes fresh ingredients, simple preparations, and bold flavors that celebrate Portugal's position as a seafaring nation and cultural bridge between continents.</p>
+            
+            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=500&h=300&fit=crop" alt="Portuguese pastéis de nata">
+            
+            <h2>Bacalhau Mastery</h2>
+            <p>Cod (bacalhau) holds legendary status in Portuguese cuisine, with claims of 365 different preparations - one for each day of the year. Salt-cured cod became essential during Portugal's Age of Discovery, providing protein for long sea voyages. Classic preparations include bacalhau à brás with eggs and potatoes, and bacalhau com natas in cream sauce.</p>
+            
+            <h2>Pastéis de Nata Excellence</h2>
+            <p>Portugal's iconic custard tarts originated in Belém's Jerónimos Monastery, where monks created the secret recipe still used today. These flaky pastries with caramelized custard centers represent Portuguese pastry mastery, requiring precise temperature control and timing to achieve the perfect balance of crispy exterior and creamy interior.</p>
+            
+            <h2>Seafood Abundance</h2>
+            <p>Portugal's extensive coastline provides exceptional seafood, from grilled sardines during summer festivals to cataplana seafood stews in copper pans. Fresh fish markets offer daily catches, while traditional preparations like caldeirada (fisherman's stew) and açorda de marisco (seafood bread soup) showcase regional coastal cooking techniques.</p>
+            
+            <h2>Wine Heritage</h2>
+            <p>Portuguese wine regions produce distinctive varieties like Vinho Verde's light, refreshing wines and Port's fortified sweetness from the Douro Valley. Indigenous grape varieties create unique flavor profiles, while traditional winemaking methods in regions like Dão and Alentejo produce wines that perfectly complement Portuguese cuisine's seafood focus.</p>
+            
+            <h2>Colonial Influences</h2>
+            <p>Portugal's colonial history introduced spices, techniques, and ingredients that enriched the national cuisine. Piri-piri peppers from Africa, tempura techniques from Japan via Macau, and tropical fruits from Brazil created fusion dishes that demonstrate Portugal's role in global culinary exchange throughout history.</p>
+            
+            <h2>Regional Traditions</h2>
+            <p>Northern Portugal offers hearty meat dishes and vinho verde, central regions provide roasted meats and strong cheeses, while the Algarve specializes in seafood and almond-based sweets. Each region's climate, geography, and cultural influences created distinct culinary identities within Portuguese cuisine's unified coastal character.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
     <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        (adsbygoogle = window.adsbygoogle || []).push({});
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
     </script>
 </body>
 </html>

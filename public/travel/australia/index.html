@@ -3,92 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Australia Travel - Top 5 Destinations</title>
+    <title>Australia Travel - FooMadicSoul</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             min-height: 100vh;
             color: #333;
         }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        .back-link {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-bottom: 2rem;
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .article-header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { line-height: 1.8; }
+        .content h2 { color: #333; margin: 2rem 0 1rem; }
+        .content p { margin-bottom: 1.5rem; color: #555; }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        header { text-align: center; margin-bottom: 3rem; color: white; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .destination-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        .destination-card:hover { transform: translateY(-5px); }
-        .destination-title { color: #4ecdc4; font-size: 1.5rem; margin-bottom: 1rem; }
-        .destination-desc { color: #666; line-height: 1.6; }
-        .highlights { margin-top: 1rem; }
-        .highlights ul { margin-left: 1.5rem; }
     </style>
+    <script src="../../assets/js/ads-config.js"></script>
+    <script src="../../assets/js/common.js"></script>
 </head>
-<body>
+<body onload="loadAdSense()">
+    <div id="common-header"></div>
     <div class="container">
-        <a href="../index.html" class="back-link">← Back to Travel</a>
-        <header>
-            <h1>🇦🇺 Australia</h1>
-            <p>Top 5 Destinations</p>
-        </header>
-        <div class="destinations-grid">
-            <a href="sydney.html" class="destination-card" style="text-decoration: none; color: inherit;">
-                <h2 class="destination-title">Sydney</h2>
-                <p class="destination-desc">Iconic harbor city with Opera House, Harbour Bridge, and beautiful beaches.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Sydney Opera House</li><li>Harbour Bridge</li><li>Bondi Beach</li></ul>
-                </div>
-            </a>
-            <a href="melbourne.html" class="destination-card" style="text-decoration: none; color: inherit;">
-                <h2 class="destination-title">Melbourne</h2>
-                <p class="destination-desc">Cultural capital with street art, coffee culture, and diverse neighborhoods.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Federation Square</li><li>Royal Botanic Gardens</li><li>Laneways</li></ul>
-                </div>
-            </a>
-            <a href="great-barrier-reef.html" class="destination-card" style="text-decoration: none; color: inherit;">
-                <h2 class="destination-title">Great Barrier Reef</h2>
-                <p class="destination-desc">World's largest coral reef system, perfect for snorkeling and diving.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Coral gardens</li><li>Marine life</li><li>Whitsunday Islands</li></ul>
-                </div>
-            </a>
-            <a href="uluru.html" class="destination-card" style="text-decoration: none; color: inherit;">
-                <h2 class="destination-title">Uluru</h2>
-                <p class="destination-desc">Sacred monolith in the heart of Australia, spiritual center of Aboriginal culture.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Sunrise/sunset viewing</li><li>Kata Tjuta</li><li>Cultural center</li></ul>
-                </div>
-            </a>
-            <a href="tasmania.html" class="destination-card" style="text-decoration: none; color: inherit;">
-                <h2 class="destination-title">Tasmania</h2>
-                <p class="destination-desc">Island state with pristine wilderness, unique wildlife, and MONA museum.</p>
-                <div class="highlights">
-                    <strong>Must-see:</strong>
-                    <ul><li>Cradle Mountain</li><li>MONA</li><li>Salamanca Market</li></ul>
-                </div>
-            </a>
+        <div class="article-header">
+            <h1>🇦🇺 Australia Travel</h1>
+            <div class="meta">Published on December 2024 | 6 min read</div>
+        </div>
+        
+        <div class="content">
+            <p>Australia captivates travelers with unique wildlife, pristine beaches, and vast outback landscapes found nowhere else on Earth. From Sydney's iconic harbor to the Great Barrier Reef's underwater wonders, Australia offers diverse experiences across a continent-sized island that combines cosmopolitan cities with ancient Aboriginal culture and extraordinary natural phenomena.</p>
+            
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop" alt="Sydney Opera House Australia">
+            
+            <h2>Sydney's Harbor City</h2>
+            <p>Sydney Harbour creates one of the world's most beautiful cityscapes with the Opera House's sail-like architecture and Harbour Bridge's steel arch framing sparkling waters. Bondi Beach epitomizes Australian beach culture with surfing, coastal walks, and outdoor dining. The city combines British colonial heritage in The Rocks district with modern multiculturalism in neighborhoods like Chinatown and Darling Harbour's entertainment precincts.</p>
+            
+            <h2>Great Barrier Reef</h2>
+            <p>The Great Barrier Reef stretches 2,300 kilometers along Queensland's coast, offering world-class diving and snorkeling among colorful coral formations and tropical fish. Cairns and Port Douglas provide gateway access to reef tours, while island resorts like Hamilton Island offer luxury accommodations within this UNESCO World Heritage marine park. The reef demonstrates Australia's commitment to marine conservation and sustainable tourism.</p>
+            
+            <h2>Outback Adventures</h2>
+            <p>Uluru (Ayers Rock) rises majestically from the Red Centre, sacred to Aboriginal peoples and offering sunrise/sunset viewing experiences that reveal changing colors across the monolith's surface. The outback provides authentic Australian experiences through cattle stations, mining towns, and vast landscapes that stretch to horizons. Road trips along routes like the Stuart Highway connect diverse regions while showcasing Australia's scale and isolation.</p>
+            
+            <h2>Unique Wildlife</h2>
+            <p>Australia's isolated evolution created unique species found nowhere else: kangaroos, koalas, wombats, and Tasmanian devils alongside dangerous creatures like crocodiles and venomous snakes. Wildlife parks and sanctuaries offer safe encounters, while natural habitats provide opportunities to observe animals in their native environments. This biodiversity reflects Australia's long separation from other continents.</p>
+            
+            <h2>Aboriginal Culture</h2>
+            <p>Aboriginal Australians maintain the world's oldest continuous culture, spanning over 65,000 years with rich traditions in art, storytelling, and land management. Cultural centers, art galleries, and guided tours share indigenous perspectives on Australian landscapes and history. Rock art sites, cultural performances, and bush tucker experiences provide insights into sophisticated traditional knowledge systems.</p>
+            
+            <h2>Diverse Landscapes</h2>
+            <p>Australia encompasses tropical rainforests in Queensland, wine regions in South Australia, rugged coastlines in Western Australia, and alpine areas in Victoria and New South Wales. Each state offers distinct experiences: Melbourne's cultural sophistication, Perth's isolation and beaches, Tasmania's wilderness, and the Northern Territory's dramatic landscapes. This diversity creates multiple travel experiences within one country.</p>
         </div>
     </div>
+    <div id="common-footer"></div>
+    <script>
+        if (typeof loadAdSense === 'function') {
+            loadAdSense();
+        }
+    </script>
 </body>
 </html>
