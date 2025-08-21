@@ -3,7 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FooMadicSoul</title>
+    <title>FooMadicSoul - Ultimate Food & Travel Guide | 50+ Countries Cuisine & Destinations</title>
+    <meta name="description" content="Discover authentic cuisines and travel destinations from 50+ countries. Expert guides on food culture, travel tips, philosophy, and lifestyle. Your ultimate resource for culinary adventures and wanderlust.">
+    <meta name="keywords" content="food blog, travel guide, world cuisine, international travel, food culture, travel destinations, culinary adventures, authentic recipes, travel tips, lifestyle blog, philosophy, trending topics">
+    <meta name="author" content="FooMadicSoul">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://foomadicsoul.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://foomadicsoul.com/">
+    <meta property="og:title" content="FooMadicSoul - Ultimate Food & Travel Guide">
+    <meta property="og:description" content="Discover authentic cuisines and travel destinations from 50+ countries. Your ultimate resource for culinary adventures and wanderlust.">
+    <meta property="og:image" content="https://foomadicsoul.com/assets/images/og-image.jpg">
+    <meta property="og:site_name" content="FooMadicSoul">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://foomadicsoul.com/">
+    <meta property="twitter:title" content="FooMadicSoul - Ultimate Food & Travel Guide">
+    <meta property="twitter:description" content="Discover authentic cuisines and travel destinations from 50+ countries. Your ultimate resource for culinary adventures and wanderlust.">
+    <meta property="twitter:image" content="https://foomadicsoul.com/assets/images/twitter-image.jpg">
+    
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#00d4ff">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
     <style>
         * {
             margin: 0;
@@ -21,7 +51,7 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: clamp(1rem, 3vw, 2rem);
         }
         
         header {
@@ -30,14 +60,15 @@
         }
         
         h1 {
-            font-size: 3rem;
+            font-size: clamp(2rem, 5vw, 3rem);
             margin-bottom: 1rem;
             color: #00d4ff;
         }
         
         .subtitle {
-            font-size: 1.2rem;
+            font-size: clamp(0.9rem, 2.5vw, 1.2rem);
             color: #ccc;
+            line-height: 1.4;
         }
         
         .main-content {
@@ -47,25 +78,54 @@
             align-items: start;
         }
         
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .side-links {
+                order: 3;
+            }
+            
+            .quadrant-container {
+                order: 1;
+            }
+        }
+        
         .quadrant-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
         }
         
+        @media (max-width: 768px) {
+            .quadrant-container {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+        
         .quadrant {
             background: #2a2a2a;
             border: 2px solid #444;
             border-radius: 15px;
-            padding: 2rem;
+            padding: clamp(1rem, 3vw, 2rem);
             text-decoration: none;
             color: #fff;
             transition: all 0.3s ease;
             text-align: center;
-            min-height: 200px;
+            min-height: 180px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+        }
+        
+        @media (max-width: 480px) {
+            .quadrant {
+                min-height: 150px;
+                padding: 1rem;
+            }
         }
         
         .quadrant:hover {
@@ -75,19 +135,20 @@
         }
         
         .quadrant-icon {
-            font-size: 3rem;
+            font-size: clamp(2rem, 4vw, 3rem);
             margin-bottom: 1rem;
         }
         
         .quadrant-title {
-            font-size: 1.5rem;
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
             margin-bottom: 0.5rem;
             color: #00d4ff;
         }
         
         .quadrant-desc {
             color: #ccc;
-            font-size: 0.9rem;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+            line-height: 1.3;
         }
         
         .side-links {
@@ -123,15 +184,39 @@
             transform: translateX(5px);
         }
     </style>
-    <script src="assets/js/ads-config.js"></script>
-    <script src="assets/js/common.js"></script>
+    <script src="assets/js/ads-config.js" defer></script>
+    <script src="assets/js/common.js" defer></script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "FooMadicSoul",
+        "url": "https://foomadicsoul.com",
+        "description": "Ultimate food and travel guide featuring authentic cuisines and destinations from 50+ countries worldwide",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://foomadicsoul.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "FooMadicSoul",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://foomadicsoul.com/assets/images/logo.png"
+            }
+        }
+    }
+    </script>
 </head>
 <body onload="loadAdSense()">
     <div id="common-header"></div>
     <div class="container">
         <header>
             <h1>FooMadicSoul</h1>
-            <p class="subtitle">Explore Food, Travel, Philosophy & Trending Topics</p>
+            <p class="subtitle">🌍 Discover 50+ Countries | 🍽️ Authentic Cuisines | ✈️ Travel Destinations | 🧠 Philosophy & Trends</p>
         </header>
         
         <div class="main-content">
@@ -143,26 +228,26 @@
             <div class="quadrant-container">
                 <a href="food/index.html" class="quadrant food">
                     <div class="quadrant-icon">🍽️</div>
-                    <h2 class="quadrant-title">Food</h2>
-                    <p class="quadrant-desc">Culinary adventures & recipes</p>
+                    <h2 class="quadrant-title">World Cuisines</h2>
+                    <p class="quadrant-desc">25 Countries | Authentic Recipes | Food Culture</p>
                 </a>
                 
                 <a href="travel/index.html" class="quadrant travel">
                     <div class="quadrant-icon">✈️</div>
-                    <h2 class="quadrant-title">Travel</h2>
-                    <p class="quadrant-desc">Destinations & adventures</p>
+                    <h2 class="quadrant-title">Travel Guides</h2>
+                    <p class="quadrant-desc">25 Destinations | Hidden Gems | Travel Tips</p>
                 </a>
                 
                 <a href="philosophy/index.html" class="quadrant philosophy">
                     <div class="quadrant-icon">🤔</div>
                     <h2 class="quadrant-title">Philosophy</h2>
-                    <p class="quadrant-desc">Deep thoughts & wisdom</p>
+                    <p class="quadrant-desc">Stoicism | Buddhism | Ethics | Wisdom</p>
                 </a>
                 
                 <a href="trending/index.html" class="quadrant trending">
                     <div class="quadrant-icon">🔥</div>
-                    <h2 class="quadrant-title">Trending</h2>
-                    <p class="quadrant-desc">Latest trends & topics</p>
+                    <h2 class="quadrant-title">Trending Now</h2>
+                    <p class="quadrant-desc">AI | Climate | Crypto | Lifestyle</p>
                 </a>
             </div>
             
@@ -212,6 +297,11 @@
         // Initialize AdSense on page load
         if (typeof loadAdSense === 'function') {
             loadAdSense();
+        }
+        
+        // Register service worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
         }
     </script>
 </body>

@@ -1,0 +1,21 @@
+# humanstxt.org
+
+/* TEAM */
+Developer: Abbin Varghese
+Site: https://abbinvarghese.com
+Location: India
+
+/* SITE */
+Last update: 2024/12/19
+Language: English
+Doctype: HTML5
+IDE: Amazon Q Developer
+Standards: HTML5, CSS3, ES6+
+Components: Responsive Design, PWA, SEO Optimized
+Software: AI-Assisted Development
+
+/* THANKS */
+Unsplash for beautiful images
+Firebase for analytics
+Google AdSense for monetization
+Amazon Q for development assistance

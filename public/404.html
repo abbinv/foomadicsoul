@@ -3,40 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found - Modern Life Hub</title>
+    <title>404 - Page Not Found | FooMadicSoul</title>
+    <meta name="description" content="Page not found. Explore our food guides, travel destinations, philosophy, and trending topics.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
+            color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
             text-align: center;
         }
-        .container { padding: 2rem; }
-        h1 { font-size: 3rem; margin-bottom: 1rem; }
-        p { font-size: 1.2rem; margin-bottom: 2rem; }
-        .home-link {
-            display: inline-block;
-            background: white;
-            color: #667eea;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: transform 0.3s ease;
+        .container {
+            max-width: 600px;
+            padding: 2rem;
         }
-        .home-link:hover { transform: translateY(-2px); }
+        h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        h2 {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        p {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            margin-bottom: 2rem;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+        .links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .link {
+            background: rgba(255,255,255,0.2);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        .link:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        @media (max-width: 480px) {
+            .links {
+                flex-direction: column;
+                align-items: center;
+            }
+            .link {
+                width: 200px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>404</h1>
-        <p>Oops! The page you're looking for doesn't exist.</p>
-        <a href="/" class="home-link">← Back to Home</a>
+        <h2>Oops! Page Not Found</h2>
+        <p>The page you're looking for seems to have wandered off on its own culinary adventure. Let's get you back on track!</p>
+        <div class="links">
+            <a href="/" class="link">🏠 Home</a>
+            <a href="/food/" class="link">🍽️ Food</a>
+            <a href="/travel/" class="link">✈️ Travel</a>
+            <a href="/philosophy/" class="link">🤔 Philosophy</a>
+            <a href="/trending/" class="link">🔥 Trending</a>
+        </div>
     </div>
 </body>
 </html>
